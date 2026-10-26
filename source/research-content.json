@@ -64,6 +64,27 @@
       "name": "The connectome of an insect brain",
       "desc": "Winding and colleagues reconstruct the larval Drosophila brain: 3,016 neurons and approximately 548,000 synapses. The study identifies recurrent motifs and multisensory pathways. Downloaded analytical matrices may cover filtered subsets and separate axonal or dendritic compartments.",
       "url": "https://doi.org/10.1126/science.add9330"
+    },
+    {
+      "year": "JAN 2023",
+      "tag": "VFB · DATA INTEGRATION",
+      "name": "Virtual Fly Brain—An interactive atlas of the Drosophila nervous system",
+      "desc": "Court and colleagues describe an atlas integrating registered neuron images, anatomy, connectivity and expression evidence. The bundled larval skeletons use VFB’s shared L1EM reference frame and original CATMAID identifiers; per-neuron sources and licenses remain explicit.",
+      "url": "https://doi.org/10.3389/fphys.2023.1076533"
+    },
+    {
+      "year": "MAR 2020",
+      "tag": "LARVAL MB · RECURRENT CIRCUITS",
+      "name": "Recurrent architecture for adaptive regulation of learning in the insect brain",
+      "desc": "Eschbach and colleagues reconstruct recurrent pathways around the larval mushroom body. Public neuron reconstructions and adjacency matrices support structural circuit analysis. Synaptic routes motivate testable learning hypotheses; topology alone does not validate activity dynamics or behavioural effects of neuron removal.",
+      "url": "https://www.nature.com/articles/s41593-020-0607-9"
+    },
+    {
+      "year": "AUG 2017",
+      "tag": "LARVAL MB · MEASURED CONNECTOME",
+      "name": "The complete connectome of a learning and memory centre in an insect brain",
+      "desc": "Eichler and colleagues map the larval mushroom body’s synaptic wiring, identifying stereotyped and variable organization in an associative circuit. Several bundled VFB cells belong to this reconstruction lineage; the eight-cell view remains a selected subset with separate export dates.",
+      "url": "https://www.nature.com/articles/nature23455"
     }
   ],
   "comparisonRows": [
@@ -158,6 +179,15 @@
       "license": "Check deposited asset terms; article licence is CC BY-NC-ND 4.0",
       "licenseUrl": "https://knowledge.uchicago.edu/records/v8mr4-skt66",
       "limit": "Article access does not by itself permit redistribution of adapted figures; these are microscopy stacks, not a complete synaptic graph."
+    },
+    {
+      "name": "Virtual Fly Brain L1EM anatomy and source records",
+      "url": "https://www.virtualflybrain.org/docs/data/em/",
+      "access": "Public CATMAID L1EM instance, individual SWC downloads and per-neuron metadata API; eight same-ID geometries are bundled offline",
+      "release": "VFB L1EM exports dated May 2025; geometry and the pinned 2023 connectivity table are distinct snapshots",
+      "license": "Selected eight skeletons: CC BY 4.0, verified in per-neuron VFB records",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "limit": "Keep template VFB_00050000, original CATMAID IDs and source units with each file. Dataset terms vary across VFB; these files provide no spatial synapse coordinates."
     }
   ]
 }

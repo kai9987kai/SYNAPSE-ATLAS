@@ -2,6 +2,34 @@
 
 Snapshot assembled and selected primary sources checked **26 October 2026**. Source datasets describe different animals and reconstruction releases. Their identifiers are not interchangeable.
 
+## Version 3: identity-linked larval anatomy
+
+Eight **Virtual Fly Brain L1EM** skeletons now share exact original CATMAID identifiers with the bundled larval graph. They contribute **43,185 coordinate nodes**, bringing the measured geometry total to **10 neurons and 76,428 coordinate nodes** when the two adult MaleCNS cells (**33,243 nodes**) are counted separately. Adult and larval geometries remain in different specimen/reference frames.
+
+The selected larval identities are `14541927`, `4235139` (VFB MBIN-e1), `10163418`, `8877158` (VFB MBON-a1), `16883909`, `4234009` (VFB MBON-b3), and `16223537`, `8980589` (**VFB CN-59**, associated with MBON-c1/MBE18 annotations). Source labels and the archived graph's alternative names are both retained; the app does not overwrite CN-59 with a forced class label.
+
+The induced eight-cell wiring graph retains **17 directed pairs, total synaptic weight 107**. Its rows come from the same pinned Pedigo table described below. It excludes connections to neurons outside the selected eight; the larger graph scopes retain those other partners. Identity matching uses the original IDs, not similarity of names or shapes.
+
+The VFB skeletons are source exports dated **May 2025**, while the pinned analytical connectivity is the archived **2023** research snapshot. These are separate exports of the same specimen, not one synchronized geometry-plus-synapse release. Current IDs establish the intended cell association; changes in proofreading coverage between exports remain a limitation.
+
+All eight source SWCs explicitly declare **1.0 micrometre** units. Captured VFB per-neuron records verify shared template **VFB_00050000**, L1 larval CNS ssTEM—Cardona/Janelia, and the **CC BY 4.0** licenses of their associated reconstruction datasets. Coordinates are retained as exported in that common VFB reference frame; Synapse Atlas performs no further registration. This does not make them directly comparable in one coordinate space with adult MaleCNS data.
+
+The compact derivative only replaces the original unknown-radius sentinel `-1` with zero so strict validators can retain those nodes. Source coordinate values, node IDs, parents and labels remain unchanged. Raw SWCs preserve the exact original bytes. Radius-derived surface or volume measurements are unsupported. The source SWC label codes are **0 undefined, 1 soma, 5 fork point and 6 end point**; these are not axon/dendrite or neurotransmitter labels.
+
+**Structural guides are schematic.** They join geometry centroids using measured neuron-pair counts. No spatial synapse coordinates are bundled, and a rendered guide is not a reconstructed synapse location. Neurite intersections also do not establish synapses.
+
+The originals, source URLs, hashes, compact data, per-neuron metadata/license evidence, validation and download reproducer are in [`data/linked-larva/`](data/linked-larva/). The detailed cell mapping and limits are in [LINKED-DATA.md](docs/LINKED-DATA.md). The public SWC URLs are stable source paths rather than immutable storage generations; saved originals and captured SHA-256 values define this bundle, and the reproducer rejects upstream byte changes.
+
+Credit the original reconstruction teams listed in the per-neuron records, including [Eichler et al. 2017](https://www.nature.com/articles/nature23455), [Eschbach et al. 2020](https://www.nature.com/articles/s41593-020-0607-9), and [Winding et al. 2023](https://doi.org/10.1126/science.add9330), together with [Virtual Fly Brain / Court et al. 2023](https://doi.org/10.3389/fphys.2023.1076533). Preserve the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/), attribution and modification description. The pre-existing processed connectivity retains its own MIT notice and Pedigo citation below.
+
+### New analysis scope
+
+Circuit Studio extracts induced cohorts from measured records and reports source-class aggregates after neuron-pair thresholding. Structural deletion comparisons remove selected nodes without modifying the source and compare against seeded uniform removals of the same count. Their control does not match node degree, class or spatial position, and descriptive ranges are not significance tests or biological lesion predictions.
+
+Morphology Bench derives physical cable/branch summaries from source segments. Its Sholl profile is centred on a chosen **source root** and restricted to that root's component; a source root is not assumed to be a soma. Forest summaries still include the other components. Tangencies are excluded and a half-open parent-to-child interval `(0,1]` defines endpoint counting. Missing reconstruction branches, coarse geometry and source coverage affect every result.
+
+Study JSON preserves validated source/settings identities so analyses can be recomputed. It does not persist imported files or computed experiment results. Portable study settings select bundled snapshots, avoiding an implied identity for later user imports.
+
 ## Larval Drosophila connectivity
 
 Primary research: Winding et al., *The connectome of an insect brain*, Science (2023), [doi:10.1126/science.add9330](https://doi.org/10.1126/science.add9330).

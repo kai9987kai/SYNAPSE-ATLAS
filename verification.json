@@ -1,266 +1,365 @@
 {
-  "testedAt": "2026-10-26T16:54:09.141Z",
+  "version": "3.0.0",
+  "checkedAt": "2026-10-26T19:14:40.122Z",
   "browser": "155.0.8059.86",
-  "viewports": [
-    "1500x1000",
-    "390x844"
-  ],
-  "coreTests": 14,
+  "coreTests": {
+    "passed": 37,
+    "failed": 0
+  },
   "browserChecks": [
     {
-      "name": "startup",
+      "name": "startup without JS errors",
       "pass": true,
       "detail": []
     },
     {
-      "name": "default measured geometry",
+      "name": "eight linked larval skeletons",
       "pass": true
     },
     {
-      "name": "left skeleton",
+      "name": "exact linked connectivity",
       "pass": true
     },
     {
-      "name": "both skeletons",
+      "name": "source code legend",
       "pass": true
     },
     {
-      "name": "clip control",
+      "name": "depth legend",
       "pass": true
     },
     {
-      "name": "zoom resets",
+      "name": "linked count threshold",
       "pass": true
     },
     {
-      "name": "adult concept badge",
+      "name": "adult specimen source",
       "pass": true
     },
     {
-      "name": "dragonfly concept badge",
+      "name": "adult units",
       "pass": true
     },
     {
-      "name": "larva concept badge",
+      "name": "adult linked panel hidden",
       "pass": true
     },
     {
-      "name": "octopus concept badge",
+      "name": "adult pair geometry",
       "pass": true
     },
     {
-      "name": "PNG export",
+      "name": "largest adult component default",
       "pass": true
     },
     {
-      "name": "core graph",
+      "name": "component selector",
       "pass": true
     },
     {
-      "name": "switch larva-mb-recurrent",
+      "name": "invalid Sholl clears stale report",
       "pass": true
     },
     {
-      "name": "switch larva-pedigo-elife-v5",
+      "name": "valid profile restored",
       "pass": true
     },
     {
-      "name": "switch exr1",
+      "name": "data card larval frame",
       "pass": true
     },
     {
-      "name": "switch larva-mb-core",
+      "name": "data card profile exact ID",
       "pass": true
     },
     {
-      "name": "threshold sweep",
+      "name": "data card adult frame",
       "pass": true
     },
     {
-      "name": "path trace",
+      "name": "data card adult profile",
       "pass": true
     },
     {
-      "name": "invalid path input",
+      "name": "linked circuit exact totals",
       "pass": true
     },
     {
-      "name": "full measured graph counts",
-      "pass": true
-    },
-    {
-      "name": "focus scope",
-      "pass": true
-    },
-    {
-      "name": "threshold preserves nodes",
-      "pass": true
-    },
-    {
-      "name": "search CSV matches table",
-      "pass": true,
-      "detail": {
-        "expected": 31,
-        "exported": 31
-      }
-    },
-    {
-      "name": "receipt has source and hash",
+      "name": "group and side induced subgraph",
       "pass": true,
       "detail": {
         "nodeCount": 3,
-        "pairCount": 6,
-        "nonSelfPairCount": 6,
+        "pairCount": 2,
+        "nonSelfPairCount": 2,
         "selfLoopCount": 0,
-        "totalWeight": 138,
+        "totalWeight": 4,
+        "density": 0.3333333333333333,
+        "reciprocity": 1,
+        "weakComponentCount": 2,
+        "largestWeakComponent": 2,
+        "largestSCC": 2
+      }
+    },
+    {
+      "name": "incoming seed neighborhood",
+      "pass": true,
+      "detail": {
+        "nodeCount": 2,
+        "pairCount": 2,
+        "nonSelfPairCount": 2,
+        "selfLoopCount": 0,
+        "totalWeight": 10,
         "density": 1,
         "reciprocity": 1,
         "weakComponentCount": 1,
-        "largestWeakComponent": 3,
+        "largestWeakComponent": 2,
+        "largestSCC": 2
+      }
+    },
+    {
+      "name": "zero-hop seed isolate",
+      "pass": true
+    },
+    {
+      "name": "unknown seed rejected",
+      "pass": true
+    },
+    {
+      "name": "high threshold handoff stays empty",
+      "pass": true
+    },
+    {
+      "name": "targeted structural deletion",
+      "pass": true,
+      "detail": {
+        "nodeCount": 7,
+        "pairCount": 11,
+        "nonSelfPairCount": 11,
+        "selfLoopCount": 0,
+        "totalWeight": 78,
+        "density": 0.2619047619047619,
+        "reciprocity": 0.36363636363636365,
+        "weakComponentCount": 3,
+        "largestWeakComponent": 5,
         "largestSCC": 3
       }
     },
     {
-      "name": "ID search",
+      "name": "matched-size random controls",
       "pass": true
     },
     {
-      "name": "CSV import succeeds",
+      "name": "seeded experiment repeatability",
       "pass": true
     },
     {
-      "name": "bad CSV rejected atomically",
+      "name": "experiment export source and controls",
       "pass": true
     },
     {
-      "name": "unsafe aggregate rejected atomically",
+      "name": "background analysis cancellation",
       "pass": true
     },
     {
-      "name": "SWC import",
+      "name": "unknown removal rejected",
       "pass": true
     },
     {
-      "name": "cycle rejected",
+      "name": "local settings save",
       "pass": true
     },
     {
-      "name": "reset clears imported graph",
+      "name": "portable settings source hashes",
       "pass": true
     },
     {
-      "name": "reset clears imported skeleton",
+      "name": "local study circuit restoration",
       "pass": true
     },
     {
-      "name": "exact restored ExR1 total",
+      "name": "local study specimen restoration",
       "pass": true
     },
     {
-      "name": "library BANC correction",
+      "name": "reject unknown group atomically",
       "pass": true
     },
     {
-      "name": "nine primary sources",
+      "name": "reject wrong family profile atomically",
       "pass": true
     },
     {
-      "name": "research search",
+      "name": "reject unknown root atomically",
       "pass": true
     },
     {
-      "name": "empty research search",
+      "name": "reject invalid controls atomically",
       "pass": true
     },
     {
-      "name": "EM appearance control",
+      "name": "reject source mismatch atomically",
       "pass": true
     },
     {
-      "name": "gallery assets present",
+      "name": "reject missing field atomically",
       "pass": true
     },
     {
-      "name": "gallery preview",
+      "name": "portable study roundtrip",
       "pass": true
     },
     {
-      "name": "gallery escape closes",
+      "name": "circuit receipt exact scope",
       "pass": true
     },
     {
-      "name": "mobile fit atlas",
+      "name": "circuit CSV induced scope",
+      "pass": true
+    },
+    {
+      "name": "morphology receipt origin and units",
+      "pass": true
+    },
+    {
+      "name": "existing pathfinder on linked graph",
+      "pass": true
+    },
+    {
+      "name": "existing CSV import",
+      "pass": true
+    },
+    {
+      "name": "import-derived circuit stays unverified",
+      "pass": true
+    },
+    {
+      "name": "existing import reset",
+      "pass": true
+    },
+    {
+      "name": "existing SWC import",
+      "pass": true
+    },
+    {
+      "name": "imported geometry hides linked claims",
+      "pass": true
+    },
+    {
+      "name": "research search regression",
+      "pass": true
+    },
+    {
+      "name": "microscopy controls regression",
+      "pass": true
+    },
+    {
+      "name": "gallery keyboard regression",
+      "pass": true
+    },
+    {
+      "name": "twelve primary papers",
+      "pass": true
+    },
+    {
+      "name": "new VFB research search",
+      "pass": true
+    },
+    {
+      "name": "Circuit Studio strict 390px viewport",
       "pass": true,
       "detail": {
-        "width": 390,
-        "scroll": 390
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390
       }
     },
     {
-      "name": "mobile fit network",
+      "name": "strict mobile layout atlas",
       "pass": true,
       "detail": {
-        "width": 390,
-        "scroll": 390
+        "viewport": 390,
+        "scroll": 390,
+        "client": 390
       }
     },
     {
-      "name": "mobile fit data",
+      "name": "strict mobile layout circuit",
       "pass": true,
       "detail": {
-        "width": 390,
-        "scroll": 390
+        "viewport": 390,
+        "scroll": 390,
+        "client": 390
       }
     },
     {
-      "name": "mobile fit micro",
+      "name": "strict mobile layout network",
       "pass": true,
       "detail": {
-        "width": 390,
-        "scroll": 390
+        "viewport": 390,
+        "scroll": 390,
+        "client": 390
       }
     },
     {
-      "name": "mobile fit research",
+      "name": "strict mobile layout data",
       "pass": true,
       "detail": {
-        "width": 390,
-        "scroll": 390
+        "viewport": 390,
+        "scroll": 390,
+        "client": 390
       }
     },
     {
-      "name": "mobile fit gallery",
+      "name": "strict mobile layout micro",
       "pass": true,
       "detail": {
-        "width": 390,
-        "scroll": 390
+        "viewport": 390,
+        "scroll": 390,
+        "client": 390
       }
     },
     {
-      "name": "region CSV scope",
+      "name": "strict mobile layout research",
+      "pass": true,
+      "detail": {
+        "viewport": 390,
+        "scroll": 390,
+        "client": 390
+      }
+    },
+    {
+      "name": "strict mobile layout gallery",
+      "pass": true,
+      "detail": {
+        "viewport": 390,
+        "scroll": 390,
+        "client": 390
+      }
+    },
+    {
+      "name": "offline linked anatomy startup",
       "pass": true
     },
     {
-      "name": "receipt snapshot consistency",
+      "name": "standalone offline worker experiment",
       "pass": true
     },
     {
-      "name": "no path result",
-      "pass": true
-    },
-    {
-      "name": "standalone file startup",
-      "pass": true
-    },
-    {
-      "name": "offline full graph",
-      "pass": true
-    },
-    {
-      "name": "no runtime data requests",
+      "name": "offline no network data requests",
       "pass": true,
       "detail": []
     }
   ],
-  "scriptErrors": []
+  "scriptErrors": [],
+  "viewports": [
+    {
+      "width": 1500,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "scope": "New v3 workflows plus existing imports, paths, gallery, research and microscopy regression checks. Mathematical tests are separate. Native deployment is recorded separately."
 }

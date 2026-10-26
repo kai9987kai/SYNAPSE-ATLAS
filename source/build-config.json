@@ -1,6 +1,6 @@
 {
   "schema": "synapse-atlas.build.v1",
-  "title": "Synapse Atlas 2 — Measured Connectomics Studio",
+  "title": "Synapse Atlas 3 — Linked Anatomy and Circuit Studio",
   "newline": "CRLF",
-  "capturedStandaloneSha256": "04f0d12fd0de79f821eea15fcd42b82fc5c9f17c82ed9eff6b5ccec22d31a9de"
+  "capturedStandaloneSha256": "f0f1c69b17035c675c2c54de8f2293439b43fa03590642a80a7b1c2967c8e524"
 }

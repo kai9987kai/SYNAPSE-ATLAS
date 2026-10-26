@@ -1,0 +1,266 @@
+{
+  "testedAt": "2026-10-26T16:54:09.141Z",
+  "browser": "155.0.8059.86",
+  "viewports": [
+    "1500x1000",
+    "390x844"
+  ],
+  "coreTests": 14,
+  "browserChecks": [
+    {
+      "name": "startup",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "default measured geometry",
+      "pass": true
+    },
+    {
+      "name": "left skeleton",
+      "pass": true
+    },
+    {
+      "name": "both skeletons",
+      "pass": true
+    },
+    {
+      "name": "clip control",
+      "pass": true
+    },
+    {
+      "name": "zoom resets",
+      "pass": true
+    },
+    {
+      "name": "adult concept badge",
+      "pass": true
+    },
+    {
+      "name": "dragonfly concept badge",
+      "pass": true
+    },
+    {
+      "name": "larva concept badge",
+      "pass": true
+    },
+    {
+      "name": "octopus concept badge",
+      "pass": true
+    },
+    {
+      "name": "PNG export",
+      "pass": true
+    },
+    {
+      "name": "core graph",
+      "pass": true
+    },
+    {
+      "name": "switch larva-mb-recurrent",
+      "pass": true
+    },
+    {
+      "name": "switch larva-pedigo-elife-v5",
+      "pass": true
+    },
+    {
+      "name": "switch exr1",
+      "pass": true
+    },
+    {
+      "name": "switch larva-mb-core",
+      "pass": true
+    },
+    {
+      "name": "threshold sweep",
+      "pass": true
+    },
+    {
+      "name": "path trace",
+      "pass": true
+    },
+    {
+      "name": "invalid path input",
+      "pass": true
+    },
+    {
+      "name": "full measured graph counts",
+      "pass": true
+    },
+    {
+      "name": "focus scope",
+      "pass": true
+    },
+    {
+      "name": "threshold preserves nodes",
+      "pass": true
+    },
+    {
+      "name": "search CSV matches table",
+      "pass": true,
+      "detail": {
+        "expected": 31,
+        "exported": 31
+      }
+    },
+    {
+      "name": "receipt has source and hash",
+      "pass": true,
+      "detail": {
+        "nodeCount": 3,
+        "pairCount": 6,
+        "nonSelfPairCount": 6,
+        "selfLoopCount": 0,
+        "totalWeight": 138,
+        "density": 1,
+        "reciprocity": 1,
+        "weakComponentCount": 1,
+        "largestWeakComponent": 3,
+        "largestSCC": 3
+      }
+    },
+    {
+      "name": "ID search",
+      "pass": true
+    },
+    {
+      "name": "CSV import succeeds",
+      "pass": true
+    },
+    {
+      "name": "bad CSV rejected atomically",
+      "pass": true
+    },
+    {
+      "name": "unsafe aggregate rejected atomically",
+      "pass": true
+    },
+    {
+      "name": "SWC import",
+      "pass": true
+    },
+    {
+      "name": "cycle rejected",
+      "pass": true
+    },
+    {
+      "name": "reset clears imported graph",
+      "pass": true
+    },
+    {
+      "name": "reset clears imported skeleton",
+      "pass": true
+    },
+    {
+      "name": "exact restored ExR1 total",
+      "pass": true
+    },
+    {
+      "name": "library BANC correction",
+      "pass": true
+    },
+    {
+      "name": "nine primary sources",
+      "pass": true
+    },
+    {
+      "name": "research search",
+      "pass": true
+    },
+    {
+      "name": "empty research search",
+      "pass": true
+    },
+    {
+      "name": "EM appearance control",
+      "pass": true
+    },
+    {
+      "name": "gallery assets present",
+      "pass": true
+    },
+    {
+      "name": "gallery preview",
+      "pass": true
+    },
+    {
+      "name": "gallery escape closes",
+      "pass": true
+    },
+    {
+      "name": "mobile fit atlas",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "mobile fit network",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "mobile fit data",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "mobile fit micro",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "mobile fit research",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "mobile fit gallery",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "region CSV scope",
+      "pass": true
+    },
+    {
+      "name": "receipt snapshot consistency",
+      "pass": true
+    },
+    {
+      "name": "no path result",
+      "pass": true
+    },
+    {
+      "name": "standalone file startup",
+      "pass": true
+    },
+    {
+      "name": "offline full graph",
+      "pass": true
+    },
+    {
+      "name": "no runtime data requests",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "scriptErrors": []
+}

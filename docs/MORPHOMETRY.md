@@ -1,0 +1,15 @@
+# Physical skeleton measurements
+
+`AtlasMorphCore.analyzeMorphology(cell, {shollStepUm: 10, rootId})` measures the supplied skeleton coordinates. Coordinate values are converted to micrometres using the explicit `cell.nmPerUnit / 1000` factor. Radius values are validated but do not enter cable-length, topology or Sholl calculations. Missing/unknown radii must be normalized to zero by an explicitly documented importer before analysis.
+
+Summary statistics cover the entire source forest. Each root is a separate connected component; isolated roots count as terminals. Branch points have at least two children; bifurcations have exactly two. An edge is a direct parent-child segment. A topological branch segment is a maximal run between a root, branch point or terminal, so unary intermediate sample nodes do not create additional branch segments. Root-path lengths follow parent-child cable, not straight-line displacement. All traversal is iterative.
+
+The radial profile covers **one selected rooted component**, centered at that component's source root coordinate. It defaults to the first root in source order and does not claim to identify a soma. Components can be selected by their root ID. This matters for disconnected source reconstructions: the first root need not represent the largest component. Profiles for different reference roots, components or units are not directly interchangeable.
+
+Each radial value counts exact line-segment/sphere intersections from a quadratic solve. Segments with both endpoints outside a sphere can contribute two crossings. Tangent contacts contribute zero. To assign a sphere intersection at a shared sample vertex once, parent-to-child segments use the half-open parameter range `t ∈ (0,1]`, with a conditioning-aware floating-point tolerance. At a branch junction exactly on a shell this explicit convention applies rather than counting every coincident outgoing edge separately. Zero-length segments contribute no crossings.
+
+The last shell is the largest positive step multiple at or within the selected component's maximum root-centered Euclidean extent. A profile with more than 512 shells is rejected with an instruction to increase the shell step. The engine never silently truncates a profile or changes the requested step. Finite coordinates, positive declared units, unique IDs, valid parent references and acyclic rooted forests are required.
+
+This is a descriptive analysis of reconstructed centerlines. Reconstruction resolution, disconnected fragments, source-root placement and missing branches affect the measurements. It does not establish arbor completeness, synaptic contacts, functional signal propagation or biological equivalence between specimens.
+
+Method context: D. A. Sholl, *Dendritic organization in the neurons of the visual and motor cortices of the cat*, Journal of Anatomy 87(4), 387–406 (1953). [Primary article scan](https://pmc.ncbi.nlm.nih.gov/articles/PMC1244622/), [PubMed record](https://pubmed.ncbi.nlm.nih.gov/13117757/). The root-centered 3D profile used here is a declared adaptation, not a claim that every file supplies soma-centered dendritic anatomy.

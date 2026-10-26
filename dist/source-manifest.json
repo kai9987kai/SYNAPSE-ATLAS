@@ -174,6 +174,69 @@
         "url": "https://github.com/neurodata/bilateral-connectome/tree/4482b9022f27d361011c9c7442e32ca51d607d08",
         "limits": "Published research-processed node/weighted-edge tables; not the full 548,000-synapse paper release. We retain all provided directed rows, weights, and self-loops. Class labels use the source simple_group column. No neurotransmitter signs or ROI assignments inferred."
       }
+    },
+    {
+      "id": "larva-linked-morphology",
+      "name": "Larval MB circuit · eight neurons with measured 3D skeletons",
+      "source": {
+        "id": "larva-pedigo-elife-v5",
+        "title": "Eight identity-linked larval mushroom-body neurons",
+        "species": "Drosophila melanogaster",
+        "stage": "L1 larva",
+        "release": "Pedigo elife-v5, commit4482b9022f27, eight-ID induced subset",
+        "commit": "4482b9022f27d361011c9c7442e32ca51d607d08",
+        "accessed": "2026-10-26",
+        "evidence": "EM-derived connectivity, research-processed snapshot",
+        "source": "https://github.com/neurodata/bilateral-connectome/tree/4482b9022f27d361011c9c7442e32ca51d607d08",
+        "publication": "https://doi.org/10.7554/eLife.83739",
+        "originalPublication": "https://doi.org/10.1126/science.add9330",
+        "license": "MIT for pinned research repository and processed files; original Winding et al. Science article CC BY 4.0",
+        "licenseFile": "larva-LICENSE.txt",
+        "scope": "Induced subset of the pinned Pedigo network, restricted to eight neurons with bundled VFB L1EM skeletons. The connection rows measure structural synaptic counts; neuron-to-neuron connectors drawn by an app are schematic because exact synapse coordinates are not supplied. Geometry and edge exports have distinct snapshot dates.",
+        "nodes": 8,
+        "directedEdges": 17,
+        "summedWeight": 107,
+        "format": {
+          "nodes": "objects: id,name,group,class,hemisphere,pair,color",
+          "edges": "arrays: [From string,To string,Synapses integer]",
+          "graphRegion": "Not provided in source"
+        },
+        "rawFiles": [
+          {
+            "file": "larva-nodes.csv",
+            "source": "https://raw.githubusercontent.com/neurodata/bilateral-connectome/4482b9022f27d361011c9c7442e32ca51d607d08/data/processed-elife/unmatched_full_nodes.csv",
+            "bytes": 2638863,
+            "sha256": "d430f9bcb61e76e1bf681539382bced179d273ed8192f668a46c254b48dccadb"
+          },
+          {
+            "file": "larva-edges.csv",
+            "source": "https://raw.githubusercontent.com/neurodata/bilateral-connectome/4482b9022f27d361011c9c7442e32ca51d607d08/data/processed-elife/unmatched_full_edgelist.csv",
+            "bytes": 2351007,
+            "sha256": "92468519f57012c8400ed397a6ade978f2228a7dc0146e4991e30cdde8129266"
+          },
+          {
+            "file": "larva-LICENSE.txt",
+            "source": "https://raw.githubusercontent.com/neurodata/bilateral-connectome/4482b9022f27d361011c9c7442e32ca51d607d08/LICENSE",
+            "bytes": 1120,
+            "sha256": "eafa6585c8e7a3f99fc62ce108d069ecf422c769a78fb980009505bafd14ddb9"
+          }
+        ],
+        "url": "https://github.com/neurodata/bilateral-connectome/tree/4482b9022f27d361011c9c7442e32ca51d607d08",
+        "limits": "Induced subset of the pinned Pedigo network, restricted to eight neurons with bundled VFB L1EM skeletons. The connection rows measure structural synaptic counts; neuron-to-neuron connectors drawn by an app are schematic because exact synapse coordinates are not supplied. Geometry and edge exports have distinct snapshot dates.",
+        "selection": {
+          "type": "induced subgraph",
+          "nodeIds": [
+            "10163418",
+            "14541927",
+            "16223537",
+            "16883909",
+            "4234009",
+            "4235139",
+            "8877158",
+            "8980589"
+          ]
+        }
+      }
     }
   ],
   "morphology": [
@@ -235,6 +298,471 @@
         "scope": "Two descending neurons only. Names as documented in official download examples; no functional activity or connectivity inferred from skeleton morphology.",
         "gcsGeneration": "1777993410878309",
         "immutableSourceUrl": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/556329.swc?generation=1777993410878309"
+      }
+    },
+    {
+      "id": "14541927",
+      "label": "MBIN-e1 · AVM011f left",
+      "side": "L",
+      "units": "µm",
+      "nmPerUnit": 1000,
+      "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0414/VFB_00050000/volume.swc",
+      "graphDatasetId": "larva-pedigo-elife-v5",
+      "graphNodeId": "14541927",
+      "linkedDatasetIds": [
+        "larva-mb-core",
+        "larva-mb-recurrent",
+        "larva-pedigo-elife-v5",
+        "larva-linked-morphology"
+      ],
+      "spaceId": "VFB_00050000",
+      "specimenId": "L1EM-Cardona-Janelia",
+      "source": {
+        "dataset": "Virtual Fly Brain L1EM reconstructed skeletons",
+        "release": "Source SWC exported 2025-05-12",
+        "evidence": "Measured EM reconstruction, centerline skeleton",
+        "source": "https://www.virtualflybrain.org/data/VFB/i/0010/0414/VFB_00050000/volume.swc",
+        "url": "https://www.virtualflybrain.org/data/VFB/i/0010/0414/VFB_00050000/volume.swc",
+        "portal": "https://v2.virtualflybrain.org/org.geppetto.frontend/geppetto?id=VFB_00100414",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Original larval reconstructions: Eichler et al. 2017, Eschbach et al. 2020, Winding et al. 2023; Virtual Fly Brain (Court et al. 2023) integration",
+        "units": "1 micrometre per source coordinate unit",
+        "nmPerUnit": 1000,
+        "accessed": "2026-10-26",
+        "sha256": "b16e6ec661545eb8dc2fcf6224e76ed4ff6698f15de2ebb8d1614aa48f875c82",
+        "bytes": 189821,
+        "nodeCount": 4476,
+        "rootCount": 1,
+        "segmentCount": 4475,
+        "branchPointCount": 207,
+        "tipCount": 215,
+        "cableLengthMicrometres": 450.722361,
+        "spaceId": "VFB_00050000",
+        "coordinateSpace": "L1 larval CNS ssTEM - Cardona/Janelia; shared VFB L1EM reference coordinate frame in micrometres",
+        "transform": "No additional coordinate change from the VFB export. Only unknown radius sentinel -1 is represented as zero in the compact derivative. Original SWC is retained.",
+        "unknownRadiusCount": 4475,
+        "scope": "Identity-linked via original L1EM/CATMAID skeleton IDs to the pinned Pedigo processed graph. Geometry exports and edge table are different snapshots of the same specimen, not a synchronized re-export. No synapse coordinates or neural activity are provided.",
+        "vfbTermId": "VFB_00100414",
+        "vfbTermRecordVersion": 1880075371068522500,
+        "vfbTermSources": [
+          "Larval MB neurons - EM (Eichler2017)",
+          "EM L1 Eschbach et al 2020b",
+          "EM L1 Winding, Pedigo et al., 2023"
+        ],
+        "geometryLabels": {
+          "0": "undefined",
+          "1": "soma",
+          "5": "fork point",
+          "6": "end point"
+        }
+      }
+    },
+    {
+      "id": "4235139",
+      "label": "MBIN-e1 · AVM011f right",
+      "side": "R",
+      "units": "µm",
+      "nmPerUnit": 1000,
+      "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0222/VFB_00050000/volume.swc",
+      "graphDatasetId": "larva-pedigo-elife-v5",
+      "graphNodeId": "4235139",
+      "linkedDatasetIds": [
+        "larva-mb-core",
+        "larva-mb-recurrent",
+        "larva-pedigo-elife-v5",
+        "larva-linked-morphology"
+      ],
+      "spaceId": "VFB_00050000",
+      "specimenId": "L1EM-Cardona-Janelia",
+      "source": {
+        "dataset": "Virtual Fly Brain L1EM reconstructed skeletons",
+        "release": "Source SWC exported 2025-05-12",
+        "evidence": "Measured EM reconstruction, centerline skeleton",
+        "source": "https://www.virtualflybrain.org/data/VFB/i/0010/0222/VFB_00050000/volume.swc",
+        "url": "https://www.virtualflybrain.org/data/VFB/i/0010/0222/VFB_00050000/volume.swc",
+        "portal": "https://v2.virtualflybrain.org/org.geppetto.frontend/geppetto?id=VFB_00100222",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Original larval reconstructions: Eichler et al. 2017, Eschbach et al. 2020, Winding et al. 2023; Virtual Fly Brain (Court et al. 2023) integration",
+        "units": "1 micrometre per source coordinate unit",
+        "nmPerUnit": 1000,
+        "accessed": "2026-10-26",
+        "sha256": "d69dc21355cca353a380c4dcf21f01041247ab5a523c5103ec8fa3c87008459c",
+        "bytes": 225512,
+        "nodeCount": 5274,
+        "rootCount": 1,
+        "segmentCount": 5273,
+        "branchPointCount": 204,
+        "tipCount": 213,
+        "cableLengthMicrometres": 500.475758,
+        "spaceId": "VFB_00050000",
+        "coordinateSpace": "L1 larval CNS ssTEM - Cardona/Janelia; shared VFB L1EM reference coordinate frame in micrometres",
+        "transform": "No additional coordinate change from the VFB export. Only unknown radius sentinel -1 is represented as zero in the compact derivative. Original SWC is retained.",
+        "unknownRadiusCount": 5272,
+        "scope": "Identity-linked via original L1EM/CATMAID skeleton IDs to the pinned Pedigo processed graph. Geometry exports and edge table are different snapshots of the same specimen, not a synchronized re-export. No synapse coordinates or neural activity are provided.",
+        "vfbTermId": "VFB_00100222",
+        "vfbTermRecordVersion": 1880075370855661600,
+        "vfbTermSources": [
+          "EM L1 Eschbach et al 2020b",
+          "EM L1 Winding, Pedigo et al., 2023",
+          "Larval MB neurons - EM (Eichler2017)"
+        ],
+        "geometryLabels": {
+          "0": "undefined",
+          "1": "soma",
+          "5": "fork point",
+          "6": "end point"
+        }
+      }
+    },
+    {
+      "id": "10163418",
+      "label": "MBON-a1 · MBE7a right",
+      "side": "R",
+      "units": "µm",
+      "nmPerUnit": 1000,
+      "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0382/VFB_00050000/volume.swc",
+      "graphDatasetId": "larva-pedigo-elife-v5",
+      "graphNodeId": "10163418",
+      "linkedDatasetIds": [
+        "larva-mb-core",
+        "larva-mb-recurrent",
+        "larva-pedigo-elife-v5",
+        "larva-linked-morphology"
+      ],
+      "spaceId": "VFB_00050000",
+      "specimenId": "L1EM-Cardona-Janelia",
+      "source": {
+        "dataset": "Virtual Fly Brain L1EM reconstructed skeletons",
+        "release": "Source SWC exported 2025-05-12",
+        "evidence": "Measured EM reconstruction, centerline skeleton",
+        "source": "https://www.virtualflybrain.org/data/VFB/i/0010/0382/VFB_00050000/volume.swc",
+        "url": "https://www.virtualflybrain.org/data/VFB/i/0010/0382/VFB_00050000/volume.swc",
+        "portal": "https://v2.virtualflybrain.org/org.geppetto.frontend/geppetto?id=VFB_00100382",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Original larval reconstructions: Eichler et al. 2017, Eschbach et al. 2020, Winding et al. 2023; Virtual Fly Brain (Court et al. 2023) integration",
+        "units": "1 micrometre per source coordinate unit",
+        "nmPerUnit": 1000,
+        "accessed": "2026-10-26",
+        "sha256": "2ac00c855f2b745787b36caffe5ef0b4b225438aa43a1ecdead9cda401dce47d",
+        "bytes": 228106,
+        "nodeCount": 5325,
+        "rootCount": 1,
+        "segmentCount": 5324,
+        "branchPointCount": 207,
+        "tipCount": 213,
+        "cableLengthMicrometres": 499.625248,
+        "spaceId": "VFB_00050000",
+        "coordinateSpace": "L1 larval CNS ssTEM - Cardona/Janelia; shared VFB L1EM reference coordinate frame in micrometres",
+        "transform": "No additional coordinate change from the VFB export. Only unknown radius sentinel -1 is represented as zero in the compact derivative. Original SWC is retained.",
+        "unknownRadiusCount": 5324,
+        "scope": "Identity-linked via original L1EM/CATMAID skeleton IDs to the pinned Pedigo processed graph. Geometry exports and edge table are different snapshots of the same specimen, not a synchronized re-export. No synapse coordinates or neural activity are provided.",
+        "vfbTermId": "VFB_00100382",
+        "vfbTermRecordVersion": 1880075370968907800,
+        "vfbTermSources": [
+          "Larval MB neurons - EM (Eichler2017)",
+          "EM L1 Eschbach et al 2020b",
+          "EM L1 Winding, Pedigo et al., 2023"
+        ],
+        "geometryLabels": {
+          "0": "undefined",
+          "1": "soma",
+          "5": "fork point",
+          "6": "end point"
+        }
+      }
+    },
+    {
+      "id": "8877158",
+      "label": "MBON-a1 · MBE7a left",
+      "side": "L",
+      "units": "µm",
+      "nmPerUnit": 1000,
+      "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0352/VFB_00050000/volume.swc",
+      "graphDatasetId": "larva-pedigo-elife-v5",
+      "graphNodeId": "8877158",
+      "linkedDatasetIds": [
+        "larva-mb-core",
+        "larva-mb-recurrent",
+        "larva-pedigo-elife-v5",
+        "larva-linked-morphology"
+      ],
+      "spaceId": "VFB_00050000",
+      "specimenId": "L1EM-Cardona-Janelia",
+      "source": {
+        "dataset": "Virtual Fly Brain L1EM reconstructed skeletons",
+        "release": "Source SWC exported 2025-05-12",
+        "evidence": "Measured EM reconstruction, centerline skeleton",
+        "source": "https://www.virtualflybrain.org/data/VFB/i/0010/0352/VFB_00050000/volume.swc",
+        "url": "https://www.virtualflybrain.org/data/VFB/i/0010/0352/VFB_00050000/volume.swc",
+        "portal": "https://v2.virtualflybrain.org/org.geppetto.frontend/geppetto?id=VFB_00100352",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Original larval reconstructions: Eichler et al. 2017, Eschbach et al. 2020, Winding et al. 2023; Virtual Fly Brain (Court et al. 2023) integration",
+        "units": "1 micrometre per source coordinate unit",
+        "nmPerUnit": 1000,
+        "accessed": "2026-10-26",
+        "sha256": "f70902c6f922a62ae9c4620e5867eca9e75e8b2997a5aeba3d3128ecdc8c700e",
+        "bytes": 187315,
+        "nodeCount": 4444,
+        "rootCount": 1,
+        "segmentCount": 4443,
+        "branchPointCount": 185,
+        "tipCount": 195,
+        "cableLengthMicrometres": 466.156069,
+        "spaceId": "VFB_00050000",
+        "coordinateSpace": "L1 larval CNS ssTEM - Cardona/Janelia; shared VFB L1EM reference coordinate frame in micrometres",
+        "transform": "No additional coordinate change from the VFB export. Only unknown radius sentinel -1 is represented as zero in the compact derivative. Original SWC is retained.",
+        "unknownRadiusCount": 4443,
+        "scope": "Identity-linked via original L1EM/CATMAID skeleton IDs to the pinned Pedigo processed graph. Geometry exports and edge table are different snapshots of the same specimen, not a synchronized re-export. No synapse coordinates or neural activity are provided.",
+        "vfbTermId": "VFB_00100352",
+        "vfbTermRecordVersion": 1880075370997219300,
+        "vfbTermSources": [
+          "Larval MB neurons - EM (Eichler2017)",
+          "EM L1 Eschbach et al 2020b",
+          "EM L1 Winding, Pedigo et al., 2023"
+        ],
+        "geometryLabels": {
+          "0": "undefined",
+          "1": "soma",
+          "5": "fork point",
+          "6": "end point"
+        }
+      }
+    },
+    {
+      "id": "16883909",
+      "label": "MBON-b3 · MBE33 left",
+      "side": "L",
+      "units": "µm",
+      "nmPerUnit": 1000,
+      "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0503/VFB_00050000/volume.swc",
+      "graphDatasetId": "larva-pedigo-elife-v5",
+      "graphNodeId": "16883909",
+      "linkedDatasetIds": [
+        "larva-mb-core",
+        "larva-mb-recurrent",
+        "larva-pedigo-elife-v5",
+        "larva-linked-morphology"
+      ],
+      "spaceId": "VFB_00050000",
+      "specimenId": "L1EM-Cardona-Janelia",
+      "source": {
+        "dataset": "Virtual Fly Brain L1EM reconstructed skeletons",
+        "release": "Source SWC exported 2025-05-12",
+        "evidence": "Measured EM reconstruction, centerline skeleton",
+        "source": "https://www.virtualflybrain.org/data/VFB/i/0010/0503/VFB_00050000/volume.swc",
+        "url": "https://www.virtualflybrain.org/data/VFB/i/0010/0503/VFB_00050000/volume.swc",
+        "portal": "https://v2.virtualflybrain.org/org.geppetto.frontend/geppetto?id=VFB_00100503",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Original larval reconstructions: Eichler et al. 2017, Eschbach et al. 2020, Winding et al. 2023; Virtual Fly Brain (Court et al. 2023) integration",
+        "units": "1 micrometre per source coordinate unit",
+        "nmPerUnit": 1000,
+        "accessed": "2026-10-26",
+        "sha256": "ab23a424a29da9e8efb92e3fbfcf982c54189a2d6a1e9c3b39e966bb6ab24a6c",
+        "bytes": 141485,
+        "nodeCount": 3349,
+        "rootCount": 1,
+        "segmentCount": 3348,
+        "branchPointCount": 126,
+        "tipCount": 133,
+        "cableLengthMicrometres": 330.94657,
+        "spaceId": "VFB_00050000",
+        "coordinateSpace": "L1 larval CNS ssTEM - Cardona/Janelia; shared VFB L1EM reference coordinate frame in micrometres",
+        "transform": "No additional coordinate change from the VFB export. Only unknown radius sentinel -1 is represented as zero in the compact derivative. Original SWC is retained.",
+        "unknownRadiusCount": 3348,
+        "scope": "Identity-linked via original L1EM/CATMAID skeleton IDs to the pinned Pedigo processed graph. Geometry exports and edge table are different snapshots of the same specimen, not a synchronized re-export. No synapse coordinates or neural activity are provided.",
+        "vfbTermId": "VFB_00100503",
+        "vfbTermRecordVersion": 1880075371042308000,
+        "vfbTermSources": [
+          "EM L1 Eschbach et al 2020b",
+          "EM L1 Winding, Pedigo et al., 2023",
+          "Larval MB neurons - EM (Eichler2017)"
+        ],
+        "geometryLabels": {
+          "0": "undefined",
+          "1": "soma",
+          "5": "fork point",
+          "6": "end point"
+        }
+      }
+    },
+    {
+      "id": "4234009",
+      "label": "MBON-b3 · MBE33 right",
+      "side": "R",
+      "units": "µm",
+      "nmPerUnit": 1000,
+      "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0221/VFB_00050000/volume.swc",
+      "graphDatasetId": "larva-pedigo-elife-v5",
+      "graphNodeId": "4234009",
+      "linkedDatasetIds": [
+        "larva-mb-core",
+        "larva-mb-recurrent",
+        "larva-pedigo-elife-v5",
+        "larva-linked-morphology"
+      ],
+      "spaceId": "VFB_00050000",
+      "specimenId": "L1EM-Cardona-Janelia",
+      "source": {
+        "dataset": "Virtual Fly Brain L1EM reconstructed skeletons",
+        "release": "Source SWC exported 2025-05-12",
+        "evidence": "Measured EM reconstruction, centerline skeleton",
+        "source": "https://www.virtualflybrain.org/data/VFB/i/0010/0221/VFB_00050000/volume.swc",
+        "url": "https://www.virtualflybrain.org/data/VFB/i/0010/0221/VFB_00050000/volume.swc",
+        "portal": "https://v2.virtualflybrain.org/org.geppetto.frontend/geppetto?id=VFB_00100221",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Original larval reconstructions: Eichler et al. 2017, Eschbach et al. 2020, Winding et al. 2023; Virtual Fly Brain (Court et al. 2023) integration",
+        "units": "1 micrometre per source coordinate unit",
+        "nmPerUnit": 1000,
+        "accessed": "2026-10-26",
+        "sha256": "c9b695a50b64de02cd994a2bf3876d67268a1e10319d8044fe84cf00bd0303a3",
+        "bytes": 168369,
+        "nodeCount": 3942,
+        "rootCount": 1,
+        "segmentCount": 3941,
+        "branchPointCount": 172,
+        "tipCount": 186,
+        "cableLengthMicrometres": 390.93792,
+        "spaceId": "VFB_00050000",
+        "coordinateSpace": "L1 larval CNS ssTEM - Cardona/Janelia; shared VFB L1EM reference coordinate frame in micrometres",
+        "transform": "No additional coordinate change from the VFB export. Only unknown radius sentinel -1 is represented as zero in the compact derivative. Original SWC is retained.",
+        "unknownRadiusCount": 3941,
+        "scope": "Identity-linked via original L1EM/CATMAID skeleton IDs to the pinned Pedigo processed graph. Geometry exports and edge table are different snapshots of the same specimen, not a synchronized re-export. No synapse coordinates or neural activity are provided.",
+        "vfbTermId": "VFB_00100221",
+        "vfbTermRecordVersion": 1880075370890264600,
+        "vfbTermSources": [
+          "EM L1 Winding, Pedigo et al., 2023",
+          "EM L1 Eschbach et al 2020b",
+          "Larval MB neurons - EM (Eichler2017)"
+        ],
+        "geometryLabels": {
+          "0": "undefined",
+          "1": "soma",
+          "5": "fork point",
+          "6": "end point"
+        }
+      }
+    },
+    {
+      "id": "16223537",
+      "label": "CN-59 · MBE18 left",
+      "side": "L",
+      "units": "µm",
+      "nmPerUnit": 1000,
+      "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0457/VFB_00050000/volume.swc",
+      "graphDatasetId": "larva-pedigo-elife-v5",
+      "graphNodeId": "16223537",
+      "linkedDatasetIds": [
+        "larva-mb-core",
+        "larva-mb-recurrent",
+        "larva-pedigo-elife-v5",
+        "larva-linked-morphology"
+      ],
+      "spaceId": "VFB_00050000",
+      "specimenId": "L1EM-Cardona-Janelia",
+      "source": {
+        "dataset": "Virtual Fly Brain L1EM reconstructed skeletons",
+        "release": "Source SWC exported 2025-05-12",
+        "evidence": "Measured EM reconstruction, centerline skeleton",
+        "source": "https://www.virtualflybrain.org/data/VFB/i/0010/0457/VFB_00050000/volume.swc",
+        "url": "https://www.virtualflybrain.org/data/VFB/i/0010/0457/VFB_00050000/volume.swc",
+        "portal": "https://v2.virtualflybrain.org/org.geppetto.frontend/geppetto?id=VFB_00100457",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Original larval reconstructions: Eichler et al. 2017, Eschbach et al. 2020, Winding et al. 2023; Virtual Fly Brain (Court et al. 2023) integration",
+        "units": "1 micrometre per source coordinate unit",
+        "nmPerUnit": 1000,
+        "accessed": "2026-10-26",
+        "sha256": "104cab5d4d66ba30c512b45deeb1e23f717094d88ad2a2438437a5384f034d01",
+        "bytes": 317782,
+        "nodeCount": 7470,
+        "rootCount": 1,
+        "segmentCount": 7469,
+        "branchPointCount": 442,
+        "tipCount": 460,
+        "cableLengthMicrometres": 909.721566,
+        "spaceId": "VFB_00050000",
+        "coordinateSpace": "L1 larval CNS ssTEM - Cardona/Janelia; shared VFB L1EM reference coordinate frame in micrometres",
+        "transform": "No additional coordinate change from the VFB export. Only unknown radius sentinel -1 is represented as zero in the compact derivative. Original SWC is retained.",
+        "unknownRadiusCount": 7469,
+        "scope": "Identity-linked via original L1EM/CATMAID skeleton IDs to the pinned Pedigo processed graph. Geometry exports and edge table are different snapshots of the same specimen, not a synchronized re-export. No synapse coordinates or neural activity are provided.",
+        "vfbTermId": "VFB_00100457",
+        "vfbTermRecordVersion": 1880075371056988200,
+        "vfbTermSources": [
+          "EM L1 Miroschnikow et al. 2018",
+          "EM L1 Eschbach et al 2020b",
+          "EM L1 Winding, Pedigo et al., 2023",
+          "Larval MB neurons - EM (Eichler2017)"
+        ],
+        "geometryLabels": {
+          "0": "undefined",
+          "1": "soma",
+          "5": "fork point",
+          "6": "end point"
+        }
+      }
+    },
+    {
+      "id": "8980589",
+      "label": "CN-59 · MBE18 right",
+      "side": "R",
+      "units": "µm",
+      "nmPerUnit": 1000,
+      "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0274/VFB_00050000/volume.swc",
+      "graphDatasetId": "larva-pedigo-elife-v5",
+      "graphNodeId": "8980589",
+      "linkedDatasetIds": [
+        "larva-mb-core",
+        "larva-mb-recurrent",
+        "larva-pedigo-elife-v5",
+        "larva-linked-morphology"
+      ],
+      "spaceId": "VFB_00050000",
+      "specimenId": "L1EM-Cardona-Janelia",
+      "source": {
+        "dataset": "Virtual Fly Brain L1EM reconstructed skeletons",
+        "release": "Source SWC exported 2025-05-13",
+        "evidence": "Measured EM reconstruction, centerline skeleton",
+        "source": "https://www.virtualflybrain.org/data/VFB/i/0010/0274/VFB_00050000/volume.swc",
+        "url": "https://www.virtualflybrain.org/data/VFB/i/0010/0274/VFB_00050000/volume.swc",
+        "portal": "https://v2.virtualflybrain.org/org.geppetto.frontend/geppetto?id=VFB_00100274",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Original larval reconstructions: Eichler et al. 2017, Eschbach et al. 2020, Winding et al. 2023; Virtual Fly Brain (Court et al. 2023) integration",
+        "units": "1 micrometre per source coordinate unit",
+        "nmPerUnit": 1000,
+        "accessed": "2026-10-26",
+        "sha256": "275644fc68b68b9797513269170a5416c97f02b51fc7fcef50e52c0a9b05f6b2",
+        "bytes": 379836,
+        "nodeCount": 8905,
+        "rootCount": 1,
+        "segmentCount": 8904,
+        "branchPointCount": 443,
+        "tipCount": 470,
+        "cableLengthMicrometres": 904.758745,
+        "spaceId": "VFB_00050000",
+        "coordinateSpace": "L1 larval CNS ssTEM - Cardona/Janelia; shared VFB L1EM reference coordinate frame in micrometres",
+        "transform": "No additional coordinate change from the VFB export. Only unknown radius sentinel -1 is represented as zero in the compact derivative. Original SWC is retained.",
+        "unknownRadiusCount": 8904,
+        "scope": "Identity-linked via original L1EM/CATMAID skeleton IDs to the pinned Pedigo processed graph. Geometry exports and edge table are different snapshots of the same specimen, not a synchronized re-export. No synapse coordinates or neural activity are provided.",
+        "vfbTermId": "VFB_00100274",
+        "vfbTermRecordVersion": 1880075370944790500,
+        "vfbTermSources": [
+          "Larval MB neurons - EM (Eichler2017)",
+          "EM L1 Eschbach et al 2020b",
+          "EM L1 Winding, Pedigo et al., 2023"
+        ],
+        "geometryLabels": {
+          "0": "undefined",
+          "1": "soma",
+          "5": "fork point",
+          "6": "end point"
+        }
       }
     }
   ],
@@ -392,5 +920,481 @@
   "suppliedOriginal": {
     "sha256": "be6124c2684c01fcf0535890799f85a68efae3b80fecacc2b61cb7f6adaa345d",
     "authenticity": "Supplied HTML embedded exports preserved; original CSVs not attached and not independently verified."
+  },
+  "appVersion": "3.0.0",
+  "linkedLarvalMorphology": {
+    "schema": "synapse-atlas.linked-larval-morphology.v1",
+    "accessed": "2026-10-26",
+    "sourceFiles": [
+      {
+        "graphNodeId": "14541927",
+        "label": "MBIN-e1 (L1EM:14541927)",
+        "vfbId": "VFB_00100414",
+        "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0414/VFB_00050000/volume.swc",
+        "localFile": "larva-14541927.swc",
+        "termEvidenceFile": "mbin-e1-term.html",
+        "sha256": "b16e6ec661545eb8dc2fcf6224e76ed4ff6698f15de2ebb8d1614aa48f875c82",
+        "bytes": 189821,
+        "sourceExportDate": "2025-05-12",
+        "metadata": {
+          "id": "14541927",
+          "name": "AVM011f left",
+          "units": "1.0 micrometer"
+        },
+        "termLicenses": [
+          {
+            "dataset": "Eichler2017",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          },
+          {
+            "dataset": "Eschbach2020b",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          },
+          {
+            "dataset": "WindingPedigo2023",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          }
+        ]
+      },
+      {
+        "graphNodeId": "4235139",
+        "label": "MBIN-e1 (L1EM:4235139)",
+        "vfbId": "VFB_00100222",
+        "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0222/VFB_00050000/volume.swc",
+        "localFile": "larva-4235139.swc",
+        "termEvidenceFile": "mbin-e1-term.html",
+        "sha256": "d69dc21355cca353a380c4dcf21f01041247ab5a523c5103ec8fa3c87008459c",
+        "bytes": 225512,
+        "sourceExportDate": "2025-05-12",
+        "metadata": {
+          "id": "4235139",
+          "name": "AVM011f right",
+          "units": "1.0 micrometer"
+        },
+        "termLicenses": [
+          {
+            "dataset": "Eschbach2020b",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          },
+          {
+            "dataset": "WindingPedigo2023",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          },
+          {
+            "dataset": "Eichler2017",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          }
+        ]
+      },
+      {
+        "graphNodeId": "10163418",
+        "label": "MBON-a1 (L1EM:10163418)",
+        "vfbId": "VFB_00100382",
+        "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0382/VFB_00050000/volume.swc",
+        "localFile": "larva-10163418.swc",
+        "termEvidenceFile": "mbon-a1-term.html",
+        "sha256": "2ac00c855f2b745787b36caffe5ef0b4b225438aa43a1ecdead9cda401dce47d",
+        "bytes": 228106,
+        "sourceExportDate": "2025-05-12",
+        "metadata": {
+          "id": "10163418",
+          "name": "MBE7a right",
+          "units": "1.0 micrometer"
+        },
+        "termLicenses": [
+          {
+            "dataset": "Eichler2017",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          },
+          {
+            "dataset": "Eschbach2020b",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          },
+          {
+            "dataset": "WindingPedigo2023",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          }
+        ]
+      },
+      {
+        "graphNodeId": "8877158",
+        "label": "MBON-a1 (L1EM:8877158)",
+        "vfbId": "VFB_00100352",
+        "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0352/VFB_00050000/volume.swc",
+        "localFile": "larva-8877158.swc",
+        "termEvidenceFile": "mbon-a1-term.html",
+        "sha256": "f70902c6f922a62ae9c4620e5867eca9e75e8b2997a5aeba3d3128ecdc8c700e",
+        "bytes": 187315,
+        "sourceExportDate": "2025-05-12",
+        "metadata": {
+          "id": "8877158",
+          "name": "MBE7a left",
+          "units": "1.0 micrometer"
+        },
+        "termLicenses": [
+          {
+            "dataset": "Eichler2017",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          },
+          {
+            "dataset": "Eschbach2020b",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          },
+          {
+            "dataset": "WindingPedigo2023",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          }
+        ]
+      },
+      {
+        "graphNodeId": "16883909",
+        "label": "MBON-b3 (L1EM:16883909)",
+        "vfbId": "VFB_00100503",
+        "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0503/VFB_00050000/volume.swc",
+        "localFile": "larva-16883909.swc",
+        "termEvidenceFile": "mbon-b3-term.html",
+        "sha256": "ab23a424a29da9e8efb92e3fbfcf982c54189a2d6a1e9c3b39e966bb6ab24a6c",
+        "bytes": 141485,
+        "sourceExportDate": "2025-05-12",
+        "metadata": {
+          "id": "16883909",
+          "name": "MBE33 left",
+          "units": "1.0 micrometer"
+        },
+        "termLicenses": [
+          {
+            "dataset": "Eschbach2020b",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          },
+          {
+            "dataset": "WindingPedigo2023",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          },
+          {
+            "dataset": "Eichler2017",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          }
+        ]
+      },
+      {
+        "graphNodeId": "4234009",
+        "label": "MBON-b3 (L1EM:4234009)",
+        "vfbId": "VFB_00100221",
+        "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0221/VFB_00050000/volume.swc",
+        "localFile": "larva-4234009.swc",
+        "termEvidenceFile": "mbon-b3-term.html",
+        "sha256": "c9b695a50b64de02cd994a2bf3876d67268a1e10319d8044fe84cf00bd0303a3",
+        "bytes": 168369,
+        "sourceExportDate": "2025-05-12",
+        "metadata": {
+          "id": "4234009",
+          "name": "MBE33 right",
+          "units": "1.0 micrometer"
+        },
+        "termLicenses": [
+          {
+            "dataset": "WindingPedigo2023",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          },
+          {
+            "dataset": "Eschbach2020b",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          },
+          {
+            "dataset": "Eichler2017",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          }
+        ]
+      },
+      {
+        "graphNodeId": "16223537",
+        "label": "CN-59 (L1EM:16223537)",
+        "vfbId": "VFB_00100457",
+        "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0457/VFB_00050000/volume.swc",
+        "localFile": "larva-16223537.swc",
+        "termEvidenceFile": "mbon-c1-term.html",
+        "sha256": "104cab5d4d66ba30c512b45deeb1e23f717094d88ad2a2438437a5384f034d01",
+        "bytes": 317782,
+        "sourceExportDate": "2025-05-12",
+        "metadata": {
+          "id": "16223537",
+          "name": "MBE18 left",
+          "units": "1.0 micrometer"
+        },
+        "termLicenses": [
+          {
+            "dataset": "Miroschnikow2018",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          },
+          {
+            "dataset": "Eschbach2020b",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          },
+          {
+            "dataset": "WindingPedigo2023",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          },
+          {
+            "dataset": "Eichler2017",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          }
+        ]
+      },
+      {
+        "graphNodeId": "8980589",
+        "label": "CN-59 (L1EM:8980589)",
+        "vfbId": "VFB_00100274",
+        "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0274/VFB_00050000/volume.swc",
+        "localFile": "larva-8980589.swc",
+        "termEvidenceFile": "mbon-c1-term.html",
+        "sha256": "275644fc68b68b9797513269170a5416c97f02b51fc7fcef50e52c0a9b05f6b2",
+        "bytes": 379836,
+        "sourceExportDate": "2025-05-13",
+        "metadata": {
+          "id": "8980589",
+          "name": "MBE18 right",
+          "units": "1.0 micrometer"
+        },
+        "termLicenses": [
+          {
+            "dataset": "Eichler2017",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          },
+          {
+            "dataset": "Eschbach2020b",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          },
+          {
+            "dataset": "WindingPedigo2023",
+            "license": "CC-BY_4.0",
+            "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          }
+        ]
+      }
+    ],
+    "metadataEvidence": {
+      "file": "vfb-neuron-records.json",
+      "sha256": "99809e5e04b17d637e9bfa7b25e03d61c90cee3e02a083145621027943bc355a",
+      "source": "https://solr.virtualflybrain.org/solr/vfb_json/select (exact ID query recorded in responseHeader.params)",
+      "scope": "Authoritative VFB per-neuron licenses, image templates and original external IDs; captured response bytes included."
+    },
+    "scope": "Geometry and connectivity identify the same specimen/cell IDs; distinct exports may differ in proofreading state. Do not treat skeleton intersection or schematic edges as spatial synapse evidence."
+  },
+  "researchLibrary": {
+    "checked": "2026-10-26",
+    "scope": "Selected primary studies and official dataset resources checked on 26 October 2026. This library is a curated snapshot, not an automatically updating or exhaustive literature review.",
+    "articles": [
+      {
+        "year": "SEP 2026",
+        "tag": "VISION · CONNECTOME ANALYSIS",
+        "name": "The organization of visual pathways in the Drosophila brain",
+        "desc": "Hoeller and colleagues use MaleCNS connectivity to trace visual pathways from optic lobes into the central brain. Network-derived receptive-field predictions are compared with physiological evidence; structural routes do not supply recorded activity for every cell.",
+        "url": "https://doi.org/10.1016/j.cell.2026.08.014"
+      },
+      {
+        "year": "SEP 2026",
+        "tag": "MALE CNS · EM RECONSTRUCTION",
+        "name": "Sexual dimorphism in the complete Drosophila male central nervous system connectome",
+        "desc": "Cell study of the adult male brain and nerve cord: 166,700 annotated neurons, including 217 disconnected cells. Approximately 124.2 million predicted synaptic connections link the connected graph. Neuron proofreading does not mean each synapse was individually proofread.",
+        "url": "https://doi.org/10.1016/j.cell.2026.08.015"
+      },
+      {
+        "year": "JUN 2026",
+        "tag": "BANC · DISTRIBUTED CONTROL",
+        "name": "Distributed control circuits across a brain-and-cord connectome",
+        "desc": "Nature study of adult female brain-and-nerve-cord circuitry. Its published figure reports 155,916 proofread or roughly proofread neurons. Local sensory-effector loops are linked by long-range pathways. The specimen lacks lamina and ocellar tissue.",
+        "url": "https://www.nature.com/articles/s41586-026-10735-w"
+      },
+      {
+        "year": "MAY 2026",
+        "tag": "OCTOPUS · TRACT TRACING",
+        "name": "Multiple Longitudinal Tracts in the Cephalopod Arm Sensorimotor System",
+        "desc": "Olson and Ragsdale describe longitudinal tracts using tracing and immunohistochemistry. Their anatomical findings suggest pathways for coordinating movements along an arm; they are not a whole-octopus synapse map or a validated control simulation.",
+        "url": "https://doi.org/10.1002/cne.70165"
+      },
+      {
+        "year": "JAN 2026",
+        "tag": "DRAGONFLY · ELECTROPHYSIOLOGY",
+        "name": "Dragonfly target-detecting neurons adapt to stimulus saliency",
+        "desc": "Vision Research experiments measure small-target neuron adaptation under changing contrast, direction and target jitter. These extracellular recordings motivate visual-processing concepts. The paper supplies no whole-dragonfly connectome; its experimental data are available on request.",
+        "url": "https://doi.org/10.1016/j.visres.2025.108713"
+      },
+      {
+        "year": "JAN 2025",
+        "tag": "OCTOPUS · CELLULAR ANATOMY",
+        "name": "Neuronal segmentation in cephalopod arms",
+        "desc": "Olson, Schulz and Ragsdale identify repeated segments in octopus axial nerve cords and topographic organization associated with suckers. Image stacks and nerve-tracing data are linked by the paper. Anatomical modules do not establish individual synaptic connections.",
+        "url": "https://www.nature.com/articles/s41467-024-55475-5"
+      },
+      {
+        "year": "OCT 2024",
+        "tag": "FLYWIRE · ADULT FEMALE BRAIN",
+        "name": "Neuronal wiring diagram of an adult brain",
+        "desc": "Dorkenwald and the FlyWire Consortium report 139,255 reconstructed neurons and approximately 54.5 million synaptic contacts in one adult female brain. This resource includes both optic lobes; it does not include the whole ventral nerve cord.",
+        "url": "https://www.nature.com/articles/s41586-024-07558-y"
+      },
+      {
+        "year": "OCT 2024",
+        "tag": "FLYWIRE · ANNOTATION",
+        "name": "Whole-brain annotation and multi-connectome cell typing of Drosophila",
+        "desc": "Schlegel and colleagues provide the companion FlyWire cell-type annotation framework and multi-connectome comparisons. A shared cell-type name is distinct from a shared neuron identifier; morphology and connectivity comparisons require specimen-aware matching.",
+        "url": "https://doi.org/10.1038/s41586-024-07686-5"
+      },
+      {
+        "year": "MAR 2023",
+        "tag": "LARVAL FLY · EM CONNECTOME",
+        "name": "The connectome of an insect brain",
+        "desc": "Winding and colleagues reconstruct the larval Drosophila brain: 3,016 neurons and approximately 548,000 synapses. The study identifies recurrent motifs and multisensory pathways. Downloaded analytical matrices may cover filtered subsets and separate axonal or dendritic compartments.",
+        "url": "https://doi.org/10.1126/science.add9330"
+      },
+      {
+        "year": "JAN 2023",
+        "tag": "VFB · DATA INTEGRATION",
+        "name": "Virtual Fly Brain—An interactive atlas of the Drosophila nervous system",
+        "desc": "Court and colleagues describe an atlas integrating registered neuron images, anatomy, connectivity and expression evidence. The bundled larval skeletons use VFB’s shared L1EM reference frame and original CATMAID identifiers; per-neuron sources and licenses remain explicit.",
+        "url": "https://doi.org/10.3389/fphys.2023.1076533"
+      },
+      {
+        "year": "MAR 2020",
+        "tag": "LARVAL MB · RECURRENT CIRCUITS",
+        "name": "Recurrent architecture for adaptive regulation of learning in the insect brain",
+        "desc": "Eschbach and colleagues reconstruct recurrent pathways around the larval mushroom body. Public neuron reconstructions and adjacency matrices support structural circuit analysis. Synaptic routes motivate testable learning hypotheses; topology alone does not validate activity dynamics or behavioural effects of neuron removal.",
+        "url": "https://www.nature.com/articles/s41593-020-0607-9"
+      },
+      {
+        "year": "AUG 2017",
+        "tag": "LARVAL MB · MEASURED CONNECTOME",
+        "name": "The complete connectome of a learning and memory centre in an insect brain",
+        "desc": "Eichler and colleagues map the larval mushroom body’s synaptic wiring, identifying stereotyped and variable organization in an associative circuit. Several bundled VFB cells belong to this reconstruction lineage; the eight-cell view remains a selected subset with separate export dates.",
+        "url": "https://www.nature.com/articles/nature23455"
+      }
+    ],
+    "comparisonRows": [
+      {
+        "system": "FlyWire / FAFB v783",
+        "scale": "139,255 neurons; ~54.5M synaptic contacts in the 2024 paper",
+        "scope": "Adult female brain, including optic lobes",
+        "limit": "One specimen; VNC excluded; v783 root IDs depend on the segmentation snapshot."
+      },
+      {
+        "system": "BANC v888 publication dataset",
+        "scale": "155,916 proofread / roughly proofread neurons in published figure",
+        "scope": "Adult female brain + ventral nerve cord",
+        "limit": "Lamina and ocellar tissue absent. Counts of all segmented objects include fragments and non-neuronal material."
+      },
+      {
+        "system": "MaleCNS v1.0",
+        "scale": "166,700 annotated neurons; ~124.2M synaptic connections",
+        "scope": "Adult male brain + ventral nerve cord",
+        "limit": "166,483 neurons have graph connections; 217 are disconnected. Synapses are computational predictions."
+      },
+      {
+        "system": "Larval Drosophila (2023)",
+        "scale": "3,016 neurons; ~548,000 synapses",
+        "scope": "Larval brain reconstruction",
+        "limit": "Developmental stage differs from adult resources; matrix subsets can have different node counts."
+      },
+      {
+        "system": "Dragonfly STMD (2026)",
+        "scale": "Physiological responses; no whole-animal connectome supplied",
+        "scope": "Target-detecting visual neurons",
+        "limit": "An illustrative dragonfly model is not measured morphology or connectivity from this study."
+      },
+      {
+        "system": "Octopus arm ANC (2025–2026)",
+        "scale": "Segments and longitudinal tracts",
+        "scope": "Cellular anatomy, immunohistochemistry and nerve tracing",
+        "limit": "Not a synapse-resolution octopus connectome; conceptual geometry must remain labelled."
+      }
+    ],
+    "portals": [
+      {
+        "name": "FlyWire Codex",
+        "url": "https://codex.flywire.ai/",
+        "access": "Interactive search and exports; bulk-download endpoint and CAVE tools",
+        "release": "FAFB v783: October 2023 segmentation snapshot; public annotations may be newer",
+        "license": "FlyWire public data: CC BY-NC 4.0",
+        "licenseUrl": "https://flywire.ai/guidelines",
+        "limit": "Keep each exported root ID tied to its dataset and release."
+      },
+      {
+        "name": "BANC publication data",
+        "url": "https://doi.org/10.7910/DVN/7WTH1N",
+        "access": "Public Harvard Dataverse file downloads and metadata API",
+        "release": "v888; v2 synapse snapshot used in publication; newer v3 files also deposited",
+        "license": "Dataset: CC BY 4.0",
+        "licenseUrl": "https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/7WTH1N",
+        "limit": "Distinguish publication v2 analyses from v3 data; large bulk files are not all bundled in this app."
+      },
+      {
+        "name": "BANC Neuroglancer",
+        "url": "https://ng.banc.community/view",
+        "access": "External volume, segmentation and morphology viewer",
+        "release": "Living resource; publication snapshot is archived separately",
+        "license": "Publication dataset: CC BY 4.0; check individual layer metadata",
+        "licenseUrl": "https://doi.org/10.7910/DVN/7WTH1N",
+        "limit": "External volume browsing is distinct from the app's embedded reference screenshots."
+      },
+      {
+        "name": "MaleCNS official downloads",
+        "url": "https://male-cns.janelia.org/download/",
+        "access": "Public bulk data and individual SWCs; neuPrint programmatic queries require a token",
+        "release": "v1.0 released 8 June 2026; main paper published 3 September 2026",
+        "license": "Dataset: CC BY 4.0",
+        "licenseUrl": "https://male-cns.janelia.org/",
+        "limit": "Native SWC coordinates use 8 nm units; template-transformed skeletons use other units."
+      },
+      {
+        "name": "FlyWire annotation repository",
+        "url": "https://github.com/flyconnectome/flywire_annotations",
+        "access": "Public versioned annotation tables and documentation",
+        "release": "Record a repository commit alongside the segmentation release",
+        "license": "FlyWire data reuse follows CC BY-NC 4.0 and its citation guidance",
+        "licenseUrl": "https://flywire.ai/guidelines",
+        "limit": "Annotations and geometry have separate version histories; cross-specimen matches need validation."
+      },
+      {
+        "name": "Octopus arm study image stacks",
+        "url": "https://doi.org/10.5281/zenodo.14064132",
+        "access": "Exemplar stacks linked by the 2025 segmentation paper",
+        "release": "Associated with Neuronal segmentation in cephalopod arms",
+        "license": "Check deposited asset terms; article licence is CC BY-NC-ND 4.0",
+        "licenseUrl": "https://knowledge.uchicago.edu/records/v8mr4-skt66",
+        "limit": "Article access does not by itself permit redistribution of adapted figures; these are microscopy stacks, not a complete synaptic graph."
+      },
+      {
+        "name": "Virtual Fly Brain L1EM anatomy and source records",
+        "url": "https://www.virtualflybrain.org/docs/data/em/",
+        "access": "Public CATMAID L1EM instance, individual SWC downloads and per-neuron metadata API; eight same-ID geometries are bundled offline",
+        "release": "VFB L1EM exports dated May 2025; geometry and the pinned 2023 connectivity table are distinct snapshots",
+        "license": "Selected eight skeletons: CC BY 4.0, verified in per-neuron VFB records",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "limit": "Keep template VFB_00050000, original CATMAID IDs and source units with each file. Dataset terms vary across VFB; these files provide no spatial synapse coordinates."
+      }
+    ]
   }
 }

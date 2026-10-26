@@ -1,0 +1,282 @@
+{
+  "schema": "synapse-atlas.linked-larval-morphology.v1",
+  "accessed": "2026-10-26",
+  "sourceFiles": [
+    {
+      "graphNodeId": "14541927",
+      "label": "MBIN-e1 (L1EM:14541927)",
+      "vfbId": "VFB_00100414",
+      "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0414/VFB_00050000/volume.swc",
+      "localFile": "larva-14541927.swc",
+      "termEvidenceFile": "mbin-e1-term.html",
+      "sha256": "b16e6ec661545eb8dc2fcf6224e76ed4ff6698f15de2ebb8d1614aa48f875c82",
+      "bytes": 189821,
+      "sourceExportDate": "2025-05-12",
+      "metadata": {
+        "id": "14541927",
+        "name": "AVM011f left",
+        "units": "1.0 micrometer"
+      },
+      "termLicenses": [
+        {
+          "dataset": "Eichler2017",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        {
+          "dataset": "Eschbach2020b",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        {
+          "dataset": "WindingPedigo2023",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        }
+      ]
+    },
+    {
+      "graphNodeId": "4235139",
+      "label": "MBIN-e1 (L1EM:4235139)",
+      "vfbId": "VFB_00100222",
+      "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0222/VFB_00050000/volume.swc",
+      "localFile": "larva-4235139.swc",
+      "termEvidenceFile": "mbin-e1-term.html",
+      "sha256": "d69dc21355cca353a380c4dcf21f01041247ab5a523c5103ec8fa3c87008459c",
+      "bytes": 225512,
+      "sourceExportDate": "2025-05-12",
+      "metadata": {
+        "id": "4235139",
+        "name": "AVM011f right",
+        "units": "1.0 micrometer"
+      },
+      "termLicenses": [
+        {
+          "dataset": "Eschbach2020b",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        {
+          "dataset": "WindingPedigo2023",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        {
+          "dataset": "Eichler2017",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        }
+      ]
+    },
+    {
+      "graphNodeId": "10163418",
+      "label": "MBON-a1 (L1EM:10163418)",
+      "vfbId": "VFB_00100382",
+      "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0382/VFB_00050000/volume.swc",
+      "localFile": "larva-10163418.swc",
+      "termEvidenceFile": "mbon-a1-term.html",
+      "sha256": "2ac00c855f2b745787b36caffe5ef0b4b225438aa43a1ecdead9cda401dce47d",
+      "bytes": 228106,
+      "sourceExportDate": "2025-05-12",
+      "metadata": {
+        "id": "10163418",
+        "name": "MBE7a right",
+        "units": "1.0 micrometer"
+      },
+      "termLicenses": [
+        {
+          "dataset": "Eichler2017",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        {
+          "dataset": "Eschbach2020b",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        {
+          "dataset": "WindingPedigo2023",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        }
+      ]
+    },
+    {
+      "graphNodeId": "8877158",
+      "label": "MBON-a1 (L1EM:8877158)",
+      "vfbId": "VFB_00100352",
+      "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0352/VFB_00050000/volume.swc",
+      "localFile": "larva-8877158.swc",
+      "termEvidenceFile": "mbon-a1-term.html",
+      "sha256": "f70902c6f922a62ae9c4620e5867eca9e75e8b2997a5aeba3d3128ecdc8c700e",
+      "bytes": 187315,
+      "sourceExportDate": "2025-05-12",
+      "metadata": {
+        "id": "8877158",
+        "name": "MBE7a left",
+        "units": "1.0 micrometer"
+      },
+      "termLicenses": [
+        {
+          "dataset": "Eichler2017",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        {
+          "dataset": "Eschbach2020b",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        {
+          "dataset": "WindingPedigo2023",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        }
+      ]
+    },
+    {
+      "graphNodeId": "16883909",
+      "label": "MBON-b3 (L1EM:16883909)",
+      "vfbId": "VFB_00100503",
+      "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0503/VFB_00050000/volume.swc",
+      "localFile": "larva-16883909.swc",
+      "termEvidenceFile": "mbon-b3-term.html",
+      "sha256": "ab23a424a29da9e8efb92e3fbfcf982c54189a2d6a1e9c3b39e966bb6ab24a6c",
+      "bytes": 141485,
+      "sourceExportDate": "2025-05-12",
+      "metadata": {
+        "id": "16883909",
+        "name": "MBE33 left",
+        "units": "1.0 micrometer"
+      },
+      "termLicenses": [
+        {
+          "dataset": "Eschbach2020b",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        {
+          "dataset": "WindingPedigo2023",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        {
+          "dataset": "Eichler2017",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        }
+      ]
+    },
+    {
+      "graphNodeId": "4234009",
+      "label": "MBON-b3 (L1EM:4234009)",
+      "vfbId": "VFB_00100221",
+      "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0221/VFB_00050000/volume.swc",
+      "localFile": "larva-4234009.swc",
+      "termEvidenceFile": "mbon-b3-term.html",
+      "sha256": "c9b695a50b64de02cd994a2bf3876d67268a1e10319d8044fe84cf00bd0303a3",
+      "bytes": 168369,
+      "sourceExportDate": "2025-05-12",
+      "metadata": {
+        "id": "4234009",
+        "name": "MBE33 right",
+        "units": "1.0 micrometer"
+      },
+      "termLicenses": [
+        {
+          "dataset": "WindingPedigo2023",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        {
+          "dataset": "Eschbach2020b",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        {
+          "dataset": "Eichler2017",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        }
+      ]
+    },
+    {
+      "graphNodeId": "16223537",
+      "label": "CN-59 (L1EM:16223537)",
+      "vfbId": "VFB_00100457",
+      "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0457/VFB_00050000/volume.swc",
+      "localFile": "larva-16223537.swc",
+      "termEvidenceFile": "mbon-c1-term.html",
+      "sha256": "104cab5d4d66ba30c512b45deeb1e23f717094d88ad2a2438437a5384f034d01",
+      "bytes": 317782,
+      "sourceExportDate": "2025-05-12",
+      "metadata": {
+        "id": "16223537",
+        "name": "MBE18 left",
+        "units": "1.0 micrometer"
+      },
+      "termLicenses": [
+        {
+          "dataset": "Miroschnikow2018",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        {
+          "dataset": "Eschbach2020b",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        {
+          "dataset": "WindingPedigo2023",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        {
+          "dataset": "Eichler2017",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        }
+      ]
+    },
+    {
+      "graphNodeId": "8980589",
+      "label": "CN-59 (L1EM:8980589)",
+      "vfbId": "VFB_00100274",
+      "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0274/VFB_00050000/volume.swc",
+      "localFile": "larva-8980589.swc",
+      "termEvidenceFile": "mbon-c1-term.html",
+      "sha256": "275644fc68b68b9797513269170a5416c97f02b51fc7fcef50e52c0a9b05f6b2",
+      "bytes": 379836,
+      "sourceExportDate": "2025-05-13",
+      "metadata": {
+        "id": "8980589",
+        "name": "MBE18 right",
+        "units": "1.0 micrometer"
+      },
+      "termLicenses": [
+        {
+          "dataset": "Eichler2017",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        {
+          "dataset": "Eschbach2020b",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        {
+          "dataset": "WindingPedigo2023",
+          "license": "CC-BY_4.0",
+          "link": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        }
+      ]
+    }
+  ],
+  "metadataEvidence": {
+    "file": "vfb-neuron-records.json",
+    "sha256": "99809e5e04b17d637e9bfa7b25e03d61c90cee3e02a083145621027943bc355a",
+    "source": "https://solr.virtualflybrain.org/solr/vfb_json/select (exact ID query recorded in responseHeader.params)",
+    "scope": "Authoritative VFB per-neuron licenses, image templates and original external IDs; captured response bytes included."
+  },
+  "scope": "Geometry and connectivity identify the same specimen/cell IDs; distinct exports may differ in proofreading state. Do not treat skeleton intersection or schematic edges as spatial synapse evidence."
+}

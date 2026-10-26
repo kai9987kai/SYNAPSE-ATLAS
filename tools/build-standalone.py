@@ -38,10 +38,17 @@ def build() -> tuple[str, dict, dict]:
     css = (SOURCE / 'upgrade.css').read_text(encoding='utf-8')
     core = (SOURCE / 'atlas-core.js').read_text(encoding='utf-8')
     extension = (SOURCE / 'upgrade.js').read_text(encoding='utf-8')
+    for name in ('circuit-core.js', 'morph-core.js'):
+        if (SOURCE / name).exists():
+            core += '\n' + (SOURCE / name).read_text(encoding='utf-8')
+    if (SOURCE / 'studio-v3.css').exists():
+        css += '\n' + (SOURCE / 'studio-v3.css').read_text(encoding='utf-8')
+    if (SOURCE / 'studio-v3.js').exists():
+        extension += '\n' + (SOURCE / 'studio-v3.js').read_text(encoding='utf-8')
     if html.count('</head>') != 1 or html.count('</body>') != 1 or '<script>' not in html:
         raise ValueError('base.html is missing its expected HTML insertion points')
     html = html.replace('</head>', '<style>' + css + '</style></head>')
-    html = html.replace('<script>', '<script>' + core + '</script><script>', 1)
+    html = html.replace('<script>', '<script id="analysisCore">' + core + '</script><script>', 1)
     data = '<script>const PUBLIC_DATA=' + script_json(public) + ';const VERIFIED_CONTENT=' + script_json(research) + ';</script>'
     html = html.replace('</body>', data + '<script>' + extension + '</script></body>')
     return html, public['manifest'], config
