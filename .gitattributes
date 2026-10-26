@@ -1,0 +1,2 @@
+# Preserve captured scientific source bytes and standalone rebuild hashes.
+* -text whitespace=trailing-space,space-before-tab,cr-at-eol

@@ -1,0 +1,389 @@
+{
+  "schema": "synapse-atlas.structural-deletion.v3",
+  "appVersion": "3.0.0",
+  "dataset": {
+    "id": "larva-linked-morphology",
+    "source": {
+      "id": "larva-pedigo-elife-v5",
+      "title": "Eight identity-linked larval mushroom-body neurons",
+      "species": "Drosophila melanogaster",
+      "stage": "L1 larva",
+      "release": "Pedigo elife-v5, commit4482b9022f27, eight-ID induced subset",
+      "commit": "4482b9022f27d361011c9c7442e32ca51d607d08",
+      "accessed": "2026-10-26",
+      "evidence": "EM-derived connectivity, research-processed snapshot",
+      "source": "https://github.com/neurodata/bilateral-connectome/tree/4482b9022f27d361011c9c7442e32ca51d607d08",
+      "publication": "https://doi.org/10.7554/eLife.83739",
+      "originalPublication": "https://doi.org/10.1126/science.add9330",
+      "license": "MIT for pinned research repository and processed files; original Winding et al. Science article CC BY 4.0",
+      "licenseFile": "larva-LICENSE.txt",
+      "scope": "Induced subset of the pinned Pedigo network, restricted to eight neurons with bundled VFB L1EM skeletons. The connection rows measure structural synaptic counts; neuron-to-neuron connectors drawn by an app are schematic because exact synapse coordinates are not supplied. Geometry and edge exports have distinct snapshot dates.",
+      "nodes": 8,
+      "directedEdges": 17,
+      "summedWeight": 107,
+      "format": {
+        "nodes": "objects: id,name,group,class,hemisphere,pair,color",
+        "edges": "arrays: [From string,To string,Synapses integer]",
+        "graphRegion": "Not provided in source"
+      },
+      "rawFiles": [
+        {
+          "file": "larva-nodes.csv",
+          "source": "https://raw.githubusercontent.com/neurodata/bilateral-connectome/4482b9022f27d361011c9c7442e32ca51d607d08/data/processed-elife/unmatched_full_nodes.csv",
+          "bytes": 2638863,
+          "sha256": "d430f9bcb61e76e1bf681539382bced179d273ed8192f668a46c254b48dccadb"
+        },
+        {
+          "file": "larva-edges.csv",
+          "source": "https://raw.githubusercontent.com/neurodata/bilateral-connectome/4482b9022f27d361011c9c7442e32ca51d607d08/data/processed-elife/unmatched_full_edgelist.csv",
+          "bytes": 2351007,
+          "sha256": "92468519f57012c8400ed397a6ade978f2228a7dc0146e4991e30cdde8129266"
+        },
+        {
+          "file": "larva-LICENSE.txt",
+          "source": "https://raw.githubusercontent.com/neurodata/bilateral-connectome/4482b9022f27d361011c9c7442e32ca51d607d08/LICENSE",
+          "bytes": 1120,
+          "sha256": "eafa6585c8e7a3f99fc62ce108d069ecf422c769a78fb980009505bafd14ddb9"
+        }
+      ],
+      "url": "https://github.com/neurodata/bilateral-connectome/tree/4482b9022f27d361011c9c7442e32ca51d607d08",
+      "limits": "Induced subset of the pinned Pedigo network, restricted to eight neurons with bundled VFB L1EM skeletons. The connection rows measure structural synaptic counts; neuron-to-neuron connectors drawn by an app are schematic because exact synapse coordinates are not supplied. Geometry and edge exports have distinct snapshot dates.",
+      "selection": {
+        "type": "induced subgraph",
+        "nodeIds": [
+          "10163418",
+          "14541927",
+          "16223537",
+          "16883909",
+          "4234009",
+          "4235139",
+          "8877158",
+          "8980589"
+        ]
+      }
+    }
+  },
+  "selection": {
+    "group": "",
+    "side": "",
+    "search": "",
+    "seedIds": [],
+    "direction": "both",
+    "hops": 1,
+    "maxNodes": 5000,
+    "sourceNodeCount": 8,
+    "sourceRowCount": 17,
+    "matchedNodeCount": 8,
+    "nodeCount": 8,
+    "rowCount": 17,
+    "truncated": false,
+    "semantics": "Metadata filters are combined with AND. Optional seed neighborhoods traverse the full unthresholded graph before intersection with metadata matches. Returned connectivity is induced by the selected nodes."
+  },
+  "threshold": 1,
+  "nodeIds": [
+    "10163418",
+    "14541927",
+    "16223537",
+    "16883909",
+    "4234009",
+    "4235139",
+    "8877158",
+    "8980589"
+  ],
+  "metrics": {
+    "nodeCount": 8,
+    "pairCount": 17,
+    "nonSelfPairCount": 17,
+    "selfLoopCount": 0,
+    "totalWeight": 107,
+    "density": 0.30357142857142855,
+    "reciprocity": 0.35294117647058826,
+    "weakComponentCount": 3,
+    "largestWeakComponent": 6,
+    "largestSCC": 4
+  },
+  "groupConnectivity": {
+    "groups": [
+      "MBINs",
+      "MBONs"
+    ],
+    "matrix": [
+      [
+        0,
+        0
+      ],
+      [
+        76,
+        31
+      ]
+    ],
+    "pairMatrix": [
+      [
+        0,
+        0
+      ],
+      [
+        8,
+        9
+      ]
+    ],
+    "groupNodes": [
+      2,
+      6
+    ],
+    "pairs": [
+      {
+        "fromGroup": "MBONs",
+        "toGroup": "MBINs",
+        "weight": 76,
+        "pairCount": 8
+      },
+      {
+        "fromGroup": "MBONs",
+        "toGroup": "MBONs",
+        "weight": 31,
+        "pairCount": 9
+      }
+    ],
+    "threshold": 1,
+    "totalWeight": 107,
+    "pairCount": 17,
+    "semantics": "Rows are grouped only after aggregation and thresholding of directed neuron pairs. Diagonal group values include connections between distinct neurons of the same group and self loops."
+  },
+  "scope": "Induced selected graph with pair threshold after row aggregation; structural measurements only.",
+  "experiment": {
+    "threshold": 1,
+    "seed": 42,
+    "removedIds": [
+      "4234009"
+    ],
+    "removedCount": 1,
+    "baseline": {
+      "metrics": {
+        "nodeCount": 8,
+        "pairCount": 17,
+        "nonSelfPairCount": 17,
+        "selfLoopCount": 0,
+        "totalWeight": 107,
+        "density": 0.30357142857142855,
+        "reciprocity": 0.35294117647058826,
+        "weakComponentCount": 3,
+        "largestWeakComponent": 6,
+        "largestSCC": 4
+      }
+    },
+    "targeted": {
+      "metrics": {
+        "nodeCount": 7,
+        "pairCount": 11,
+        "nonSelfPairCount": 11,
+        "selfLoopCount": 0,
+        "totalWeight": 78,
+        "density": 0.2619047619047619,
+        "reciprocity": 0.36363636363636365,
+        "weakComponentCount": 3,
+        "largestWeakComponent": 5,
+        "largestSCC": 3
+      }
+    },
+    "delta": {
+      "nodeCount": -1,
+      "pairCount": -6,
+      "nonSelfPairCount": -6,
+      "selfLoopCount": 0,
+      "totalWeight": -29,
+      "density": -0.04166666666666663,
+      "reciprocity": 0.010695187165775388,
+      "weakComponentCount": 0,
+      "largestWeakComponent": -1,
+      "largestSCC": -1
+    },
+    "random": {
+      "trials": 5,
+      "samples": [
+        {
+          "removedIds": [
+            "4234009"
+          ],
+          "metrics": {
+            "nodeCount": 7,
+            "pairCount": 11,
+            "nonSelfPairCount": 11,
+            "selfLoopCount": 0,
+            "totalWeight": 78,
+            "density": 0.2619047619047619,
+            "reciprocity": 0.36363636363636365,
+            "weakComponentCount": 3,
+            "largestWeakComponent": 5,
+            "largestSCC": 3
+          }
+        },
+        {
+          "removedIds": [
+            "16883909"
+          ],
+          "metrics": {
+            "nodeCount": 7,
+            "pairCount": 10,
+            "nonSelfPairCount": 10,
+            "selfLoopCount": 0,
+            "totalWeight": 69,
+            "density": 0.23809523809523808,
+            "reciprocity": 0.2,
+            "weakComponentCount": 3,
+            "largestWeakComponent": 5,
+            "largestSCC": 2
+          }
+        },
+        {
+          "removedIds": [
+            "8877158"
+          ],
+          "metrics": {
+            "nodeCount": 7,
+            "pairCount": 10,
+            "nonSelfPairCount": 10,
+            "selfLoopCount": 0,
+            "totalWeight": 72,
+            "density": 0.23809523809523808,
+            "reciprocity": 0.2,
+            "weakComponentCount": 3,
+            "largestWeakComponent": 5,
+            "largestSCC": 3
+          }
+        },
+        {
+          "removedIds": [
+            "4235139"
+          ],
+          "metrics": {
+            "nodeCount": 7,
+            "pairCount": 13,
+            "nonSelfPairCount": 13,
+            "selfLoopCount": 0,
+            "totalWeight": 65,
+            "density": 0.30952380952380953,
+            "reciprocity": 0.46153846153846156,
+            "weakComponentCount": 3,
+            "largestWeakComponent": 5,
+            "largestSCC": 4
+          }
+        },
+        {
+          "removedIds": [
+            "14541927"
+          ],
+          "metrics": {
+            "nodeCount": 7,
+            "pairCount": 13,
+            "nonSelfPairCount": 13,
+            "selfLoopCount": 0,
+            "totalWeight": 73,
+            "density": 0.30952380952380953,
+            "reciprocity": 0.46153846153846156,
+            "weakComponentCount": 3,
+            "largestWeakComponent": 5,
+            "largestSCC": 4
+          }
+        }
+      ],
+      "summary": {
+        "nodeCount": {
+          "min": 7,
+          "max": 7,
+          "mean": 7,
+          "p05": 7,
+          "p50": 7,
+          "p95": 7
+        },
+        "pairCount": {
+          "min": 10,
+          "max": 13,
+          "mean": 11.4,
+          "p05": 10,
+          "p50": 11,
+          "p95": 13
+        },
+        "nonSelfPairCount": {
+          "min": 10,
+          "max": 13,
+          "mean": 11.4,
+          "p05": 10,
+          "p50": 11,
+          "p95": 13
+        },
+        "selfLoopCount": {
+          "min": 0,
+          "max": 0,
+          "mean": 0,
+          "p05": 0,
+          "p50": 0,
+          "p95": 0
+        },
+        "totalWeight": {
+          "min": 65,
+          "max": 78,
+          "mean": 71.4,
+          "p05": 65.8,
+          "p50": 72,
+          "p95": 77
+        },
+        "density": {
+          "min": 0.23809523809523808,
+          "max": 0.30952380952380953,
+          "mean": 0.27142857142857146,
+          "p05": 0.23809523809523808,
+          "p50": 0.2619047619047619,
+          "p95": 0.30952380952380953
+        },
+        "reciprocity": {
+          "min": 0.2,
+          "max": 0.46153846153846156,
+          "mean": 0.3373426573426574,
+          "p05": 0.2,
+          "p50": 0.36363636363636365,
+          "p95": 0.46153846153846156
+        },
+        "weakComponentCount": {
+          "min": 3,
+          "max": 3,
+          "mean": 3,
+          "p05": 3,
+          "p50": 3,
+          "p95": 3
+        },
+        "largestWeakComponent": {
+          "min": 5,
+          "max": 5,
+          "mean": 5,
+          "p05": 5,
+          "p50": 5,
+          "p95": 5
+        },
+        "largestSCC": {
+          "min": 2,
+          "max": 4,
+          "mean": 3.2,
+          "p05": 2.2,
+          "p50": 3,
+          "p95": 4
+        }
+      },
+      "targetedPercentile": {
+        "nodeCount": 50,
+        "pairCount": 50,
+        "nonSelfPairCount": 50,
+        "selfLoopCount": 50,
+        "totalWeight": 90,
+        "density": 50,
+        "reciprocity": 50,
+        "weakComponentCount": 50,
+        "largestWeakComponent": 50,
+        "largestSCC": 40
+      },
+      "sampling": "Uniform without replacement within each trial; independently repeated trials; same number of removed neurons as targeted selection.",
+      "percentileDefinition": "0–100 empirical percentile with half weight for ties; descriptive only, not a p-value."
+    },
+    "interpretation": "This deletes graph nodes and incident edges from a structural snapshot. It does not simulate neural compensation, physiology, causal interventions or behavioural effects. Random controls are matched only on deletion count, not type, degree, side or other biological covariates."
+  }
+}

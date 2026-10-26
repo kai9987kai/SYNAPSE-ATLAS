@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+rebuilt/
+rebuilt-data/
+rebuilt-online/
+rebuilt-linked-originals/
+.openai/

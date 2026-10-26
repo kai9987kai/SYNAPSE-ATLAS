@@ -1,0 +1,131 @@
+{
+  "schema": "synapse-atlas.morphology.v3",
+  "cell": {
+    "id": "14541927",
+    "label": "MBIN-e1 · AVM011f left",
+    "source": {
+      "dataset": "Virtual Fly Brain L1EM reconstructed skeletons",
+      "release": "Source SWC exported 2025-05-12",
+      "evidence": "Measured EM reconstruction, centerline skeleton",
+      "source": "https://www.virtualflybrain.org/data/VFB/i/0010/0414/VFB_00050000/volume.swc",
+      "url": "https://www.virtualflybrain.org/data/VFB/i/0010/0414/VFB_00050000/volume.swc",
+      "portal": "https://v2.virtualflybrain.org/org.geppetto.frontend/geppetto?id=VFB_00100414",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Original larval reconstructions: Eichler et al. 2017, Eschbach et al. 2020, Winding et al. 2023; Virtual Fly Brain (Court et al. 2023) integration",
+      "units": "1 micrometre per source coordinate unit",
+      "nmPerUnit": 1000,
+      "accessed": "2026-10-26",
+      "sha256": "b16e6ec661545eb8dc2fcf6224e76ed4ff6698f15de2ebb8d1614aa48f875c82",
+      "bytes": 189821,
+      "nodeCount": 4476,
+      "rootCount": 1,
+      "segmentCount": 4475,
+      "branchPointCount": 207,
+      "tipCount": 215,
+      "cableLengthMicrometres": 450.722361,
+      "spaceId": "VFB_00050000",
+      "coordinateSpace": "L1 larval CNS ssTEM - Cardona/Janelia; shared VFB L1EM reference coordinate frame in micrometres",
+      "transform": "No additional coordinate change from the VFB export. Only unknown radius sentinel -1 is represented as zero in the compact derivative. Original SWC is retained.",
+      "unknownRadiusCount": 4475,
+      "scope": "Identity-linked via original L1EM/CATMAID skeleton IDs to the pinned Pedigo processed graph. Geometry exports and edge table are different snapshots of the same specimen, not a synchronized re-export. No synapse coordinates or neural activity are provided.",
+      "vfbTermId": "VFB_00100414",
+      "vfbTermRecordVersion": 1880075371068522500,
+      "vfbTermSources": [
+        "Larval MB neurons - EM (Eichler2017)",
+        "EM L1 Eschbach et al 2020b",
+        "EM L1 Winding, Pedigo et al., 2023"
+      ],
+      "geometryLabels": {
+        "0": "undefined",
+        "1": "soma",
+        "5": "fork point",
+        "6": "end point"
+      }
+    },
+    "sourceUrl": "https://www.virtualflybrain.org/data/VFB/i/0010/0414/VFB_00050000/volume.swc",
+    "graphDatasetId": "larva-pedigo-elife-v5",
+    "graphNodeId": "14541927"
+  },
+  "summary": {
+    "nodeCount": 4476,
+    "segmentCount": 4475,
+    "rootCount": 1,
+    "componentCount": 1,
+    "cableUm": 450.7223613030903,
+    "branchPointCount": 207,
+    "bifurcationCount": 200,
+    "terminalCount": 215,
+    "maxRootPathUm": 117.90664580695133,
+    "boundsUm": {
+      "min": [
+        63.524605,
+        19.171001,
+        14.550001
+      ],
+      "max": [
+        89.073906,
+        58.432606,
+        61.750004
+      ],
+      "extent": [
+        25.549300999999993,
+        39.261605,
+        47.200002999999995
+      ]
+    },
+    "edgeLengthsUm": {
+      "count": 4475,
+      "mean": 0.1007200807381206,
+      "median": 0.06962124892588821,
+      "max": 0.9822878723164611
+    },
+    "branchSegmentsUm": {
+      "count": 422,
+      "total": 450.72236130308914,
+      "mean": 1.0680624675428654,
+      "median": 0.5793375012145613,
+      "max": 55.90107783648117
+    }
+  },
+  "roots": [
+    {
+      "id": 1,
+      "nodeCount": 4476,
+      "cableUm": 450.7223613030903,
+      "maxRootPathUm": 117.90664580695133
+    }
+  ],
+  "profile": {
+    "rootId": 1,
+    "centerUm": [
+      80.052505,
+      42.7789,
+      14.550001
+    ],
+    "radiiUm": [
+      10,
+      20,
+      30,
+      40,
+      50
+    ],
+    "crossings": [
+      1,
+      1,
+      17,
+      4,
+      2
+    ],
+    "scope": "selected rooted component",
+    "stepUm": 10,
+    "nodeCount": 4476,
+    "cableUm": 450.7223613030903,
+    "intersectionRule": "Non-tangent line–sphere intersections; parent→child segment t ∈ (0,1]. Exact-vertex events use this half-open convention; tangencies are excluded."
+  },
+  "units": {
+    "coordinateUnitNm": 1000,
+    "nmPerUnit": 1000,
+    "physical": "µm"
+  }
+}

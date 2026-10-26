@@ -1,5 +1,9 @@
 # Synapse Atlas 3.0
 
+[Open the live app](https://synapse-atlas-research-kai-20261026.kai9987kai.chatgpt.site/) · [Download the complete v3 package](releases/Synapse-Atlas-3.0.zip)
+
+The repository root contains the standalone `index.html`, source, tests, original data, documentation and verification receipts. `dist/` preserves the deployed static build. The release archive includes the captured app, source and source-data notices.
+
 A standalone connectomics workbench linking measured larval neuron geometry to its wiring, with circuit extraction, controlled structural comparisons and physical morphology measurements. Selected primary sources were checked on **26 October 2026**. The library is a curated snapshot and does not refresh automatically.
 
 ## Open the app
