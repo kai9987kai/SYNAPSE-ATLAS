@@ -1,0 +1,163 @@
+{
+  "checked": "2026-10-26",
+  "scope": "Selected primary studies and official dataset resources checked on 26 October 2026. This library is a curated snapshot, not an automatically updating or exhaustive literature review.",
+  "articles": [
+    {
+      "year": "SEP 2026",
+      "tag": "VISION · CONNECTOME ANALYSIS",
+      "name": "The organization of visual pathways in the Drosophila brain",
+      "desc": "Hoeller and colleagues use MaleCNS connectivity to trace visual pathways from optic lobes into the central brain. Network-derived receptive-field predictions are compared with physiological evidence; structural routes do not supply recorded activity for every cell.",
+      "url": "https://doi.org/10.1016/j.cell.2026.08.014"
+    },
+    {
+      "year": "SEP 2026",
+      "tag": "MALE CNS · EM RECONSTRUCTION",
+      "name": "Sexual dimorphism in the complete Drosophila male central nervous system connectome",
+      "desc": "Cell study of the adult male brain and nerve cord: 166,700 annotated neurons, including 217 disconnected cells. Approximately 124.2 million predicted synaptic connections link the connected graph. Neuron proofreading does not mean each synapse was individually proofread.",
+      "url": "https://doi.org/10.1016/j.cell.2026.08.015"
+    },
+    {
+      "year": "JUN 2026",
+      "tag": "BANC · DISTRIBUTED CONTROL",
+      "name": "Distributed control circuits across a brain-and-cord connectome",
+      "desc": "Nature study of adult female brain-and-nerve-cord circuitry. Its published figure reports 155,916 proofread or roughly proofread neurons. Local sensory-effector loops are linked by long-range pathways. The specimen lacks lamina and ocellar tissue.",
+      "url": "https://www.nature.com/articles/s41586-026-10735-w"
+    },
+    {
+      "year": "MAY 2026",
+      "tag": "OCTOPUS · TRACT TRACING",
+      "name": "Multiple Longitudinal Tracts in the Cephalopod Arm Sensorimotor System",
+      "desc": "Olson and Ragsdale describe longitudinal tracts using tracing and immunohistochemistry. Their anatomical findings suggest pathways for coordinating movements along an arm; they are not a whole-octopus synapse map or a validated control simulation.",
+      "url": "https://doi.org/10.1002/cne.70165"
+    },
+    {
+      "year": "JAN 2026",
+      "tag": "DRAGONFLY · ELECTROPHYSIOLOGY",
+      "name": "Dragonfly target-detecting neurons adapt to stimulus saliency",
+      "desc": "Vision Research experiments measure small-target neuron adaptation under changing contrast, direction and target jitter. These extracellular recordings motivate visual-processing concepts. The paper supplies no whole-dragonfly connectome; its experimental data are available on request.",
+      "url": "https://doi.org/10.1016/j.visres.2025.108713"
+    },
+    {
+      "year": "JAN 2025",
+      "tag": "OCTOPUS · CELLULAR ANATOMY",
+      "name": "Neuronal segmentation in cephalopod arms",
+      "desc": "Olson, Schulz and Ragsdale identify repeated segments in octopus axial nerve cords and topographic organization associated with suckers. Image stacks and nerve-tracing data are linked by the paper. Anatomical modules do not establish individual synaptic connections.",
+      "url": "https://www.nature.com/articles/s41467-024-55475-5"
+    },
+    {
+      "year": "OCT 2024",
+      "tag": "FLYWIRE · ADULT FEMALE BRAIN",
+      "name": "Neuronal wiring diagram of an adult brain",
+      "desc": "Dorkenwald and the FlyWire Consortium report 139,255 reconstructed neurons and approximately 54.5 million synaptic contacts in one adult female brain. This resource includes both optic lobes; it does not include the whole ventral nerve cord.",
+      "url": "https://www.nature.com/articles/s41586-024-07558-y"
+    },
+    {
+      "year": "OCT 2024",
+      "tag": "FLYWIRE · ANNOTATION",
+      "name": "Whole-brain annotation and multi-connectome cell typing of Drosophila",
+      "desc": "Schlegel and colleagues provide the companion FlyWire cell-type annotation framework and multi-connectome comparisons. A shared cell-type name is distinct from a shared neuron identifier; morphology and connectivity comparisons require specimen-aware matching.",
+      "url": "https://doi.org/10.1038/s41586-024-07686-5"
+    },
+    {
+      "year": "MAR 2023",
+      "tag": "LARVAL FLY · EM CONNECTOME",
+      "name": "The connectome of an insect brain",
+      "desc": "Winding and colleagues reconstruct the larval Drosophila brain: 3,016 neurons and approximately 548,000 synapses. The study identifies recurrent motifs and multisensory pathways. Downloaded analytical matrices may cover filtered subsets and separate axonal or dendritic compartments.",
+      "url": "https://doi.org/10.1126/science.add9330"
+    }
+  ],
+  "comparisonRows": [
+    {
+      "system": "FlyWire / FAFB v783",
+      "scale": "139,255 neurons; ~54.5M synaptic contacts in the 2024 paper",
+      "scope": "Adult female brain, including optic lobes",
+      "limit": "One specimen; VNC excluded; v783 root IDs depend on the segmentation snapshot."
+    },
+    {
+      "system": "BANC v888 publication dataset",
+      "scale": "155,916 proofread / roughly proofread neurons in published figure",
+      "scope": "Adult female brain + ventral nerve cord",
+      "limit": "Lamina and ocellar tissue absent. Counts of all segmented objects include fragments and non-neuronal material."
+    },
+    {
+      "system": "MaleCNS v1.0",
+      "scale": "166,700 annotated neurons; ~124.2M synaptic connections",
+      "scope": "Adult male brain + ventral nerve cord",
+      "limit": "166,483 neurons have graph connections; 217 are disconnected. Synapses are computational predictions."
+    },
+    {
+      "system": "Larval Drosophila (2023)",
+      "scale": "3,016 neurons; ~548,000 synapses",
+      "scope": "Larval brain reconstruction",
+      "limit": "Developmental stage differs from adult resources; matrix subsets can have different node counts."
+    },
+    {
+      "system": "Dragonfly STMD (2026)",
+      "scale": "Physiological responses; no whole-animal connectome supplied",
+      "scope": "Target-detecting visual neurons",
+      "limit": "An illustrative dragonfly model is not measured morphology or connectivity from this study."
+    },
+    {
+      "system": "Octopus arm ANC (2025–2026)",
+      "scale": "Segments and longitudinal tracts",
+      "scope": "Cellular anatomy, immunohistochemistry and nerve tracing",
+      "limit": "Not a synapse-resolution octopus connectome; conceptual geometry must remain labelled."
+    }
+  ],
+  "portals": [
+    {
+      "name": "FlyWire Codex",
+      "url": "https://codex.flywire.ai/",
+      "access": "Interactive search and exports; bulk-download endpoint and CAVE tools",
+      "release": "FAFB v783: October 2023 segmentation snapshot; public annotations may be newer",
+      "license": "FlyWire public data: CC BY-NC 4.0",
+      "licenseUrl": "https://flywire.ai/guidelines",
+      "limit": "Keep each exported root ID tied to its dataset and release."
+    },
+    {
+      "name": "BANC publication data",
+      "url": "https://doi.org/10.7910/DVN/7WTH1N",
+      "access": "Public Harvard Dataverse file downloads and metadata API",
+      "release": "v888; v2 synapse snapshot used in publication; newer v3 files also deposited",
+      "license": "Dataset: CC BY 4.0",
+      "licenseUrl": "https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/7WTH1N",
+      "limit": "Distinguish publication v2 analyses from v3 data; large bulk files are not all bundled in this app."
+    },
+    {
+      "name": "BANC Neuroglancer",
+      "url": "https://ng.banc.community/view",
+      "access": "External volume, segmentation and morphology viewer",
+      "release": "Living resource; publication snapshot is archived separately",
+      "license": "Publication dataset: CC BY 4.0; check individual layer metadata",
+      "licenseUrl": "https://doi.org/10.7910/DVN/7WTH1N",
+      "limit": "External volume browsing is distinct from the app's embedded reference screenshots."
+    },
+    {
+      "name": "MaleCNS official downloads",
+      "url": "https://male-cns.janelia.org/download/",
+      "access": "Public bulk data and individual SWCs; neuPrint programmatic queries require a token",
+      "release": "v1.0 released 8 June 2026; main paper published 3 September 2026",
+      "license": "Dataset: CC BY 4.0",
+      "licenseUrl": "https://male-cns.janelia.org/",
+      "limit": "Native SWC coordinates use 8 nm units; template-transformed skeletons use other units."
+    },
+    {
+      "name": "FlyWire annotation repository",
+      "url": "https://github.com/flyconnectome/flywire_annotations",
+      "access": "Public versioned annotation tables and documentation",
+      "release": "Record a repository commit alongside the segmentation release",
+      "license": "FlyWire data reuse follows CC BY-NC 4.0 and its citation guidance",
+      "licenseUrl": "https://flywire.ai/guidelines",
+      "limit": "Annotations and geometry have separate version histories; cross-specimen matches need validation."
+    },
+    {
+      "name": "Octopus arm study image stacks",
+      "url": "https://doi.org/10.5281/zenodo.14064132",
+      "access": "Exemplar stacks linked by the 2025 segmentation paper",
+      "release": "Associated with Neuronal segmentation in cephalopod arms",
+      "license": "Check deposited asset terms; article licence is CC BY-NC-ND 4.0",
+      "licenseUrl": "https://knowledge.uchicago.edu/records/v8mr4-skt66",
+      "limit": "Article access does not by itself permit redistribution of adapted figures; these are microscopy stacks, not a complete synaptic graph."
+    }
+  ]
+}

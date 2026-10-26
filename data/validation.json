@@ -1,0 +1,27 @@
+{
+  "graphNodes": 3013,
+  "graphEdges": 111243,
+  "graphWeight": 353859,
+  "selfLoops": 537,
+  "invalidEndpoints": 0,
+  "nonpositiveWeights": 0,
+  "duplicateDirectedPairs": 0,
+  "morphologies": [
+    {
+      "id": "12781",
+      "nodes": 15945,
+      "duplicateNodeIDs": 0,
+      "missingParents": 0,
+      "rootCount": 3,
+      "cycle": false
+    },
+    {
+      "id": "556329",
+      "nodes": 17298,
+      "duplicateNodeIDs": 0,
+      "missingParents": 0,
+      "rootCount": 3,
+      "cycle": false
+    }
+  ]
+}

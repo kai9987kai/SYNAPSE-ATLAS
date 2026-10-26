@@ -1,0 +1,396 @@
+{
+  "schema": "synapse-atlas.sources.v2",
+  "accessed": "2026-10-26",
+  "graphs": [
+    {
+      "id": "larva-mb-core",
+      "name": "Larval mushroom-body input/output core",
+      "source": {
+        "id": "larva-mb-core",
+        "title": "Larval mushroom-body input/output core",
+        "species": "Drosophila melanogaster",
+        "stage": "L1 larva",
+        "release": "Pedigo et al. processed larval network / elife-v5 / 4482b9022f27",
+        "commit": "4482b9022f27d361011c9c7442e32ca51d607d08",
+        "accessed": "2026-10-26",
+        "evidence": "EM-derived connectivity, research-processed snapshot",
+        "source": "https://github.com/neurodata/bilateral-connectome/tree/4482b9022f27d361011c9c7442e32ca51d607d08",
+        "publication": "https://doi.org/10.7554/eLife.83739",
+        "originalPublication": "https://doi.org/10.1126/science.add9330",
+        "license": "MIT for pinned research repository and processed files; original Winding et al. Science article CC BY 4.0",
+        "licenseFile": "larva-LICENSE.txt",
+        "scope": "Induced subset of the pinned larval research graph. Includes every supplied edge whose two endpoints pass the declared group filter. Connections to other cells are outside scope.",
+        "nodes": 76,
+        "directedEdges": 773,
+        "summedWeight": 4403,
+        "format": {
+          "nodes": "objects: id,name,group,class,hemisphere,pair,color",
+          "edges": "arrays: [From string,To string,Synapses integer]",
+          "graphRegion": "Not provided in source"
+        },
+        "rawFiles": [
+          {
+            "file": "larva-nodes.csv",
+            "source": "https://raw.githubusercontent.com/neurodata/bilateral-connectome/4482b9022f27d361011c9c7442e32ca51d607d08/data/processed-elife/unmatched_full_nodes.csv",
+            "bytes": 2638863,
+            "sha256": "d430f9bcb61e76e1bf681539382bced179d273ed8192f668a46c254b48dccadb"
+          },
+          {
+            "file": "larva-edges.csv",
+            "source": "https://raw.githubusercontent.com/neurodata/bilateral-connectome/4482b9022f27d361011c9c7442e32ca51d607d08/data/processed-elife/unmatched_full_edgelist.csv",
+            "bytes": 2351007,
+            "sha256": "92468519f57012c8400ed397a6ade978f2228a7dc0146e4991e30cdde8129266"
+          },
+          {
+            "file": "larva-LICENSE.txt",
+            "source": "https://raw.githubusercontent.com/neurodata/bilateral-connectome/4482b9022f27d361011c9c7442e32ca51d607d08/LICENSE",
+            "bytes": 1120,
+            "sha256": "eafa6585c8e7a3f99fc62ce108d069ecf422c769a78fb980009505bafd14ddb9"
+          }
+        ],
+        "selection": {
+          "type": "induced subgraph",
+          "sourceColumn": "simple_group",
+          "includedGroups": [
+            "MBINs",
+            "MBONs"
+          ]
+        },
+        "url": "https://github.com/neurodata/bilateral-connectome/tree/4482b9022f27d361011c9c7442e32ca51d607d08",
+        "limits": "Induced subset of the pinned larval research graph. Includes every supplied edge whose two endpoints pass the declared group filter. Connections to other cells are outside scope."
+      }
+    },
+    {
+      "id": "larva-mb-recurrent",
+      "name": "Larval mushroom-body recurrent circuit",
+      "source": {
+        "id": "larva-mb-recurrent",
+        "title": "Larval mushroom-body recurrent circuit",
+        "species": "Drosophila melanogaster",
+        "stage": "L1 larva",
+        "release": "Pedigo et al. processed larval network / elife-v5 / 4482b9022f27",
+        "commit": "4482b9022f27d361011c9c7442e32ca51d607d08",
+        "accessed": "2026-10-26",
+        "evidence": "EM-derived connectivity, research-processed snapshot",
+        "source": "https://github.com/neurodata/bilateral-connectome/tree/4482b9022f27d361011c9c7442e32ca51d607d08",
+        "publication": "https://doi.org/10.7554/eLife.83739",
+        "originalPublication": "https://doi.org/10.1126/science.add9330",
+        "license": "MIT for pinned research repository and processed files; original Winding et al. Science article CC BY 4.0",
+        "licenseFile": "larva-LICENSE.txt",
+        "scope": "Induced subset of the pinned larval research graph. Includes every supplied edge whose two endpoints pass the declared group filter. Connections to other cells are outside scope.",
+        "nodes": 238,
+        "directedEdges": 4851,
+        "summedWeight": 20847,
+        "format": {
+          "nodes": "objects: id,name,group,class,hemisphere,pair,color",
+          "edges": "arrays: [From string,To string,Synapses integer]",
+          "graphRegion": "Not provided in source"
+        },
+        "rawFiles": [
+          {
+            "file": "larva-nodes.csv",
+            "source": "https://raw.githubusercontent.com/neurodata/bilateral-connectome/4482b9022f27d361011c9c7442e32ca51d607d08/data/processed-elife/unmatched_full_nodes.csv",
+            "bytes": 2638863,
+            "sha256": "d430f9bcb61e76e1bf681539382bced179d273ed8192f668a46c254b48dccadb"
+          },
+          {
+            "file": "larva-edges.csv",
+            "source": "https://raw.githubusercontent.com/neurodata/bilateral-connectome/4482b9022f27d361011c9c7442e32ca51d607d08/data/processed-elife/unmatched_full_edgelist.csv",
+            "bytes": 2351007,
+            "sha256": "92468519f57012c8400ed397a6ade978f2228a7dc0146e4991e30cdde8129266"
+          },
+          {
+            "file": "larva-LICENSE.txt",
+            "source": "https://raw.githubusercontent.com/neurodata/bilateral-connectome/4482b9022f27d361011c9c7442e32ca51d607d08/LICENSE",
+            "bytes": 1120,
+            "sha256": "eafa6585c8e7a3f99fc62ce108d069ecf422c769a78fb980009505bafd14ddb9"
+          }
+        ],
+        "selection": {
+          "type": "induced subgraph",
+          "sourceColumn": "simple_group",
+          "includedGroups": [
+            "FFNs",
+            "MB-FBNs",
+            "MBINs",
+            "MBONs"
+          ]
+        },
+        "url": "https://github.com/neurodata/bilateral-connectome/tree/4482b9022f27d361011c9c7442e32ca51d607d08",
+        "limits": "Induced subset of the pinned larval research graph. Includes every supplied edge whose two endpoints pass the declared group filter. Connections to other cells are outside scope."
+      }
+    },
+    {
+      "id": "larva-pedigo-elife-v5",
+      "name": "Larval Drosophila — Pedigo et al. processed full network",
+      "edgeColumns": [
+        "From",
+        "To",
+        "Synapses"
+      ],
+      "source": {
+        "id": "larva-pedigo-elife-v5",
+        "title": "Larval Drosophila — Pedigo et al. processed full network",
+        "species": "Drosophila melanogaster",
+        "stage": "L1 larva",
+        "release": "Pedigo et al. processed larval network / elife-v5 / 4482b9022f27",
+        "commit": "4482b9022f27d361011c9c7442e32ca51d607d08",
+        "accessed": "2026-10-26",
+        "evidence": "EM-derived connectivity, research-processed snapshot",
+        "source": "https://github.com/neurodata/bilateral-connectome/tree/4482b9022f27d361011c9c7442e32ca51d607d08",
+        "publication": "https://doi.org/10.7554/eLife.83739",
+        "originalPublication": "https://doi.org/10.1126/science.add9330",
+        "license": "MIT for pinned research repository and processed files; original Winding et al. Science article CC BY 4.0",
+        "licenseFile": "larva-LICENSE.txt",
+        "scope": "Published research-processed node/weighted-edge tables; not the full 548,000-synapse paper release. We retain all provided directed rows, weights, and self-loops. Class labels use the source simple_group column. No neurotransmitter signs or ROI assignments inferred.",
+        "nodes": 3013,
+        "directedEdges": 111243,
+        "summedWeight": 353859,
+        "format": {
+          "nodes": "objects: id,name,group,class,hemisphere,pair,color",
+          "edges": "arrays: [From string,To string,Synapses integer]",
+          "graphRegion": "Not provided in source"
+        },
+        "rawFiles": [
+          {
+            "file": "larva-nodes.csv",
+            "source": "https://raw.githubusercontent.com/neurodata/bilateral-connectome/4482b9022f27d361011c9c7442e32ca51d607d08/data/processed-elife/unmatched_full_nodes.csv",
+            "bytes": 2638863,
+            "sha256": "d430f9bcb61e76e1bf681539382bced179d273ed8192f668a46c254b48dccadb"
+          },
+          {
+            "file": "larva-edges.csv",
+            "source": "https://raw.githubusercontent.com/neurodata/bilateral-connectome/4482b9022f27d361011c9c7442e32ca51d607d08/data/processed-elife/unmatched_full_edgelist.csv",
+            "bytes": 2351007,
+            "sha256": "92468519f57012c8400ed397a6ade978f2228a7dc0146e4991e30cdde8129266"
+          },
+          {
+            "file": "larva-LICENSE.txt",
+            "source": "https://raw.githubusercontent.com/neurodata/bilateral-connectome/4482b9022f27d361011c9c7442e32ca51d607d08/LICENSE",
+            "bytes": 1120,
+            "sha256": "eafa6585c8e7a3f99fc62ce108d069ecf422c769a78fb980009505bafd14ddb9"
+          }
+        ],
+        "url": "https://github.com/neurodata/bilateral-connectome/tree/4482b9022f27d361011c9c7442e32ca51d607d08",
+        "limits": "Published research-processed node/weighted-edge tables; not the full 548,000-synapse paper release. We retain all provided directed rows, weights, and self-loops. Class labels use the source simple_group column. No neurotransmitter signs or ROI assignments inferred."
+      }
+    }
+  ],
+  "morphology": [
+    {
+      "id": "12781",
+      "label": "DNge104_R",
+      "side": "right",
+      "units": "8 nm",
+      "nmPerUnit": 8,
+      "sourceUrl": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/12781.swc",
+      "source": {
+        "dataset": "MaleCNS",
+        "release": "v1.0",
+        "evidence": "Measured EM reconstruction; coarse centerline skeleton",
+        "source": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/12781.swc",
+        "portal": "https://male-cns.janelia.org/download/",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Male CNS project: HHMI Janelia FlyEM, University of Cambridge, MRC LMB, Google Research",
+        "units": "8 nm per source coordinate unit",
+        "nmPerUnit": 8,
+        "accessed": "2026-10-26",
+        "sha256": "84f14c2f8b98da664db2c322c6f3f47f83b61c412207bddfa67e2315b86fc699",
+        "bytes": 552929,
+        "nodeCount": 15945,
+        "rootCount": 3,
+        "branchPointCount": 1362,
+        "cableLengthMicrometres": 12469.385,
+        "scope": "Two descending neurons only. Names as documented in official download examples; no functional activity or connectivity inferred from skeleton morphology.",
+        "gcsGeneration": "1777993123308257",
+        "immutableSourceUrl": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/12781.swc?generation=1777993123308257"
+      }
+    },
+    {
+      "id": "556329",
+      "label": "DNge104_L",
+      "side": "left",
+      "units": "8 nm",
+      "nmPerUnit": 8,
+      "sourceUrl": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/556329.swc",
+      "source": {
+        "dataset": "MaleCNS",
+        "release": "v1.0",
+        "evidence": "Measured EM reconstruction; coarse centerline skeleton",
+        "source": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/556329.swc",
+        "portal": "https://male-cns.janelia.org/download/",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Male CNS project: HHMI Janelia FlyEM, University of Cambridge, MRC LMB, Google Research",
+        "units": "8 nm per source coordinate unit",
+        "nmPerUnit": 8,
+        "accessed": "2026-10-26",
+        "sha256": "af862b1065dd08bd16956e108ed785361342d584eb357f16fdc116bc26a2f7ad",
+        "bytes": 602377,
+        "nodeCount": 17298,
+        "rootCount": 3,
+        "branchPointCount": 1482,
+        "cableLengthMicrometres": 13521.22,
+        "scope": "Two descending neurons only. Names as documented in official download examples; no functional activity or connectivity inferred from skeleton morphology.",
+        "gcsGeneration": "1777993410878309",
+        "immutableSourceUrl": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/556329.swc?generation=1777993410878309"
+      }
+    }
+  ],
+  "research": {
+    "checked": "2026-10-26",
+    "scope": "Selected relevant primary research, not an exhaustive or automatically updating literature search",
+    "sources": [
+      {
+        "id": "flywire",
+        "title": "Neuronal wiring diagram of an adult brain",
+        "authors": "Dorkenwald et al.; FlyWire Consortium",
+        "date": "2024-10-02",
+        "journal": "Nature",
+        "url": "https://www.nature.com/articles/s41586-024-07558-y",
+        "doi": "10.1038/s41586-024-07558-y",
+        "evidence": "EM connectome",
+        "finding": "Adult female brain: 139,255 neurons, 54.5 million synaptic contacts. Connectivity is structural; no recorded activity is bundled.",
+        "portal": "https://codex.flywire.ai/",
+        "download": "https://codex.flywire.ai/api/download",
+        "dataLicense": "CC BY-NC 4.0",
+        "licenseSource": "https://flywire.ai/guidelines",
+        "release": "v783; October 2023 segmentation snapshot, with later public annotation updates"
+      },
+      {
+        "id": "flywire-annotation",
+        "title": "Whole-brain annotation and multi-connectome cell typing of Drosophila",
+        "authors": "Schlegel et al.",
+        "date": "2024-10-02",
+        "journal": "Nature",
+        "url": "https://doi.org/10.1038/s41586-024-07686-5",
+        "doi": "10.1038/s41586-024-07686-5",
+        "evidence": "Annotation and cell typing",
+        "finding": "Companion annotation resource for FlyWire; cell typing and cross-connectome comparisons require specimen-specific identifiers.",
+        "portal": "https://github.com/flyconnectome/flywire_annotations"
+      },
+      {
+        "id": "banc",
+        "title": "Distributed control circuits across a brain-and-cord connectome",
+        "authors": "Bates, Phelps, Kim, Yang et al.",
+        "date": "2026-06-08",
+        "journal": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10735-w",
+        "mirror": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13518251/",
+        "doi": "10.1038/s41586-026-10735-w",
+        "evidence": "EM connectome",
+        "finding": "Adult female brain and nerve cord. Published figure reports 155,916 proofread/roughly proofread neurons. Local sensory-effector loops are linked by longer pathways.",
+        "limits": "Lamina, ocelli and ocellar ganglion missing. 171,512 accounted-for objects includes fragments/glia/trachea. Do not label all objects neurons or compare unqualified predicted-synapse totals.",
+        "portal": "https://ng.banc.community/view",
+        "download": "https://doi.org/10.7910/DVN/7WTH1N",
+        "release": "v888 publication dataset; v2 synapse snapshot used in paper; v3 also available",
+        "dataLicense": "CC BY 4.0",
+        "licenseSource": "https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/7WTH1N"
+      },
+      {
+        "id": "malecns",
+        "title": "Sexual dimorphism in the complete Drosophila male central nervous system connectome",
+        "date": "2026-09-03",
+        "journal": "Cell",
+        "url": "https://doi.org/10.1016/j.cell.2026.08.015",
+        "doi": "10.1016/j.cell.2026.08.015",
+        "evidence": "EM connectome",
+        "finding": "166,700 annotated neurons: 166,483 connected plus 217 without synapses. The proofread graph has 124.2 million synaptic connections and approximately 25.58 million directed edges.",
+        "limits": "Synapses are predictions, not individually proofread. Missing lamina/ocellar tissue. Distinct male specimen; IDs cannot substitute for FlyWire roots.",
+        "portal": "https://male-cns.janelia.org/",
+        "download": "https://male-cns.janelia.org/download/",
+        "release": "v1.0 released 2026-06-08; paper 2026-09-03",
+        "dataLicense": "CC BY 4.0",
+        "licenseSource": "https://male-cns.janelia.org/"
+      },
+      {
+        "id": "malecns-vision",
+        "title": "The organization of visual pathways in the Drosophila brain",
+        "authors": "Hoeller et al.",
+        "date": "2026-09-03",
+        "journal": "Cell",
+        "url": "https://doi.org/10.1016/j.cell.2026.08.014",
+        "doi": "10.1016/j.cell.2026.08.014",
+        "evidence": "Connectome network analysis",
+        "finding": "MaleCNS analysis maps parallel visual pathways beyond the optic lobes and predicts receptive-field structure; network predictions are compared with physiology.",
+        "limits": "Structural predictions do not provide recorded activity for every cell."
+      },
+      {
+        "id": "larva",
+        "title": "The connectome of an insect brain",
+        "authors": "Winding et al.",
+        "date": "2023-03-10",
+        "journal": "Science",
+        "url": "https://doi.org/10.1126/science.add9330",
+        "doi": "10.1126/science.add9330",
+        "evidence": "EM connectome",
+        "finding": "Larval brain reconstruction comprises 3,016 neurons and approximately 548,000 synapses, with extensive recurrent connectivity.",
+        "limits": "Specific distributed matrices contain filtered subsets and compartment channels; their node counts need not equal the paper's full reconstruction count."
+      },
+      {
+        "id": "dragonfly",
+        "title": "Dragonfly target-detecting neurons adapt to stimulus saliency",
+        "date": "2026-01",
+        "journal": "Vision Research",
+        "url": "https://doi.org/10.1016/j.visres.2025.108713",
+        "doi": "10.1016/j.visres.2025.108713",
+        "evidence": "Extracellular electrophysiology",
+        "finding": "Small-target neurons show saliency-dependent adaptation. Contrast, preferred direction and target jitter affect adaptation.",
+        "limits": "Data available on request; no whole-dragonfly connectome or downloadable neural morphology is supplied by this paper."
+      },
+      {
+        "id": "octopus-segmentation",
+        "title": "Neuronal segmentation in cephalopod arms",
+        "authors": "Olson, Schulz and Ragsdale",
+        "date": "2025-01-15",
+        "journal": "Nature Communications",
+        "url": "https://www.nature.com/articles/s41467-024-55475-5",
+        "doi": "10.1038/s41467-024-55475-5",
+        "evidence": "Cellular anatomy and nerve tracing",
+        "finding": "Octopus axial nerve cords contain repeated neuronal segments and a topographic organization associated with suckers.",
+        "limits": "Anatomical modules are not a whole-octopus synapse-level connectome.",
+        "download": "https://doi.org/10.5281/zenodo.14064132",
+        "code": "https://github.com/olsoncs/Neuronal-Segmentation-Cephalopod-Arms",
+        "articleLicense": "CC BY-NC-ND 4.0; verify separate asset licenses before adapting imagery"
+      },
+      {
+        "id": "octopus-tracts",
+        "title": "Multiple Longitudinal Tracts in the Cephalopod Arm Sensorimotor System",
+        "authors": "Olson and Ragsdale",
+        "date": "2026-05-05",
+        "journal": "Journal of Comparative Neurology",
+        "url": "https://doi.org/10.1002/cne.70165",
+        "doi": "10.1002/cne.70165",
+        "evidence": "Tract tracing and immunohistochemistry",
+        "finding": "Distinct longitudinal tracts in octopus arm neuropil and cerebrobrachial pathways suggest anatomical substrates for coordinating movements along an arm.",
+        "limits": "Not synapse-level connectivity or a validated arm-control simulation.",
+        "articleLicense": "CC BY 4.0"
+      }
+    ],
+    "practicalMorphologyAssets": [
+      {
+        "dataset": "MaleCNS v1.0",
+        "id": "12781",
+        "label": "DNge104_R",
+        "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/12781.swc",
+        "coordinateUnitNm": 8,
+        "license": "CC BY 4.0",
+        "documentation": "https://male-cns.janelia.org/download/"
+      },
+      {
+        "dataset": "MaleCNS v1.0",
+        "id": "556329",
+        "label": "DNge104_L",
+        "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/556329.swc",
+        "coordinateUnitNm": 8,
+        "license": "CC BY 4.0",
+        "documentation": "https://male-cns.janelia.org/download/"
+      }
+    ]
+  },
+  "suppliedOriginal": {
+    "sha256": "be6124c2684c01fcf0535890799f85a68efae3b80fecacc2b61cb7f6adaa345d",
+    "authenticity": "Supplied HTML embedded exports preserved; original CSVs not attached and not independently verified."
+  }
+}

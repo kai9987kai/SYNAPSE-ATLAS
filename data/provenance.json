@@ -1,0 +1,91 @@
+{
+  "accessed": "2026-10-26",
+  "datasets": [
+    {
+      "id": "larva-pedigo-elife-v5",
+      "title": "Larval Drosophila \u2014 Pedigo et al. processed full network",
+      "species": "Drosophila melanogaster",
+      "stage": "L1 larva",
+      "release": "elife-v5",
+      "commit": "4482b9022f27d361011c9c7442e32ca51d607d08",
+      "accessed": "2026-10-26",
+      "evidence": "EM-derived connectivity, research-processed snapshot",
+      "source": "https://github.com/neurodata/bilateral-connectome/tree/4482b9022f27d361011c9c7442e32ca51d607d08",
+      "publication": "https://doi.org/10.7554/eLife.83739",
+      "originalPublication": "https://doi.org/10.1126/science.add9330",
+      "license": "MIT for pinned research repository and processed files; original Winding et al. Science article CC BY 4.0",
+      "licenseFile": "larva-LICENSE.txt",
+      "scope": "Published research-processed node/weighted-edge tables; not the full 548,000-synapse paper release. We retain all provided directed rows, weights, and self-loops. Class labels use the source simple_group column. No neurotransmitter signs or ROI assignments inferred.",
+      "nodes": 3013,
+      "directedEdges": 111243,
+      "summedWeight": 353859,
+      "format": {
+        "nodes": "objects: id,name,group,class,hemisphere,pair,color",
+        "edges": "arrays: [From string,To string,Synapses integer]",
+        "graphRegion": "Not provided in source"
+      },
+      "rawFiles": [
+        {
+          "file": "larva-nodes.csv",
+          "source": "https://raw.githubusercontent.com/neurodata/bilateral-connectome/4482b9022f27d361011c9c7442e32ca51d607d08/data/processed-elife/unmatched_full_nodes.csv",
+          "bytes": 2638863,
+          "sha256": "d430f9bcb61e76e1bf681539382bced179d273ed8192f668a46c254b48dccadb"
+        },
+        {
+          "file": "larva-edges.csv",
+          "source": "https://raw.githubusercontent.com/neurodata/bilateral-connectome/4482b9022f27d361011c9c7442e32ca51d607d08/data/processed-elife/unmatched_full_edgelist.csv",
+          "bytes": 2351007,
+          "sha256": "92468519f57012c8400ed397a6ade978f2228a7dc0146e4991e30cdde8129266"
+        },
+        {
+          "file": "larva-LICENSE.txt",
+          "source": "https://raw.githubusercontent.com/neurodata/bilateral-connectome/4482b9022f27d361011c9c7442e32ca51d607d08/LICENSE",
+          "bytes": 1120,
+          "sha256": "eafa6585c8e7a3f99fc62ce108d069ecf422c769a78fb980009505bafd14ddb9"
+        }
+      ]
+    }
+  ],
+  "morphologies": [
+    {
+      "dataset": "MaleCNS",
+      "release": "v1.0",
+      "evidence": "Measured EM reconstruction; coarse centerline skeleton",
+      "source": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/12781.swc",
+      "portal": "https://male-cns.janelia.org/download/",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Male CNS project: HHMI Janelia FlyEM, University of Cambridge, MRC LMB, Google Research",
+      "units": "8 nm per source coordinate unit",
+      "nmPerUnit": 8,
+      "accessed": "2026-10-26",
+      "sha256": "84f14c2f8b98da664db2c322c6f3f47f83b61c412207bddfa67e2315b86fc699",
+      "bytes": 552929,
+      "nodeCount": 15945,
+      "rootCount": 3,
+      "branchPointCount": 1362,
+      "cableLengthMicrometres": 12469.385,
+      "scope": "Two descending neurons only. Names as documented in official download examples; no functional activity or connectivity inferred from skeleton morphology."
+    },
+    {
+      "dataset": "MaleCNS",
+      "release": "v1.0",
+      "evidence": "Measured EM reconstruction; coarse centerline skeleton",
+      "source": "https://storage.googleapis.com/flyem-male-cns/v1.0/segmentation/skeletons-malecns/skeletons-swc/556329.swc",
+      "portal": "https://male-cns.janelia.org/download/",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Male CNS project: HHMI Janelia FlyEM, University of Cambridge, MRC LMB, Google Research",
+      "units": "8 nm per source coordinate unit",
+      "nmPerUnit": 8,
+      "accessed": "2026-10-26",
+      "sha256": "af862b1065dd08bd16956e108ed785361342d584eb357f16fdc116bc26a2f7ad",
+      "bytes": 602377,
+      "nodeCount": 17298,
+      "rootCount": 3,
+      "branchPointCount": 1482,
+      "cableLengthMicrometres": 13521.22,
+      "scope": "Two descending neurons only. Names as documented in official download examples; no functional activity or connectivity inferred from skeleton morphology."
+    }
+  ]
+}
