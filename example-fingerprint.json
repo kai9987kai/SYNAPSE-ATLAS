@@ -1,0 +1,349 @@
+{
+  "schema": "synapse-atlas.wiring-fingerprint.v4",
+  "appVersion": "4.0.0",
+  "createdAt": "2026-10-27T22:35:27.036Z",
+  "threshold": 1,
+  "interpretation": "Observed structural source records; no neural dynamics, biological absence, causal development or completeness-adjusted estimate is established.",
+  "dataset": {
+    "id": "celegans-witvliet-8",
+    "name": "C. elegans · specimen 8 · adult / ~50 h",
+    "source": {
+      "title": "Witvliet et al. developmental brain, specimen 8",
+      "release": "NemaNode pinned source 6b7ca03f6d68",
+      "commit": "6b7ca03f6d68c4ea1af3c120d1a47681edc74a90",
+      "url": "https://github.com/zhenlab-ltri/NemaNode/tree/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90",
+      "publication": "https://doi.org/10.1038/s41586-021-03778-8",
+      "portal": "https://www.nemanode.org/",
+      "license": "NemaNode source representation: GPL-3.0; preserve source notice and attribution",
+      "licenseUrl": "https://github.com/zhenlab-ltri/NemaNode/blob/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/LICENSE",
+      "licenseFile": "originals/NemaNode-LICENSE.txt",
+      "attribution": "Witvliet, Mulcahy, Mitchell et al., Nature 596, 257–261 (2021); NemaNode, Zhen and Samuel laboratories",
+      "species": "Caenorhabditis elegans",
+      "sex": "hermaphrodite",
+      "specimen": "Dataset8",
+      "specimenId": "witvliet_2020_8",
+      "ageHours": 50,
+      "stage": "adult",
+      "region": "head / brain: nerve ring, ventral ganglion and reconstructed anterior neuropil",
+      "identityNamespace": "celegans-name/witvliet2021",
+      "comparisonGroup": "witvliet2021-chemical-head",
+      "edgeType": "chemical",
+      "nodeKind": "cells",
+      "includesNonNeuronal": true,
+      "nodeUniversePolicy": "Observed endpoints of retained chemical connections only; this is not a complete reconstructed-cell inventory and does not declare unobserved catalog cells as isolates.",
+      "weightDefinition": "Sum of source chemical synapse occurrence counts for each directed pre/post pair. A source annotation ID can contribute to several post-synaptic pairs; summed edge weights are not counts of unique source annotation IDs.",
+      "limits": "Cross-sectional specimens, not longitudinal imaging of one animal. Four L1 specimens, one L2, one L3 and two adults; approximate ages from source metadata. Absent/unobserved cells and edges are not proven biological absence. Chemical contacts include muscles and other non-neuronal cells. Partial gap-junction annotations are excluded. No neural activity, efficacy, causal development or whole-302-neuron coverage is established.",
+      "rawFiles": [
+        {
+          "file": "originals/witvliet_2020_8.json",
+          "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/connections/witvliet_2020_8.json",
+          "bytes": 887526,
+          "sha256": "465aeb3c1f42d84273023cef8e5f5d8ebbcf63248550b2219db68fccb9787033"
+        },
+        {
+          "file": "originals/neurons.json",
+          "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/neurons.json",
+          "bytes": 58575,
+          "sha256": "c780e0b7cab28b311a7e0916a7b8e37b9cf72de152712bd4a5eb29fd9d595492"
+        },
+        {
+          "file": "originals/datasets.json",
+          "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/datasets.json",
+          "bytes": 5440,
+          "sha256": "b5734d75c084e76001e651eeb6d1afc723e180c6e172299a9e8ccfb403dc21f6"
+        }
+      ],
+      "accessed": "2026-10-27",
+      "uniqueSourceAnnotationIds": 3674,
+      "excludedGapJunctionRows": 616
+    }
+  },
+  "queryId": "AVAL",
+  "result": {
+    "query": {
+      "id": "AVAL",
+      "label": "AVAL",
+      "group": "Interneuron",
+      "featureCount": 35,
+      "norm": 39.382737335030434
+    },
+    "threshold": 1,
+    "direction": "both",
+    "sameGroup": false,
+    "candidateCount": 218,
+    "neighbors": [
+      {
+        "id": "AVDR",
+        "label": "AVDR",
+        "group": "Interneuron",
+        "similarity": 0.5788841041520838,
+        "sharedFeatureCount": 10,
+        "featureCount": 18,
+        "norm": 19.519221295943137
+      },
+      {
+        "id": "AVAR",
+        "label": "AVAR",
+        "group": "Interneuron",
+        "similarity": 0.2914670811518814,
+        "sharedFeatureCount": 22,
+        "featureCount": 32,
+        "norm": 38.41874542459709
+      },
+      {
+        "id": "AVBL",
+        "label": "AVBL",
+        "group": "Interneuron",
+        "similarity": 0.27656491672566125,
+        "sharedFeatureCount": 16,
+        "featureCount": 29,
+        "norm": 33.51119216023208
+      },
+      {
+        "id": "RIMR",
+        "label": "RIMR",
+        "group": "Interneuron + Motor + Modulatory",
+        "similarity": 0.27018533426782865,
+        "sharedFeatureCount": 10,
+        "featureCount": 45,
+        "norm": 44.45222154178574
+      },
+      {
+        "id": "AIBL",
+        "label": "AIBL",
+        "group": "Interneuron",
+        "similarity": 0.2472672871316584,
+        "sharedFeatureCount": 10,
+        "featureCount": 49,
+        "norm": 52.78257288158659
+      },
+      {
+        "id": "AVDL",
+        "label": "AVDL",
+        "group": "Interneuron",
+        "similarity": 0.23033308413919681,
+        "sharedFeatureCount": 11,
+        "featureCount": 16,
+        "norm": 15.874507866387544
+      },
+      {
+        "id": "AIAL",
+        "label": "AIAL",
+        "group": "Interneuron",
+        "similarity": 0.1899030297596543,
+        "sharedFeatureCount": 5,
+        "featureCount": 29,
+        "norm": 41.182520563948
+      },
+      {
+        "id": "SMBVL",
+        "label": "SMBVL",
+        "group": "Motor",
+        "similarity": 0.18139806143687412,
+        "sharedFeatureCount": 5,
+        "featureCount": 28,
+        "norm": 22.956480566497994
+      },
+      {
+        "id": "SMDDR",
+        "label": "SMDDR",
+        "group": "Sensory + Motor",
+        "similarity": 0.17066856547408538,
+        "sharedFeatureCount": 6,
+        "featureCount": 35,
+        "norm": 38.23610858861032
+      },
+      {
+        "id": "RIBL",
+        "label": "RIBL",
+        "group": "Interneuron",
+        "similarity": 0.16276323001544463,
+        "sharedFeatureCount": 7,
+        "featureCount": 39,
+        "norm": 40.24922359499622
+      },
+      {
+        "id": "AVEL",
+        "label": "AVEL",
+        "group": "Interneuron",
+        "similarity": 0.1593191389596144,
+        "sharedFeatureCount": 16,
+        "featureCount": 39,
+        "norm": 44.14748010928823
+      },
+      {
+        "id": "AVJR",
+        "label": "AVJR",
+        "group": "Interneuron + Modulatory",
+        "similarity": 0.1340951673357355,
+        "sharedFeatureCount": 6,
+        "featureCount": 25,
+        "norm": 15.905973720586866
+      },
+      {
+        "id": "ASHL",
+        "label": "ASHL",
+        "group": "Sensory",
+        "similarity": 0.13263216079361484,
+        "sharedFeatureCount": 2,
+        "featureCount": 31,
+        "norm": 28.142494558940577
+      },
+      {
+        "id": "RIGL",
+        "label": "RIGL",
+        "group": "Interneuron",
+        "similarity": 0.12587003015480352,
+        "sharedFeatureCount": 7,
+        "featureCount": 36,
+        "norm": 27.83882181415011
+      },
+      {
+        "id": "ADAL",
+        "label": "ADAL",
+        "group": "Interneuron",
+        "similarity": 0.11592375347337483,
+        "sharedFeatureCount": 8,
+        "featureCount": 28,
+        "norm": 22.561028345356956
+      },
+      {
+        "id": "RMFR",
+        "label": "RMFR",
+        "group": "Motor",
+        "similarity": 0.11384653810120877,
+        "sharedFeatureCount": 7,
+        "featureCount": 33,
+        "norm": 24.979991993593593
+      },
+      {
+        "id": "RIML",
+        "label": "RIML",
+        "group": "Interneuron + Motor + Modulatory",
+        "similarity": 0.11308320285351289,
+        "sharedFeatureCount": 9,
+        "featureCount": 49,
+        "norm": 42.21374183841087
+      },
+      {
+        "id": "RMGL",
+        "label": "RMGL",
+        "group": "Motor + Modulatory",
+        "similarity": 0.10404522707947969,
+        "sharedFeatureCount": 2,
+        "featureCount": 35,
+        "norm": 11.958260743101398
+      },
+      {
+        "id": "PVCL",
+        "label": "PVCL",
+        "group": "Interneuron",
+        "similarity": 0.10220280725351348,
+        "sharedFeatureCount": 8,
+        "featureCount": 32,
+        "norm": 21.863211109075447
+      },
+      {
+        "id": "RIGR",
+        "label": "RIGR",
+        "group": "Interneuron",
+        "similarity": 0.09905252739969235,
+        "sharedFeatureCount": 5,
+        "featureCount": 35,
+        "norm": 30.24896692450835
+      },
+      {
+        "id": "AIBR",
+        "label": "AIBR",
+        "group": "Interneuron",
+        "similarity": 0.09456225964479252,
+        "sharedFeatureCount": 10,
+        "featureCount": 50,
+        "norm": 51.55579501860097
+      },
+      {
+        "id": "AVBR",
+        "label": "AVBR",
+        "group": "Interneuron",
+        "similarity": 0.08812670522418291,
+        "sharedFeatureCount": 14,
+        "featureCount": 28,
+        "norm": 36.59234892706397
+      },
+      {
+        "id": "SMBDR",
+        "label": "SMBDR",
+        "group": "Motor",
+        "similarity": 0.08664965843990097,
+        "sharedFeatureCount": 5,
+        "featureCount": 28,
+        "norm": 16.703293088490067
+      },
+      {
+        "id": "AVHR",
+        "label": "AVHR",
+        "group": "Modulatory",
+        "similarity": 0.08398287389272717,
+        "sharedFeatureCount": 5,
+        "featureCount": 28,
+        "norm": 11.489125293076057
+      },
+      {
+        "id": "RIAL",
+        "label": "RIAL",
+        "group": "Interneuron",
+        "similarity": 0.08178163209220747,
+        "sharedFeatureCount": 7,
+        "featureCount": 47,
+        "norm": 107.11675872616759
+      },
+      {
+        "id": "AWBL",
+        "label": "AWBL",
+        "group": "Sensory",
+        "similarity": 0.07834795324434997,
+        "sharedFeatureCount": 2,
+        "featureCount": 22,
+        "norm": 15.556349186104045
+      },
+      {
+        "id": "AVJL",
+        "label": "AVJL",
+        "group": "Interneuron + Modulatory",
+        "similarity": 0.07748848282829081,
+        "sharedFeatureCount": 7,
+        "featureCount": 24,
+        "norm": 12.12435565298214
+      },
+      {
+        "id": "SMDVR",
+        "label": "SMDVR",
+        "group": "Sensory + Motor",
+        "similarity": 0.0734326268389131,
+        "sharedFeatureCount": 7,
+        "featureCount": 30,
+        "norm": 30.083217912982647
+      },
+      {
+        "id": "RMFL",
+        "label": "RMFL",
+        "group": "Motor",
+        "similarity": 0.07241013629352903,
+        "sharedFeatureCount": 8,
+        "featureCount": 38,
+        "norm": 23.49468024894146
+      },
+      {
+        "id": "ASKL",
+        "label": "ASKL",
+        "group": "Sensory",
+        "similarity": 0.0711986707545848,
+        "sharedFeatureCount": 1,
+        "featureCount": 20,
+        "norm": 28.53068523537421
+      }
+    ],
+    "status": "ok",
+    "semantics": "Sparse weighted cosine compares exact partner IDs. Incoming and outgoing features occupy separate dimensions; self loops are retained. Rows aggregate before pair thresholding. The query neuron is excluded; optional group restriction uses source metadata. Zero vectors have similarity 0. Ties use exact ID order. Similarity describes retained wiring fingerprints and does not establish cell-type identity, homology, activity or causal function."
+  }
+}

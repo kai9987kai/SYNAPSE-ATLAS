@@ -1,6 +1,42 @@
 # Data sources and attribution
 
-Snapshot assembled and selected primary sources checked **26 October 2026**. Source datasets describe different animals and reconstruction releases. Their identifiers are not interchangeable.
+Version 4 sources were assembled and selected research/portals checked **27 October 2026**. The library contains **17 research entries, including clearly labelled preprints, and 10 portals**. It is not an exhaustive or automatically updating review. Source datasets describe different animals and reconstruction releases; their identifiers are not interchangeable.
+
+## Version 4: eight independent developmental brain graphs
+
+Primary research: [Witvliet, Mulcahy, Mitchell et al., *Connectomes across development reveal principles of brain maturation*, Nature (2021)](https://doi.org/10.1038/s41586-021-03778-8). The paper identifies [NemaNode](https://www.nemanode.org/) as its connectivity portal. This release uses the official laboratory's factual raw records at [NemaNode commit `6b7ca03f6d68c4ea1af3c120d1a47681edc74a90`](https://github.com/zhenlab-ltri/NemaNode/tree/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90).
+
+The source metadata label four L1 specimens at approximately **0, 5, 8 and 16 hours**, one L2 at **23 hours**, one L3 at **27 hours**, and two adults at approximately **50 hours** after birth. Each larval age is represented by one individual, with two adults at the same listed age. These are cross-sectional hermaphrodites, not repeated measurements of one animal. Source `visualTime` values are graphical layout positions and are not used as biological ages.
+
+Across these eight graphs, observed chemical endpoint counts range **187–221 cells**, directed chemical pairs **775–2,202**, and summed weights **1,296–7,970**. The exact eight-row scope table is in [DEVELOPMENTAL-DATA.md](docs/DEVELOPMENTAL-DATA.md) and the dataset README. Names have common identity namespace **`celegans-name/witvliet2021`** within this dataset family. There are **183 common observed names across all eight** and **223 names in the union** of these endpoint universes.
+
+The declared universe is observed endpoints of retained chemical records, not the global 447-cell catalogue or a complete reconstructed-cell inventory. It includes muscles and other non-neuronal cells. These are brain/head-volume contacts, not full 302-neuron whole-animal connectomes. Absent names/edges do not prove biological absence. Catalogue type/transmitter metadata are retained as source annotations rather than age-specific physiological measurements.
+
+Only source **`typ == 0` chemical** records are retained. Their positive integer `syn` occurrences are summed per exact directed `(pre, post)` pair. **`typ == 2` electrical** observations are excluded because gap-junction annotation was partial. Polyadic annotation IDs can contribute counts to several postsynaptic pairs. Graph weight sums are not counts of unique source annotation IDs. Source Dataset7 retains eleven self-loop pairs; no loops were invented or removed by the normalization.
+
+**License and attribution:** the selected NemaNode source representation carries **GNU GPL version 3**. Preserve its original notice, all corresponding JSON records, the source URL, attribution and transformation source under [`data/witvliet2021/`](data/witvliet2021/). No upstream NemaNode application code is copied into this app. Credit Witvliet and colleagues together with NemaNode and the Zhen/Samuel laboratories. This notice does not assign one blanket license to other Synapse Atlas assets. The CC BY 4.0 license on the separate [Zenodo 5637219 3D-model deposit](https://zenodo.org/records/5637219) is not claimed for these connectivity tables; the author analysis repository has no root license and was not used as the distributable raw source.
+
+Source URLs, SHA-256 hashes, normalization source, original bytes and validation are included. Both offline rebuilds and actual downloads from immutable Git commit URLs reproduced the normalized data byte for byte. These checks establish consistency, not biological completeness. See [DEVELOPMENTAL-DATA.md](docs/DEVELOPMENTAL-DATA.md) for identity, coverage and comparison limits.
+
+### Observatory measurement scope
+
+Specimen comparisons use verified shared identity namespaces and each source pair's **common observed cell set**. Each overlap-matrix cell can therefore have a different common scope. Counts and normalized fractions are separate; excluded nodes and pairs are reported. Scores describe observations and do not isolate developmental effects from animal-to-animal or reconstruction differences.
+
+Bilateral audits require reciprocal source pair mappings, exclude/report invalid mappings and compare observed edges with their mirrored counterparts. They do not correct for asymmetric coverage or establish functional symmetry. Wiring-fingerprint similarity uses exact partner IDs in separate incoming/outgoing vector dimensions within one source. It does not establish cell class, function or cross-species homology.
+
+## Version 4: native calibrated serial electron microscopy
+
+The EM Laboratory now embeds **eight consecutive 512 × 512 JPEG source tiles** from the [L1 CNS ssTEM stack hosted by Virtual Fly Brain](https://www.virtualflybrain.org/hosted/l1em-catmaid/). The authoritative [CATMAID stack metadata](https://l1em.catmaid.virtualflybrain.org/1/stack/1/info) records **3.8 × 3.8 × 50 nm** voxel sampling, with native Z translation **6,050 nm**.
+
+The bundled fixed-XY patch covers source planes **1001–1008**, at native project Z positions **56.10–56.45 µm**. Its field is **1.9456 × 1.9456 µm**; first-to-last plane separation is **350 nm**, rather than a claim that eight image planes define a segmented tissue volume. Coordinates use the documented native stack/project calibration. No registration overlay between these tiles and exported VFB SWCs is asserted.
+
+**License and attribution:** captured live VFB template record **VFB_00050000** links the hosted L1EM template to **CC BY 4.0**. This evidence, stack metadata, tile URLs, originals and SHA-256 receipts are preserved under [`data/serial-em/`](data/serial-em/). Credit the original L1 CNS acquisition/reconstruction teams, including Albert Cardona and collaborators at HHMI Janelia and associated original publications, with Virtual Fly Brain hosting/integration. Consult the detailed EM README for those source records and citation links. Source URLs can change; captured bytes and their hashes define this app's snapshot.
+
+Rulers measure native image-plane distances. ROI statistics and serial profiles use **JPEG-decoded 8-bit pixel values**, not calibrated detector intensities; display contrast/brightness changes do not redefine the statistics. A fixed XY ROI through sections does not track a cell. User notes remain observations rather than validated annotations. These images do not supply segmentation, named neurons, identified synapses or detector calibration. The earlier reference screenshot remains separately labelled and is not substituted for native data.
+
+## Retained version 3 fly sources
+
+The ten measured fly skeletons and **76,428 coordinate nodes** are unchanged. Their source notices and scope are retained below; the new worm graphs do not create cross-species identity mappings or share a coordinate frame with these geometries.
 
 ## Version 3: identity-linked larval anatomy
 

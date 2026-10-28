@@ -1,0 +1,230 @@
+{
+  "schema": "synapse-atlas.witvliet-sources.v1",
+  "accessed": "2026-10-27",
+  "repository": "https://github.com/zhenlab-ltri/NemaNode",
+  "commit": "6b7ca03f6d68c4ea1af3c120d1a47681edc74a90",
+  "license": "GPL-3.0 source representation",
+  "licenseScope": "This notice applies to the selected NemaNode source records and their transformed factual table representation. No upstream application code is copied. It is not a blanket license for other Synapse Atlas assets.",
+  "identityNamespace": "celegans-name/witvliet2021",
+  "files": [
+    {
+      "file": "originals/NemaNode-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "file": "originals/understanding-nemanode-data.md",
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/docs/understanding-nemanode-data.md",
+      "bytes": 3116,
+      "sha256": "ed475c567082c6f8c85e79cfdbe68aa1d022e09073da37eaeb44753e9b67c86a"
+    },
+    {
+      "file": "originals/datasets.json",
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/datasets.json",
+      "bytes": 5440,
+      "sha256": "b5734d75c084e76001e651eeb6d1afc723e180c6e172299a9e8ccfb403dc21f6"
+    },
+    {
+      "file": "originals/neurons.json",
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/neurons.json",
+      "bytes": 58575,
+      "sha256": "c780e0b7cab28b311a7e0916a7b8e37b9cf72de152712bd4a5eb29fd9d595492"
+    },
+    {
+      "file": "originals/witvliet_2020_1.json",
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/connections/witvliet_2020_1.json",
+      "bytes": 218889,
+      "sha256": "50b3e052e55dbd4578f8faf8f171f9e586bda9f183702d53228cacd856c06d78"
+    },
+    {
+      "file": "originals/witvliet_2020_2.json",
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/connections/witvliet_2020_2.json",
+      "bytes": 297125,
+      "sha256": "dd0f45f0762eb921fdfbc2d4a6e35f9abaeb9aac636665fd57d655bc865922c3"
+    },
+    {
+      "file": "originals/witvliet_2020_3.json",
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/connections/witvliet_2020_3.json",
+      "bytes": 302339,
+      "sha256": "3ba7f6619c1693633ae05697b31912c0da3a40cd8b4e27bb2406a04a2fa0adfd"
+    },
+    {
+      "file": "originals/witvliet_2020_4.json",
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/connections/witvliet_2020_4.json",
+      "bytes": 403492,
+      "sha256": "4394d09c16318be6bcf503ef3d76a9f030e13ea691ca2e4af4c488901c727f7f"
+    },
+    {
+      "file": "originals/witvliet_2020_5.json",
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/connections/witvliet_2020_5.json",
+      "bytes": 574022,
+      "sha256": "54957f08f53b48c1cf6f11502b40b76d6dc2f8ce84edd1af012c9a7c54dfab69"
+    },
+    {
+      "file": "originals/witvliet_2020_6.json",
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/connections/witvliet_2020_6.json",
+      "bytes": 555840,
+      "sha256": "9068c14e4c40b689329d5eabfdb53fd46b374d4606ddb67a250bf7798e49dd4d"
+    },
+    {
+      "file": "originals/witvliet_2020_7.json",
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/connections/witvliet_2020_7.json",
+      "bytes": 854336,
+      "sha256": "350b247214763fe6b5a89b76a95cc018f7551c0446ad6501bd9c4774fb05fbae"
+    },
+    {
+      "file": "originals/witvliet_2020_8.json",
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/connections/witvliet_2020_8.json",
+      "bytes": 887526,
+      "sha256": "465aeb3c1f42d84273023cef8e5f5d8ebbcf63248550b2219db68fccb9787033"
+    }
+  ],
+  "publication": "https://doi.org/10.1038/s41586-021-03778-8",
+  "authorAnalysisRepository": "https://github.com/dwitvliet/nature2021/tree/0646af9d25896ae660f97d462eab2d67282f5625",
+  "specimens": [
+    {
+      "id": "celegans-witvliet-1",
+      "stage": "L1",
+      "ageHours": 0,
+      "nodeCount": 187,
+      "neuronalEndpointCount": 170,
+      "nonNeuronalOrUnclassifiedEndpointCount": 17,
+      "directedPairCount": 775,
+      "totalWeight": 1296,
+      "uniqueSourceAnnotationIds": 608,
+      "chemicalRawRows": 775,
+      "excludedElectricalRawRows": 164,
+      "invalidEndpoints": 0,
+      "nonpositiveWeights": 0,
+      "duplicateDirectedPairs": 0,
+      "selfLoops": 0
+    },
+    {
+      "id": "celegans-witvliet-2",
+      "stage": "L1",
+      "ageHours": 5,
+      "nodeCount": 193,
+      "neuronalEndpointCount": 172,
+      "nonNeuronalOrUnclassifiedEndpointCount": 21,
+      "directedPairCount": 986,
+      "totalWeight": 1895,
+      "uniqueSourceAnnotationIds": 817,
+      "chemicalRawRows": 986,
+      "excludedElectricalRawRows": 245,
+      "invalidEndpoints": 0,
+      "nonpositiveWeights": 0,
+      "duplicateDirectedPairs": 0,
+      "selfLoops": 0
+    },
+    {
+      "id": "celegans-witvliet-3",
+      "stage": "L1",
+      "ageHours": 8,
+      "nodeCount": 198,
+      "neuronalEndpointCount": 171,
+      "nonNeuronalOrUnclassifiedEndpointCount": 27,
+      "directedPairCount": 1012,
+      "totalWeight": 2128,
+      "uniqueSourceAnnotationIds": 949,
+      "chemicalRawRows": 1012,
+      "excludedElectricalRawRows": 186,
+      "invalidEndpoints": 0,
+      "nonpositiveWeights": 0,
+      "duplicateDirectedPairs": 0,
+      "selfLoops": 0
+    },
+    {
+      "id": "celegans-witvliet-4",
+      "stage": "L1",
+      "ageHours": 16,
+      "nodeCount": 203,
+      "neuronalEndpointCount": 177,
+      "nonNeuronalOrUnclassifiedEndpointCount": 26,
+      "directedPairCount": 1136,
+      "totalWeight": 2777,
+      "uniqueSourceAnnotationIds": 1296,
+      "chemicalRawRows": 1136,
+      "excludedElectricalRawRows": 415,
+      "invalidEndpoints": 0,
+      "nonpositiveWeights": 0,
+      "duplicateDirectedPairs": 0,
+      "selfLoops": 0
+    },
+    {
+      "id": "celegans-witvliet-5",
+      "stage": "L2",
+      "ageHours": 23,
+      "nodeCount": 210,
+      "neuronalEndpointCount": 182,
+      "nonNeuronalOrUnclassifiedEndpointCount": 28,
+      "directedPairCount": 1515,
+      "totalWeight": 4116,
+      "uniqueSourceAnnotationIds": 1887,
+      "chemicalRawRows": 1515,
+      "excludedElectricalRawRows": 577,
+      "invalidEndpoints": 0,
+      "nonpositiveWeights": 0,
+      "duplicateDirectedPairs": 0,
+      "selfLoops": 0
+    },
+    {
+      "id": "celegans-witvliet-6",
+      "stage": "L3",
+      "ageHours": 27,
+      "nodeCount": 216,
+      "neuronalEndpointCount": 184,
+      "nonNeuronalOrUnclassifiedEndpointCount": 32,
+      "directedPairCount": 1525,
+      "totalWeight": 4456,
+      "uniqueSourceAnnotationIds": 2016,
+      "chemicalRawRows": 1525,
+      "excludedElectricalRawRows": 427,
+      "invalidEndpoints": 0,
+      "nonpositiveWeights": 0,
+      "duplicateDirectedPairs": 0,
+      "selfLoops": 0
+    },
+    {
+      "id": "celegans-witvliet-7",
+      "stage": "adult",
+      "ageHours": 50,
+      "nodeCount": 221,
+      "neuronalEndpointCount": 189,
+      "nonNeuronalOrUnclassifiedEndpointCount": 32,
+      "directedPairCount": 2202,
+      "totalWeight": 7467,
+      "uniqueSourceAnnotationIds": 3562,
+      "chemicalRawRows": 2202,
+      "excludedElectricalRawRows": 579,
+      "invalidEndpoints": 0,
+      "nonpositiveWeights": 0,
+      "duplicateDirectedPairs": 0,
+      "selfLoops": 11
+    },
+    {
+      "id": "celegans-witvliet-8",
+      "stage": "adult",
+      "ageHours": 50,
+      "nodeCount": 219,
+      "neuronalEndpointCount": 187,
+      "nonNeuronalOrUnclassifiedEndpointCount": 32,
+      "directedPairCount": 2186,
+      "totalWeight": 7970,
+      "uniqueSourceAnnotationIds": 3674,
+      "chemicalRawRows": 2186,
+      "excludedElectricalRawRows": 616,
+      "invalidEndpoints": 0,
+      "nonpositiveWeights": 0,
+      "duplicateDirectedPairs": 0,
+      "selfLoops": 0
+    }
+  ],
+  "notes": [
+    "Four L1 specimens (0,5,8,16h), one L2(23h), one L3(27h), two adults(~50h) according to pinned author/lab metadata.",
+    "The Zenodo 5637219 CC BY 4.0 license concerns deposited 3D models and is not claimed for these connectivity tables.",
+    "Original analysis repository has no root license; chosen raw data representation is the official lab NemaNode repository carrying GPL-3.0.",
+    "Node universes contain observed chemical endpoints, including non-neuronal cells. Presence in one graph and absence in another need not mean the cell was born/lost.",
+    "Different ages are different individuals. Descriptive differences combine age, individual variation, reconstruction and annotation differences."
+  ]
+}

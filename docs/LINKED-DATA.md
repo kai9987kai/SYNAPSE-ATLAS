@@ -40,3 +40,5 @@ The graph edges supply synaptic counts between identified cells. They provide **
 `larval-linked-validation.json` records unique nodes, finite coordinates, valid parent references, acyclicity, explicit units, template and license checks. Every original ID was checked against the pinned full and MB-core graphs. These are file/identity checks, not an independent reconstruction audit.
 
 Use `download_linked_originals.py` to fetch original SWCs and reject any source whose bytes no longer match this captured snapshot. The source URLs are public stable paths rather than immutable object versions; the saved originals and SHA-256 records define this bundle. The captured VFB metadata response is retained as evidence rather than silently replaced by later metadata.
+
+Normalized embedded VFB metadata record versions are decimal strings to preserve integers larger than JavaScript’s safe-integer range. Original captured source records and skeleton bytes remain unchanged.

@@ -1,0 +1,271 @@
+{
+  "schema": "synapse-atlas.em-source-manifest.v1",
+  "accessed": "2026-10-27",
+  "source": {
+    "title": "L1 CNS ssTEM image stack, Cardona/Janelia, hosted by Virtual Fly Brain",
+    "url": "https://www.virtualflybrain.org/hosted/l1em-catmaid/",
+    "stackMetadataUrl": "https://l1em.catmaid.virtualflybrain.org/1/stack/1/info",
+    "resolutionNm": {
+      "x": 3.8,
+      "y": 3.8,
+      "z": 50.0
+    },
+    "translationNm": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 6050.0
+    },
+    "dimensions": {
+      "x": 28128,
+      "y": 31840,
+      "z": 4841
+    },
+    "orientation": 0,
+    "tileSourceType": 4,
+    "license": "CC BY 4.0 as recorded for VFB L1EM template VFB_00050000",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "licenseEvidence": "template-record-live.json; VFB_00050000 dataset_license links CC_BY_4_0 to the hosted L1EM template",
+    "attribution": "Original L1 CNS ssTEM acquisition: Albert Cardona and collaborators, HHMI Janelia; associated original L1EM publications including Ohyama et al. 2015 and Winding et al. 2023. Hosted and preserved by Virtual Fly Brain (Court et al. 2023).",
+    "limits": "Eight 512x512 JPEG tiles are a small native image patch, not a whole volume. Source tiles are aligned, tiled and JPEG-compressed EM images; intensity is not calibrated detector output. No segmentation, identified synapses or neuron labels are supplied. URLs are mutable; captured original bytes and SHA-256 define this snapshot. Native stack project translation is documented; no overlay registration with exported SWCs is asserted.",
+    "metadataEvidence": {
+      "stack-info.json": {
+        "sha256": "0727a17c6ead37271608f7641228c926a32d7a065eda5835de39a72e116e09af",
+        "bytes": 4015
+      },
+      "projects.json": {
+        "sha256": "9954948d9770ed18610af1fd369abe488a895c70d8c594912fb14f91caaf637a",
+        "bytes": 467
+      },
+      "stacks.json": {
+        "sha256": "3a52dde5ee32b9ce5c3816024a8055c5bf8d06fbd2e6e3d9833c2c70496edd30",
+        "bytes": 177
+      },
+      "template-record-live.json": {
+        "sha256": "4e3560dcad524f9934491c39f278bb77ab22412cabb433e3e1c0a62142c60ebc",
+        "bytes": 31315
+      }
+    },
+    "nativeProjectFrame": {
+      "units": "nm",
+      "formula": "project = translation + stackPixel * resolution; imageX = (col*512 + pixelX) * 2^zoomLevel, likewiseY",
+      "xyPixelSizeNm": 3.8,
+      "sectionStepNm": 50,
+      "zTranslationNm": 6050,
+      "tileOriginUm": [
+        54.4768,
+        68.096
+      ],
+      "firstLastPlaneUm": [
+        56.1,
+        56.45
+      ],
+      "fieldOfViewUm": [
+        1.9456,
+        1.9456
+      ],
+      "scope": "Spatial calibration describes the native CATMAID stack. VFB SWC export registration is not asserted."
+    }
+  },
+  "images": [
+    {
+      "id": "l1em-z1001",
+      "filename": "tiles/l1em-z1001-zoom0-r35-c28.jpg",
+      "zIndex": 1001,
+      "zUm": 56.1,
+      "width": 512,
+      "height": 512,
+      "pixelSizeNm": 3.8,
+      "xIndex": 14336,
+      "yIndex": 17920,
+      "row": 35,
+      "col": 28,
+      "zoomLevel": 0,
+      "xOriginUm": 54.4768,
+      "yOriginUm": 68.096,
+      "sourceUrl": "https://virtualflybrain.org/data/EM/L1EM/0111-8/1001/0/35_28.jpg",
+      "sha256": "6df76d4e090b373bcb54537cb1b02055e7f653e97a10e5bfb7025cf0baf2e0d9",
+      "bytes": 83028,
+      "responseHeaders": {
+        "Content-Type": "image/jpeg",
+        "Content-Length": "83028",
+        "Last-Modified": "Wed, 05 Apr 2017 12:26:55 GMT",
+        "ETag": "\"58e4e28f-14454\""
+      }
+    },
+    {
+      "id": "l1em-z1002",
+      "filename": "tiles/l1em-z1002-zoom0-r35-c28.jpg",
+      "zIndex": 1002,
+      "zUm": 56.15,
+      "width": 512,
+      "height": 512,
+      "pixelSizeNm": 3.8,
+      "xIndex": 14336,
+      "yIndex": 17920,
+      "row": 35,
+      "col": 28,
+      "zoomLevel": 0,
+      "xOriginUm": 54.4768,
+      "yOriginUm": 68.096,
+      "sourceUrl": "https://virtualflybrain.org/data/EM/L1EM/0111-8/1002/0/35_28.jpg",
+      "sha256": "7a841b46af537d18b81025568633dd65a3d9220416c610ebbcc199c84240fd30",
+      "bytes": 76855,
+      "responseHeaders": {
+        "Content-Type": "image/jpeg",
+        "Content-Length": "76855",
+        "Last-Modified": "Wed, 05 Apr 2017 12:27:20 GMT",
+        "ETag": "\"58e4e2a8-12c37\""
+      }
+    },
+    {
+      "id": "l1em-z1003",
+      "filename": "tiles/l1em-z1003-zoom0-r35-c28.jpg",
+      "zIndex": 1003,
+      "zUm": 56.2,
+      "width": 512,
+      "height": 512,
+      "pixelSizeNm": 3.8,
+      "xIndex": 14336,
+      "yIndex": 17920,
+      "row": 35,
+      "col": 28,
+      "zoomLevel": 0,
+      "xOriginUm": 54.4768,
+      "yOriginUm": 68.096,
+      "sourceUrl": "https://virtualflybrain.org/data/EM/L1EM/0111-8/1003/0/35_28.jpg",
+      "sha256": "89bb83bc851daa1913e3ef6f13e337a45a6d86cc8498d3a46d2421858c707073",
+      "bytes": 78378,
+      "responseHeaders": {
+        "Content-Type": "image/jpeg",
+        "Content-Length": "78378",
+        "Last-Modified": "Wed, 05 Apr 2017 12:27:51 GMT",
+        "ETag": "\"58e4e2c7-1322a\""
+      }
+    },
+    {
+      "id": "l1em-z1004",
+      "filename": "tiles/l1em-z1004-zoom0-r35-c28.jpg",
+      "zIndex": 1004,
+      "zUm": 56.25,
+      "width": 512,
+      "height": 512,
+      "pixelSizeNm": 3.8,
+      "xIndex": 14336,
+      "yIndex": 17920,
+      "row": 35,
+      "col": 28,
+      "zoomLevel": 0,
+      "xOriginUm": 54.4768,
+      "yOriginUm": 68.096,
+      "sourceUrl": "https://virtualflybrain.org/data/EM/L1EM/0111-8/1004/0/35_28.jpg",
+      "sha256": "ff2c06e8173815998b151144febb770143564f948b1b4ff32e634b654a7eba30",
+      "bytes": 65409,
+      "responseHeaders": {
+        "Content-Type": "image/jpeg",
+        "Content-Length": "65409",
+        "Last-Modified": "Wed, 05 Apr 2017 12:28:49 GMT",
+        "ETag": "\"58e4e301-ff81\""
+      }
+    },
+    {
+      "id": "l1em-z1005",
+      "filename": "tiles/l1em-z1005-zoom0-r35-c28.jpg",
+      "zIndex": 1005,
+      "zUm": 56.3,
+      "width": 512,
+      "height": 512,
+      "pixelSizeNm": 3.8,
+      "xIndex": 14336,
+      "yIndex": 17920,
+      "row": 35,
+      "col": 28,
+      "zoomLevel": 0,
+      "xOriginUm": 54.4768,
+      "yOriginUm": 68.096,
+      "sourceUrl": "https://virtualflybrain.org/data/EM/L1EM/0111-8/1005/0/35_28.jpg",
+      "sha256": "717231c4cd618e3732968f91f04e7df9817e5a5131e9287f530b5cba1277fa71",
+      "bytes": 76343,
+      "responseHeaders": {
+        "Content-Type": "image/jpeg",
+        "Content-Length": "76343",
+        "Last-Modified": "Wed, 05 Apr 2017 12:30:47 GMT",
+        "ETag": "\"58e4e377-12a37\""
+      }
+    },
+    {
+      "id": "l1em-z1006",
+      "filename": "tiles/l1em-z1006-zoom0-r35-c28.jpg",
+      "zIndex": 1006,
+      "zUm": 56.35,
+      "width": 512,
+      "height": 512,
+      "pixelSizeNm": 3.8,
+      "xIndex": 14336,
+      "yIndex": 17920,
+      "row": 35,
+      "col": 28,
+      "zoomLevel": 0,
+      "xOriginUm": 54.4768,
+      "yOriginUm": 68.096,
+      "sourceUrl": "https://virtualflybrain.org/data/EM/L1EM/0111-8/1006/0/35_28.jpg",
+      "sha256": "ab5baa01b70a48696848c6f542c38666ae7e801397e2bce34683143ecb72c15f",
+      "bytes": 77344,
+      "responseHeaders": {
+        "Content-Type": "image/jpeg",
+        "Content-Length": "77344",
+        "Last-Modified": "Wed, 05 Apr 2017 12:32:51 GMT",
+        "ETag": "\"58e4e3f3-12e20\""
+      }
+    },
+    {
+      "id": "l1em-z1007",
+      "filename": "tiles/l1em-z1007-zoom0-r35-c28.jpg",
+      "zIndex": 1007,
+      "zUm": 56.4,
+      "width": 512,
+      "height": 512,
+      "pixelSizeNm": 3.8,
+      "xIndex": 14336,
+      "yIndex": 17920,
+      "row": 35,
+      "col": 28,
+      "zoomLevel": 0,
+      "xOriginUm": 54.4768,
+      "yOriginUm": 68.096,
+      "sourceUrl": "https://virtualflybrain.org/data/EM/L1EM/0111-8/1007/0/35_28.jpg",
+      "sha256": "e42e7513f1b5ec331d9fc19194fec135897259b6fbd62a1abc3cd6f8709cdb87",
+      "bytes": 73750,
+      "responseHeaders": {
+        "Content-Type": "image/jpeg",
+        "Content-Length": "73750",
+        "Last-Modified": "Wed, 05 Apr 2017 12:35:42 GMT",
+        "ETag": "\"58e4e49e-12016\""
+      }
+    },
+    {
+      "id": "l1em-z1008",
+      "filename": "tiles/l1em-z1008-zoom0-r35-c28.jpg",
+      "zIndex": 1008,
+      "zUm": 56.45,
+      "width": 512,
+      "height": 512,
+      "pixelSizeNm": 3.8,
+      "xIndex": 14336,
+      "yIndex": 17920,
+      "row": 35,
+      "col": 28,
+      "zoomLevel": 0,
+      "xOriginUm": 54.4768,
+      "yOriginUm": 68.096,
+      "sourceUrl": "https://virtualflybrain.org/data/EM/L1EM/0111-8/1008/0/35_28.jpg",
+      "sha256": "0570fe8f830edf203dd0a38e1a397fdfe8e6d017d2c09d524d4b5ecd254ce449",
+      "bytes": 70837,
+      "responseHeaders": {
+        "Content-Type": "image/jpeg",
+        "Content-Length": "70837",
+        "Last-Modified": "Wed, 05 Apr 2017 12:37:46 GMT",
+        "ETag": "\"58e4e51a-114b5\""
+      }
+    }
+  ]
+}

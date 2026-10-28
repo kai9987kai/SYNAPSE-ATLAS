@@ -57,8 +57,10 @@
           ]
         },
         "url": "https://github.com/neurodata/bilateral-connectome/tree/4482b9022f27d361011c9c7442e32ca51d607d08",
-        "limits": "Induced subset of the pinned larval research graph. Includes every supplied edge whose two endpoints pass the declared group filter. Connections to other cells are outside scope."
-      }
+        "limits": "Induced subset of the pinned larval research graph. Includes every supplied edge whose two endpoints pass the declared group filter. Connections to other cells are outside scope.",
+        "identityNamespace": "drosophila-l1em-catmaid"
+      },
+      "identityNamespace": "drosophila-l1em-catmaid"
     },
     {
       "id": "larva-mb-recurrent",
@@ -117,8 +119,10 @@
           ]
         },
         "url": "https://github.com/neurodata/bilateral-connectome/tree/4482b9022f27d361011c9c7442e32ca51d607d08",
-        "limits": "Induced subset of the pinned larval research graph. Includes every supplied edge whose two endpoints pass the declared group filter. Connections to other cells are outside scope."
-      }
+        "limits": "Induced subset of the pinned larval research graph. Includes every supplied edge whose two endpoints pass the declared group filter. Connections to other cells are outside scope.",
+        "identityNamespace": "drosophila-l1em-catmaid"
+      },
+      "identityNamespace": "drosophila-l1em-catmaid"
     },
     {
       "id": "larva-pedigo-elife-v5",
@@ -172,8 +176,10 @@
           }
         ],
         "url": "https://github.com/neurodata/bilateral-connectome/tree/4482b9022f27d361011c9c7442e32ca51d607d08",
-        "limits": "Published research-processed node/weighted-edge tables; not the full 548,000-synapse paper release. We retain all provided directed rows, weights, and self-loops. Class labels use the source simple_group column. No neurotransmitter signs or ROI assignments inferred."
-      }
+        "limits": "Published research-processed node/weighted-edge tables; not the full 548,000-synapse paper release. We retain all provided directed rows, weights, and self-loops. Class labels use the source simple_group column. No neurotransmitter signs or ROI assignments inferred.",
+        "identityNamespace": "drosophila-l1em-catmaid"
+      },
+      "identityNamespace": "drosophila-l1em-catmaid"
     },
     {
       "id": "larva-linked-morphology",
@@ -235,7 +241,449 @@
             "8877158",
             "8980589"
           ]
-        }
+        },
+        "identityNamespace": "drosophila-l1em-catmaid"
+      },
+      "identityNamespace": "drosophila-l1em-catmaid"
+    },
+    {
+      "id": "celegans-witvliet-1",
+      "name": "C. elegans · specimen 1 · L1 / ~0 h",
+      "identityNamespace": "celegans-name/witvliet2021",
+      "source": {
+        "title": "Witvliet et al. developmental brain, specimen 1",
+        "release": "NemaNode pinned source 6b7ca03f6d68",
+        "commit": "6b7ca03f6d68c4ea1af3c120d1a47681edc74a90",
+        "url": "https://github.com/zhenlab-ltri/NemaNode/tree/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90",
+        "publication": "https://doi.org/10.1038/s41586-021-03778-8",
+        "portal": "https://www.nemanode.org/",
+        "license": "NemaNode source representation: GPL-3.0; preserve source notice and attribution",
+        "licenseUrl": "https://github.com/zhenlab-ltri/NemaNode/blob/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/LICENSE",
+        "licenseFile": "originals/NemaNode-LICENSE.txt",
+        "attribution": "Witvliet, Mulcahy, Mitchell et al., Nature 596, 257–261 (2021); NemaNode, Zhen and Samuel laboratories",
+        "species": "Caenorhabditis elegans",
+        "sex": "hermaphrodite",
+        "specimen": "Dataset1",
+        "specimenId": "witvliet_2020_1",
+        "ageHours": 0,
+        "stage": "L1",
+        "region": "head / brain: nerve ring, ventral ganglion and reconstructed anterior neuropil",
+        "identityNamespace": "celegans-name/witvliet2021",
+        "comparisonGroup": "witvliet2021-chemical-head",
+        "edgeType": "chemical",
+        "nodeKind": "cells",
+        "includesNonNeuronal": true,
+        "nodeUniversePolicy": "Observed endpoints of retained chemical connections only; this is not a complete reconstructed-cell inventory and does not declare unobserved catalog cells as isolates.",
+        "weightDefinition": "Sum of source chemical synapse occurrence counts for each directed pre/post pair. A source annotation ID can contribute to several post-synaptic pairs; summed edge weights are not counts of unique source annotation IDs.",
+        "limits": "Cross-sectional specimens, not longitudinal imaging of one animal. Four L1 specimens, one L2, one L3 and two adults; approximate ages from source metadata. Absent/unobserved cells and edges are not proven biological absence. Chemical contacts include muscles and other non-neuronal cells. Partial gap-junction annotations are excluded. No neural activity, efficacy, causal development or whole-302-neuron coverage is established.",
+        "rawFiles": [
+          {
+            "file": "originals/witvliet_2020_1.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/connections/witvliet_2020_1.json",
+            "bytes": 218889,
+            "sha256": "50b3e052e55dbd4578f8faf8f171f9e586bda9f183702d53228cacd856c06d78"
+          },
+          {
+            "file": "originals/neurons.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/neurons.json",
+            "bytes": 58575,
+            "sha256": "c780e0b7cab28b311a7e0916a7b8e37b9cf72de152712bd4a5eb29fd9d595492"
+          },
+          {
+            "file": "originals/datasets.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/datasets.json",
+            "bytes": 5440,
+            "sha256": "b5734d75c084e76001e651eeb6d1afc723e180c6e172299a9e8ccfb403dc21f6"
+          }
+        ],
+        "accessed": "2026-10-27",
+        "uniqueSourceAnnotationIds": 608,
+        "excludedGapJunctionRows": 164
+      }
+    },
+    {
+      "id": "celegans-witvliet-2",
+      "name": "C. elegans · specimen 2 · L1 / ~5 h",
+      "identityNamespace": "celegans-name/witvliet2021",
+      "source": {
+        "title": "Witvliet et al. developmental brain, specimen 2",
+        "release": "NemaNode pinned source 6b7ca03f6d68",
+        "commit": "6b7ca03f6d68c4ea1af3c120d1a47681edc74a90",
+        "url": "https://github.com/zhenlab-ltri/NemaNode/tree/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90",
+        "publication": "https://doi.org/10.1038/s41586-021-03778-8",
+        "portal": "https://www.nemanode.org/",
+        "license": "NemaNode source representation: GPL-3.0; preserve source notice and attribution",
+        "licenseUrl": "https://github.com/zhenlab-ltri/NemaNode/blob/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/LICENSE",
+        "licenseFile": "originals/NemaNode-LICENSE.txt",
+        "attribution": "Witvliet, Mulcahy, Mitchell et al., Nature 596, 257–261 (2021); NemaNode, Zhen and Samuel laboratories",
+        "species": "Caenorhabditis elegans",
+        "sex": "hermaphrodite",
+        "specimen": "Dataset2",
+        "specimenId": "witvliet_2020_2",
+        "ageHours": 5,
+        "stage": "L1",
+        "region": "head / brain: nerve ring, ventral ganglion and reconstructed anterior neuropil",
+        "identityNamespace": "celegans-name/witvliet2021",
+        "comparisonGroup": "witvliet2021-chemical-head",
+        "edgeType": "chemical",
+        "nodeKind": "cells",
+        "includesNonNeuronal": true,
+        "nodeUniversePolicy": "Observed endpoints of retained chemical connections only; this is not a complete reconstructed-cell inventory and does not declare unobserved catalog cells as isolates.",
+        "weightDefinition": "Sum of source chemical synapse occurrence counts for each directed pre/post pair. A source annotation ID can contribute to several post-synaptic pairs; summed edge weights are not counts of unique source annotation IDs.",
+        "limits": "Cross-sectional specimens, not longitudinal imaging of one animal. Four L1 specimens, one L2, one L3 and two adults; approximate ages from source metadata. Absent/unobserved cells and edges are not proven biological absence. Chemical contacts include muscles and other non-neuronal cells. Partial gap-junction annotations are excluded. No neural activity, efficacy, causal development or whole-302-neuron coverage is established.",
+        "rawFiles": [
+          {
+            "file": "originals/witvliet_2020_2.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/connections/witvliet_2020_2.json",
+            "bytes": 297125,
+            "sha256": "dd0f45f0762eb921fdfbc2d4a6e35f9abaeb9aac636665fd57d655bc865922c3"
+          },
+          {
+            "file": "originals/neurons.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/neurons.json",
+            "bytes": 58575,
+            "sha256": "c780e0b7cab28b311a7e0916a7b8e37b9cf72de152712bd4a5eb29fd9d595492"
+          },
+          {
+            "file": "originals/datasets.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/datasets.json",
+            "bytes": 5440,
+            "sha256": "b5734d75c084e76001e651eeb6d1afc723e180c6e172299a9e8ccfb403dc21f6"
+          }
+        ],
+        "accessed": "2026-10-27",
+        "uniqueSourceAnnotationIds": 817,
+        "excludedGapJunctionRows": 245
+      }
+    },
+    {
+      "id": "celegans-witvliet-3",
+      "name": "C. elegans · specimen 3 · L1 / ~8 h",
+      "identityNamespace": "celegans-name/witvliet2021",
+      "source": {
+        "title": "Witvliet et al. developmental brain, specimen 3",
+        "release": "NemaNode pinned source 6b7ca03f6d68",
+        "commit": "6b7ca03f6d68c4ea1af3c120d1a47681edc74a90",
+        "url": "https://github.com/zhenlab-ltri/NemaNode/tree/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90",
+        "publication": "https://doi.org/10.1038/s41586-021-03778-8",
+        "portal": "https://www.nemanode.org/",
+        "license": "NemaNode source representation: GPL-3.0; preserve source notice and attribution",
+        "licenseUrl": "https://github.com/zhenlab-ltri/NemaNode/blob/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/LICENSE",
+        "licenseFile": "originals/NemaNode-LICENSE.txt",
+        "attribution": "Witvliet, Mulcahy, Mitchell et al., Nature 596, 257–261 (2021); NemaNode, Zhen and Samuel laboratories",
+        "species": "Caenorhabditis elegans",
+        "sex": "hermaphrodite",
+        "specimen": "Dataset3",
+        "specimenId": "witvliet_2020_3",
+        "ageHours": 8,
+        "stage": "L1",
+        "region": "head / brain: nerve ring, ventral ganglion and reconstructed anterior neuropil",
+        "identityNamespace": "celegans-name/witvliet2021",
+        "comparisonGroup": "witvliet2021-chemical-head",
+        "edgeType": "chemical",
+        "nodeKind": "cells",
+        "includesNonNeuronal": true,
+        "nodeUniversePolicy": "Observed endpoints of retained chemical connections only; this is not a complete reconstructed-cell inventory and does not declare unobserved catalog cells as isolates.",
+        "weightDefinition": "Sum of source chemical synapse occurrence counts for each directed pre/post pair. A source annotation ID can contribute to several post-synaptic pairs; summed edge weights are not counts of unique source annotation IDs.",
+        "limits": "Cross-sectional specimens, not longitudinal imaging of one animal. Four L1 specimens, one L2, one L3 and two adults; approximate ages from source metadata. Absent/unobserved cells and edges are not proven biological absence. Chemical contacts include muscles and other non-neuronal cells. Partial gap-junction annotations are excluded. No neural activity, efficacy, causal development or whole-302-neuron coverage is established.",
+        "rawFiles": [
+          {
+            "file": "originals/witvliet_2020_3.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/connections/witvliet_2020_3.json",
+            "bytes": 302339,
+            "sha256": "3ba7f6619c1693633ae05697b31912c0da3a40cd8b4e27bb2406a04a2fa0adfd"
+          },
+          {
+            "file": "originals/neurons.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/neurons.json",
+            "bytes": 58575,
+            "sha256": "c780e0b7cab28b311a7e0916a7b8e37b9cf72de152712bd4a5eb29fd9d595492"
+          },
+          {
+            "file": "originals/datasets.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/datasets.json",
+            "bytes": 5440,
+            "sha256": "b5734d75c084e76001e651eeb6d1afc723e180c6e172299a9e8ccfb403dc21f6"
+          }
+        ],
+        "accessed": "2026-10-27",
+        "uniqueSourceAnnotationIds": 949,
+        "excludedGapJunctionRows": 186
+      }
+    },
+    {
+      "id": "celegans-witvliet-4",
+      "name": "C. elegans · specimen 4 · L1 / ~16 h",
+      "identityNamespace": "celegans-name/witvliet2021",
+      "source": {
+        "title": "Witvliet et al. developmental brain, specimen 4",
+        "release": "NemaNode pinned source 6b7ca03f6d68",
+        "commit": "6b7ca03f6d68c4ea1af3c120d1a47681edc74a90",
+        "url": "https://github.com/zhenlab-ltri/NemaNode/tree/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90",
+        "publication": "https://doi.org/10.1038/s41586-021-03778-8",
+        "portal": "https://www.nemanode.org/",
+        "license": "NemaNode source representation: GPL-3.0; preserve source notice and attribution",
+        "licenseUrl": "https://github.com/zhenlab-ltri/NemaNode/blob/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/LICENSE",
+        "licenseFile": "originals/NemaNode-LICENSE.txt",
+        "attribution": "Witvliet, Mulcahy, Mitchell et al., Nature 596, 257–261 (2021); NemaNode, Zhen and Samuel laboratories",
+        "species": "Caenorhabditis elegans",
+        "sex": "hermaphrodite",
+        "specimen": "Dataset4",
+        "specimenId": "witvliet_2020_4",
+        "ageHours": 16,
+        "stage": "L1",
+        "region": "head / brain: nerve ring, ventral ganglion and reconstructed anterior neuropil",
+        "identityNamespace": "celegans-name/witvliet2021",
+        "comparisonGroup": "witvliet2021-chemical-head",
+        "edgeType": "chemical",
+        "nodeKind": "cells",
+        "includesNonNeuronal": true,
+        "nodeUniversePolicy": "Observed endpoints of retained chemical connections only; this is not a complete reconstructed-cell inventory and does not declare unobserved catalog cells as isolates.",
+        "weightDefinition": "Sum of source chemical synapse occurrence counts for each directed pre/post pair. A source annotation ID can contribute to several post-synaptic pairs; summed edge weights are not counts of unique source annotation IDs.",
+        "limits": "Cross-sectional specimens, not longitudinal imaging of one animal. Four L1 specimens, one L2, one L3 and two adults; approximate ages from source metadata. Absent/unobserved cells and edges are not proven biological absence. Chemical contacts include muscles and other non-neuronal cells. Partial gap-junction annotations are excluded. No neural activity, efficacy, causal development or whole-302-neuron coverage is established.",
+        "rawFiles": [
+          {
+            "file": "originals/witvliet_2020_4.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/connections/witvliet_2020_4.json",
+            "bytes": 403492,
+            "sha256": "4394d09c16318be6bcf503ef3d76a9f030e13ea691ca2e4af4c488901c727f7f"
+          },
+          {
+            "file": "originals/neurons.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/neurons.json",
+            "bytes": 58575,
+            "sha256": "c780e0b7cab28b311a7e0916a7b8e37b9cf72de152712bd4a5eb29fd9d595492"
+          },
+          {
+            "file": "originals/datasets.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/datasets.json",
+            "bytes": 5440,
+            "sha256": "b5734d75c084e76001e651eeb6d1afc723e180c6e172299a9e8ccfb403dc21f6"
+          }
+        ],
+        "accessed": "2026-10-27",
+        "uniqueSourceAnnotationIds": 1296,
+        "excludedGapJunctionRows": 415
+      }
+    },
+    {
+      "id": "celegans-witvliet-5",
+      "name": "C. elegans · specimen 5 · L2 / ~23 h",
+      "identityNamespace": "celegans-name/witvliet2021",
+      "source": {
+        "title": "Witvliet et al. developmental brain, specimen 5",
+        "release": "NemaNode pinned source 6b7ca03f6d68",
+        "commit": "6b7ca03f6d68c4ea1af3c120d1a47681edc74a90",
+        "url": "https://github.com/zhenlab-ltri/NemaNode/tree/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90",
+        "publication": "https://doi.org/10.1038/s41586-021-03778-8",
+        "portal": "https://www.nemanode.org/",
+        "license": "NemaNode source representation: GPL-3.0; preserve source notice and attribution",
+        "licenseUrl": "https://github.com/zhenlab-ltri/NemaNode/blob/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/LICENSE",
+        "licenseFile": "originals/NemaNode-LICENSE.txt",
+        "attribution": "Witvliet, Mulcahy, Mitchell et al., Nature 596, 257–261 (2021); NemaNode, Zhen and Samuel laboratories",
+        "species": "Caenorhabditis elegans",
+        "sex": "hermaphrodite",
+        "specimen": "Dataset5",
+        "specimenId": "witvliet_2020_5",
+        "ageHours": 23,
+        "stage": "L2",
+        "region": "head / brain: nerve ring, ventral ganglion and reconstructed anterior neuropil",
+        "identityNamespace": "celegans-name/witvliet2021",
+        "comparisonGroup": "witvliet2021-chemical-head",
+        "edgeType": "chemical",
+        "nodeKind": "cells",
+        "includesNonNeuronal": true,
+        "nodeUniversePolicy": "Observed endpoints of retained chemical connections only; this is not a complete reconstructed-cell inventory and does not declare unobserved catalog cells as isolates.",
+        "weightDefinition": "Sum of source chemical synapse occurrence counts for each directed pre/post pair. A source annotation ID can contribute to several post-synaptic pairs; summed edge weights are not counts of unique source annotation IDs.",
+        "limits": "Cross-sectional specimens, not longitudinal imaging of one animal. Four L1 specimens, one L2, one L3 and two adults; approximate ages from source metadata. Absent/unobserved cells and edges are not proven biological absence. Chemical contacts include muscles and other non-neuronal cells. Partial gap-junction annotations are excluded. No neural activity, efficacy, causal development or whole-302-neuron coverage is established.",
+        "rawFiles": [
+          {
+            "file": "originals/witvliet_2020_5.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/connections/witvliet_2020_5.json",
+            "bytes": 574022,
+            "sha256": "54957f08f53b48c1cf6f11502b40b76d6dc2f8ce84edd1af012c9a7c54dfab69"
+          },
+          {
+            "file": "originals/neurons.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/neurons.json",
+            "bytes": 58575,
+            "sha256": "c780e0b7cab28b311a7e0916a7b8e37b9cf72de152712bd4a5eb29fd9d595492"
+          },
+          {
+            "file": "originals/datasets.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/datasets.json",
+            "bytes": 5440,
+            "sha256": "b5734d75c084e76001e651eeb6d1afc723e180c6e172299a9e8ccfb403dc21f6"
+          }
+        ],
+        "accessed": "2026-10-27",
+        "uniqueSourceAnnotationIds": 1887,
+        "excludedGapJunctionRows": 577
+      }
+    },
+    {
+      "id": "celegans-witvliet-6",
+      "name": "C. elegans · specimen 6 · L3 / ~27 h",
+      "identityNamespace": "celegans-name/witvliet2021",
+      "source": {
+        "title": "Witvliet et al. developmental brain, specimen 6",
+        "release": "NemaNode pinned source 6b7ca03f6d68",
+        "commit": "6b7ca03f6d68c4ea1af3c120d1a47681edc74a90",
+        "url": "https://github.com/zhenlab-ltri/NemaNode/tree/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90",
+        "publication": "https://doi.org/10.1038/s41586-021-03778-8",
+        "portal": "https://www.nemanode.org/",
+        "license": "NemaNode source representation: GPL-3.0; preserve source notice and attribution",
+        "licenseUrl": "https://github.com/zhenlab-ltri/NemaNode/blob/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/LICENSE",
+        "licenseFile": "originals/NemaNode-LICENSE.txt",
+        "attribution": "Witvliet, Mulcahy, Mitchell et al., Nature 596, 257–261 (2021); NemaNode, Zhen and Samuel laboratories",
+        "species": "Caenorhabditis elegans",
+        "sex": "hermaphrodite",
+        "specimen": "Dataset6",
+        "specimenId": "witvliet_2020_6",
+        "ageHours": 27,
+        "stage": "L3",
+        "region": "head / brain: nerve ring, ventral ganglion and reconstructed anterior neuropil",
+        "identityNamespace": "celegans-name/witvliet2021",
+        "comparisonGroup": "witvliet2021-chemical-head",
+        "edgeType": "chemical",
+        "nodeKind": "cells",
+        "includesNonNeuronal": true,
+        "nodeUniversePolicy": "Observed endpoints of retained chemical connections only; this is not a complete reconstructed-cell inventory and does not declare unobserved catalog cells as isolates.",
+        "weightDefinition": "Sum of source chemical synapse occurrence counts for each directed pre/post pair. A source annotation ID can contribute to several post-synaptic pairs; summed edge weights are not counts of unique source annotation IDs.",
+        "limits": "Cross-sectional specimens, not longitudinal imaging of one animal. Four L1 specimens, one L2, one L3 and two adults; approximate ages from source metadata. Absent/unobserved cells and edges are not proven biological absence. Chemical contacts include muscles and other non-neuronal cells. Partial gap-junction annotations are excluded. No neural activity, efficacy, causal development or whole-302-neuron coverage is established.",
+        "rawFiles": [
+          {
+            "file": "originals/witvliet_2020_6.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/connections/witvliet_2020_6.json",
+            "bytes": 555840,
+            "sha256": "9068c14e4c40b689329d5eabfdb53fd46b374d4606ddb67a250bf7798e49dd4d"
+          },
+          {
+            "file": "originals/neurons.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/neurons.json",
+            "bytes": 58575,
+            "sha256": "c780e0b7cab28b311a7e0916a7b8e37b9cf72de152712bd4a5eb29fd9d595492"
+          },
+          {
+            "file": "originals/datasets.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/datasets.json",
+            "bytes": 5440,
+            "sha256": "b5734d75c084e76001e651eeb6d1afc723e180c6e172299a9e8ccfb403dc21f6"
+          }
+        ],
+        "accessed": "2026-10-27",
+        "uniqueSourceAnnotationIds": 2016,
+        "excludedGapJunctionRows": 427
+      }
+    },
+    {
+      "id": "celegans-witvliet-7",
+      "name": "C. elegans · specimen 7 · adult / ~50 h",
+      "identityNamespace": "celegans-name/witvliet2021",
+      "source": {
+        "title": "Witvliet et al. developmental brain, specimen 7",
+        "release": "NemaNode pinned source 6b7ca03f6d68",
+        "commit": "6b7ca03f6d68c4ea1af3c120d1a47681edc74a90",
+        "url": "https://github.com/zhenlab-ltri/NemaNode/tree/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90",
+        "publication": "https://doi.org/10.1038/s41586-021-03778-8",
+        "portal": "https://www.nemanode.org/",
+        "license": "NemaNode source representation: GPL-3.0; preserve source notice and attribution",
+        "licenseUrl": "https://github.com/zhenlab-ltri/NemaNode/blob/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/LICENSE",
+        "licenseFile": "originals/NemaNode-LICENSE.txt",
+        "attribution": "Witvliet, Mulcahy, Mitchell et al., Nature 596, 257–261 (2021); NemaNode, Zhen and Samuel laboratories",
+        "species": "Caenorhabditis elegans",
+        "sex": "hermaphrodite",
+        "specimen": "Dataset7",
+        "specimenId": "witvliet_2020_7",
+        "ageHours": 50,
+        "stage": "adult",
+        "region": "head / brain: nerve ring, ventral ganglion and reconstructed anterior neuropil",
+        "identityNamespace": "celegans-name/witvliet2021",
+        "comparisonGroup": "witvliet2021-chemical-head",
+        "edgeType": "chemical",
+        "nodeKind": "cells",
+        "includesNonNeuronal": true,
+        "nodeUniversePolicy": "Observed endpoints of retained chemical connections only; this is not a complete reconstructed-cell inventory and does not declare unobserved catalog cells as isolates.",
+        "weightDefinition": "Sum of source chemical synapse occurrence counts for each directed pre/post pair. A source annotation ID can contribute to several post-synaptic pairs; summed edge weights are not counts of unique source annotation IDs.",
+        "limits": "Cross-sectional specimens, not longitudinal imaging of one animal. Four L1 specimens, one L2, one L3 and two adults; approximate ages from source metadata. Absent/unobserved cells and edges are not proven biological absence. Chemical contacts include muscles and other non-neuronal cells. Partial gap-junction annotations are excluded. No neural activity, efficacy, causal development or whole-302-neuron coverage is established.",
+        "rawFiles": [
+          {
+            "file": "originals/witvliet_2020_7.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/connections/witvliet_2020_7.json",
+            "bytes": 854336,
+            "sha256": "350b247214763fe6b5a89b76a95cc018f7551c0446ad6501bd9c4774fb05fbae"
+          },
+          {
+            "file": "originals/neurons.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/neurons.json",
+            "bytes": 58575,
+            "sha256": "c780e0b7cab28b311a7e0916a7b8e37b9cf72de152712bd4a5eb29fd9d595492"
+          },
+          {
+            "file": "originals/datasets.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/datasets.json",
+            "bytes": 5440,
+            "sha256": "b5734d75c084e76001e651eeb6d1afc723e180c6e172299a9e8ccfb403dc21f6"
+          }
+        ],
+        "accessed": "2026-10-27",
+        "uniqueSourceAnnotationIds": 3562,
+        "excludedGapJunctionRows": 579
+      }
+    },
+    {
+      "id": "celegans-witvliet-8",
+      "name": "C. elegans · specimen 8 · adult / ~50 h",
+      "identityNamespace": "celegans-name/witvliet2021",
+      "source": {
+        "title": "Witvliet et al. developmental brain, specimen 8",
+        "release": "NemaNode pinned source 6b7ca03f6d68",
+        "commit": "6b7ca03f6d68c4ea1af3c120d1a47681edc74a90",
+        "url": "https://github.com/zhenlab-ltri/NemaNode/tree/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90",
+        "publication": "https://doi.org/10.1038/s41586-021-03778-8",
+        "portal": "https://www.nemanode.org/",
+        "license": "NemaNode source representation: GPL-3.0; preserve source notice and attribution",
+        "licenseUrl": "https://github.com/zhenlab-ltri/NemaNode/blob/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/LICENSE",
+        "licenseFile": "originals/NemaNode-LICENSE.txt",
+        "attribution": "Witvliet, Mulcahy, Mitchell et al., Nature 596, 257–261 (2021); NemaNode, Zhen and Samuel laboratories",
+        "species": "Caenorhabditis elegans",
+        "sex": "hermaphrodite",
+        "specimen": "Dataset8",
+        "specimenId": "witvliet_2020_8",
+        "ageHours": 50,
+        "stage": "adult",
+        "region": "head / brain: nerve ring, ventral ganglion and reconstructed anterior neuropil",
+        "identityNamespace": "celegans-name/witvliet2021",
+        "comparisonGroup": "witvliet2021-chemical-head",
+        "edgeType": "chemical",
+        "nodeKind": "cells",
+        "includesNonNeuronal": true,
+        "nodeUniversePolicy": "Observed endpoints of retained chemical connections only; this is not a complete reconstructed-cell inventory and does not declare unobserved catalog cells as isolates.",
+        "weightDefinition": "Sum of source chemical synapse occurrence counts for each directed pre/post pair. A source annotation ID can contribute to several post-synaptic pairs; summed edge weights are not counts of unique source annotation IDs.",
+        "limits": "Cross-sectional specimens, not longitudinal imaging of one animal. Four L1 specimens, one L2, one L3 and two adults; approximate ages from source metadata. Absent/unobserved cells and edges are not proven biological absence. Chemical contacts include muscles and other non-neuronal cells. Partial gap-junction annotations are excluded. No neural activity, efficacy, causal development or whole-302-neuron coverage is established.",
+        "rawFiles": [
+          {
+            "file": "originals/witvliet_2020_8.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/connections/witvliet_2020_8.json",
+            "bytes": 887526,
+            "sha256": "465aeb3c1f42d84273023cef8e5f5d8ebbcf63248550b2219db68fccb9787033"
+          },
+          {
+            "file": "originals/neurons.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/neurons.json",
+            "bytes": 58575,
+            "sha256": "c780e0b7cab28b311a7e0916a7b8e37b9cf72de152712bd4a5eb29fd9d595492"
+          },
+          {
+            "file": "originals/datasets.json",
+            "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/6b7ca03f6d68c4ea1af3c120d1a47681edc74a90/src/server/populate-db/raw-data/datasets.json",
+            "bytes": 5440,
+            "sha256": "b5734d75c084e76001e651eeb6d1afc723e180c6e172299a9e8ccfb403dc21f6"
+          }
+        ],
+        "accessed": "2026-10-27",
+        "uniqueSourceAnnotationIds": 3674,
+        "excludedGapJunctionRows": 616
       }
     }
   ],
@@ -344,7 +792,7 @@
         "unknownRadiusCount": 4475,
         "scope": "Identity-linked via original L1EM/CATMAID skeleton IDs to the pinned Pedigo processed graph. Geometry exports and edge table are different snapshots of the same specimen, not a synchronized re-export. No synapse coordinates or neural activity are provided.",
         "vfbTermId": "VFB_00100414",
-        "vfbTermRecordVersion": 1880075371068522500,
+        "vfbTermRecordVersion": "1880075371068522497",
         "vfbTermSources": [
           "Larval MB neurons - EM (Eichler2017)",
           "EM L1 Eschbach et al 2020b",
@@ -402,7 +850,7 @@
         "unknownRadiusCount": 5272,
         "scope": "Identity-linked via original L1EM/CATMAID skeleton IDs to the pinned Pedigo processed graph. Geometry exports and edge table are different snapshots of the same specimen, not a synchronized re-export. No synapse coordinates or neural activity are provided.",
         "vfbTermId": "VFB_00100222",
-        "vfbTermRecordVersion": 1880075370855661600,
+        "vfbTermRecordVersion": "1880075370855661569",
         "vfbTermSources": [
           "EM L1 Eschbach et al 2020b",
           "EM L1 Winding, Pedigo et al., 2023",
@@ -460,7 +908,7 @@
         "unknownRadiusCount": 5324,
         "scope": "Identity-linked via original L1EM/CATMAID skeleton IDs to the pinned Pedigo processed graph. Geometry exports and edge table are different snapshots of the same specimen, not a synchronized re-export. No synapse coordinates or neural activity are provided.",
         "vfbTermId": "VFB_00100382",
-        "vfbTermRecordVersion": 1880075370968907800,
+        "vfbTermRecordVersion": "1880075370968907776",
         "vfbTermSources": [
           "Larval MB neurons - EM (Eichler2017)",
           "EM L1 Eschbach et al 2020b",
@@ -518,7 +966,7 @@
         "unknownRadiusCount": 4443,
         "scope": "Identity-linked via original L1EM/CATMAID skeleton IDs to the pinned Pedigo processed graph. Geometry exports and edge table are different snapshots of the same specimen, not a synchronized re-export. No synapse coordinates or neural activity are provided.",
         "vfbTermId": "VFB_00100352",
-        "vfbTermRecordVersion": 1880075370997219300,
+        "vfbTermRecordVersion": "1880075370997219329",
         "vfbTermSources": [
           "Larval MB neurons - EM (Eichler2017)",
           "EM L1 Eschbach et al 2020b",
@@ -576,7 +1024,7 @@
         "unknownRadiusCount": 3348,
         "scope": "Identity-linked via original L1EM/CATMAID skeleton IDs to the pinned Pedigo processed graph. Geometry exports and edge table are different snapshots of the same specimen, not a synchronized re-export. No synapse coordinates or neural activity are provided.",
         "vfbTermId": "VFB_00100503",
-        "vfbTermRecordVersion": 1880075371042308000,
+        "vfbTermRecordVersion": "1880075371042308098",
         "vfbTermSources": [
           "EM L1 Eschbach et al 2020b",
           "EM L1 Winding, Pedigo et al., 2023",
@@ -634,7 +1082,7 @@
         "unknownRadiusCount": 3941,
         "scope": "Identity-linked via original L1EM/CATMAID skeleton IDs to the pinned Pedigo processed graph. Geometry exports and edge table are different snapshots of the same specimen, not a synchronized re-export. No synapse coordinates or neural activity are provided.",
         "vfbTermId": "VFB_00100221",
-        "vfbTermRecordVersion": 1880075370890264600,
+        "vfbTermRecordVersion": "1880075370890264577",
         "vfbTermSources": [
           "EM L1 Winding, Pedigo et al., 2023",
           "EM L1 Eschbach et al 2020b",
@@ -692,7 +1140,7 @@
         "unknownRadiusCount": 7469,
         "scope": "Identity-linked via original L1EM/CATMAID skeleton IDs to the pinned Pedigo processed graph. Geometry exports and edge table are different snapshots of the same specimen, not a synchronized re-export. No synapse coordinates or neural activity are provided.",
         "vfbTermId": "VFB_00100457",
-        "vfbTermRecordVersion": 1880075371056988200,
+        "vfbTermRecordVersion": "1880075371056988160",
         "vfbTermSources": [
           "EM L1 Miroschnikow et al. 2018",
           "EM L1 Eschbach et al 2020b",
@@ -751,7 +1199,7 @@
         "unknownRadiusCount": 8904,
         "scope": "Identity-linked via original L1EM/CATMAID skeleton IDs to the pinned Pedigo processed graph. Geometry exports and edge table are different snapshots of the same specimen, not a synchronized re-export. No synapse coordinates or neural activity are provided.",
         "vfbTermId": "VFB_00100274",
-        "vfbTermRecordVersion": 1880075370944790500,
+        "vfbTermRecordVersion": "1880075370944790528",
         "vfbTermSources": [
           "Larval MB neurons - EM (Eichler2017)",
           "EM L1 Eschbach et al 2020b",
@@ -921,7 +1369,7 @@
     "sha256": "be6124c2684c01fcf0535890799f85a68efae3b80fecacc2b61cb7f6adaa345d",
     "authenticity": "Supplied HTML embedded exports preserved; original CSVs not attached and not independently verified."
   },
-  "appVersion": "3.0.0",
+  "appVersion": "4.0.0",
   "linkedLarvalMorphology": {
     "schema": "synapse-atlas.linked-larval-morphology.v1",
     "accessed": "2026-10-26",
@@ -1205,8 +1653,8 @@
     "scope": "Geometry and connectivity identify the same specimen/cell IDs; distinct exports may differ in proofreading state. Do not treat skeleton intersection or schematic edges as spatial synapse evidence."
   },
   "researchLibrary": {
-    "checked": "2026-10-26",
-    "scope": "Selected primary studies and official dataset resources checked on 26 October 2026. This library is a curated snapshot, not an automatically updating or exhaustive literature review.",
+    "checked": "2026-10-27",
+    "scope": "Curated primary papers, documented datasets and explicitly labelled preprints checked for this release on 27 October 2026; not an exhaustive or automatically updated literature review.",
     "articles": [
       {
         "year": "SEP 2026",
@@ -1291,6 +1739,49 @@
         "name": "The complete connectome of a learning and memory centre in an insect brain",
         "desc": "Eichler and colleagues map the larval mushroom body’s synaptic wiring, identifying stereotyped and variable organization in an associative circuit. Several bundled VFB cells belong to this reconstruction lineage; the eight-cell view remains a selected subset with separate export dates.",
         "url": "https://www.nature.com/articles/nature23455"
+      },
+      {
+        "year": "JUL 2026 · PREPRINT",
+        "tag": "PROOFREADING · GLOBAL PROXIES",
+        "name": "Connectome quality converges predictably to reveal optimal stopping points during proofreading",
+        "desc": "Martinez and colleagues propose tracking graph invariants across actual proofreading snapshots. Their zebrafish and hemibrain analyses motivate explicit version histories. Convergence is a global proxy, not a measured error rate, biological change or validated stopping rule for every circuit.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13345220/",
+        "doi": "10.64898/2026.06.30.735414",
+        "evidence": "bioRxiv preprint v1, posted4 July2026; not peer reviewed"
+      },
+      {
+        "year": "JUL 2026 · PREPRINT v2",
+        "tag": "ANNOTATION · RESIDUAL UNCERTAINTY",
+        "name": "Beyond Agreement: Standardizing Crowdsourced Synapse Annotations through Proofreading in EM Connectomics",
+        "desc": "Lee and colleagues combine explicit annotation criteria, rater calibration and probabilistic consensus in two larval EM volumes. The revised preprint reports remaining ambiguity and dataset-dependent agreement. Its eight-nanometre isotropic datasets are different from the bundled anisotropic L1EM patch.",
+        "url": "https://www.biorxiv.org/content/10.1101/2025.09.26.678851v2",
+        "doi": "10.1101/2025.09.26.678851",
+        "evidence": "bioRxiv preprint v2, posted30 July2026; not peer reviewed"
+      },
+      {
+        "year": "JAN 2026",
+        "tag": "VISUAL ANALYTICS · GUIDED PROOFREADING",
+        "name": "SynAnno: Interactive Guided Proofreading of Synaptic Annotations",
+        "desc": "Lauenburg and colleagues present structured neuron-centred review, optimized traversal and a three-dimensional progress map. Seven experts evaluated the workflow. This research motivates inspectable annotation records; Synapse Atlas does not bundle SynAnno’s learned error-detection models or reproduce its validation study.",
+        "url": "https://doi.org/10.1109/TVCG.2025.3634824",
+        "doi": "10.1109/TVCG.2025.3634824",
+        "evidence": "Peer-reviewed IEEE TVCG32(1):429–439; issueJanuary2026"
+      },
+      {
+        "year": "APR 2025",
+        "tag": "VERSIONING · REPRODUCIBLE CONNECTOMICS",
+        "name": "CAVE: Connectome Annotation Versioning Engine",
+        "desc": "CAVE preserves queryable annotation and segmentation states while proofreading changes cell identities. Its time-aware services support reproducible analysis of large connectomes. Version identifiers and source receipts remain necessary even when a local workbench bundles only static snapshots.",
+        "url": "https://www.nature.com/articles/s41592-024-02426-z",
+        "doi": "10.1038/s41592-024-02426-z",
+        "evidence": "Peer-reviewed Nature Methods; published9 April2025"
+      },
+      {
+        "year": "AUG 2021",
+        "tag": "DEVELOPMENT · MEASURED CONNECTOMES",
+        "name": "Connectomes across development reveal principles of brain maturation",
+        "desc": "Witvliet and colleagues reconstructed chemical connectivity across eight separate C. elegans specimens spanning larval stages and adulthood. Comparisons use identified cells and reveal both shared organization and variable wiring; cross-sectional specimens do not establish a longitudinal trajectory or causal developmental change.",
+        "url": "https://doi.org/10.1038/s41586-021-03778-8"
       }
     ],
     "comparisonRows": [
@@ -1394,7 +1885,307 @@
         "license": "Selected eight skeletons: CC BY 4.0, verified in per-neuron VFB records",
         "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
         "limit": "Keep template VFB_00050000, original CATMAID IDs and source units with each file. Dataset terms vary across VFB; these files provide no spatial synapse coordinates."
+      },
+      {
+        "name": "L1EM native serial EM stack",
+        "url": "https://www.virtualflybrain.org/hosted/l1em-catmaid/",
+        "access": "Public CATMAID stack metadata and source JPEG tiles; eight calibrated source tiles are bundled offline",
+        "release": "NativeL1CNS0-tilt stack; source tiles last modified2017, captured27 October2026",
+        "license": "L1EM template recorded asCC BY4.0 in authoritativeVFB record",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "limit": "Eight adjacent512×512 tiles cover a1.9456µm square patch. They contain no segmentation, assigned neuron identities or synapse coordinates; native stack registration must not be conflated with exportedSWC registration."
+      },
+      {
+        "name": "Larva1099 activity-to-EM resource",
+        "url": "https://www.virtualflybrain.org/hosted/larva1099-catmaid/",
+        "access": "Public12nm isotropic eFIB-SEM volume and a curated named-neuron export; linked preprint is in revision",
+        "release": "Randel etal resource2026; associated DOI10.1101/2025.09.25.678485",
+        "license": "Check individual volume and reconstruction terms before redistribution; no assets from this resource are bundled",
+        "licenseUrl": "https://www.virtualflybrain.org/hosted/larva1099-catmaid/",
+        "limit": "A different L1 larva from the bundledL1EM specimen. Curated named neurons are not a complete connectome; primary preprint status is explicit."
+      },
+      {
+        "name": "NemaNode developmental connectomes",
+        "url": "https://www.nemanode.org/",
+        "access": "Official lab browser; pinned factual chemical connection tables for eight Witvliet specimens are bundled offline.",
+        "release": "NemaNode source 6b7ca03f6d68; Nature 2021 cross-sectional developmental series",
+        "license": "Selected source representation: GPL-3.0; preserve source notice and original files",
+        "limit": "Observed chemical-edge endpoints include non-neuronal cells; gap-junction rows are excluded and absence does not prove biological absence."
       }
     ]
+  },
+  "updated": "2026-10-27",
+  "serialEM": {
+    "schema": "synapse-atlas.em-tiles.v1",
+    "accessed": "2026-10-27",
+    "id": "l1em-native-serial-patch",
+    "name": "L1 CNS native ssTEM serial patch",
+    "images": [
+      {
+        "id": "l1em-z1001",
+        "filename": "tiles/l1em-z1001-zoom0-r35-c28.jpg",
+        "zIndex": 1001,
+        "zUm": 56.1,
+        "width": 512,
+        "height": 512,
+        "pixelSizeNm": 3.8,
+        "xIndex": 14336,
+        "yIndex": 17920,
+        "row": 35,
+        "col": 28,
+        "zoomLevel": 0,
+        "xOriginUm": 54.4768,
+        "yOriginUm": 68.096,
+        "sourceUrl": "https://virtualflybrain.org/data/EM/L1EM/0111-8/1001/0/35_28.jpg",
+        "sha256": "6df76d4e090b373bcb54537cb1b02055e7f653e97a10e5bfb7025cf0baf2e0d9",
+        "bytes": 83028,
+        "responseHeaders": {
+          "Content-Type": "image/jpeg",
+          "Content-Length": "83028",
+          "Last-Modified": "Wed, 05 Apr 2017 12:26:55 GMT",
+          "ETag": "\"58e4e28f-14454\""
+        }
+      },
+      {
+        "id": "l1em-z1002",
+        "filename": "tiles/l1em-z1002-zoom0-r35-c28.jpg",
+        "zIndex": 1002,
+        "zUm": 56.15,
+        "width": 512,
+        "height": 512,
+        "pixelSizeNm": 3.8,
+        "xIndex": 14336,
+        "yIndex": 17920,
+        "row": 35,
+        "col": 28,
+        "zoomLevel": 0,
+        "xOriginUm": 54.4768,
+        "yOriginUm": 68.096,
+        "sourceUrl": "https://virtualflybrain.org/data/EM/L1EM/0111-8/1002/0/35_28.jpg",
+        "sha256": "7a841b46af537d18b81025568633dd65a3d9220416c610ebbcc199c84240fd30",
+        "bytes": 76855,
+        "responseHeaders": {
+          "Content-Type": "image/jpeg",
+          "Content-Length": "76855",
+          "Last-Modified": "Wed, 05 Apr 2017 12:27:20 GMT",
+          "ETag": "\"58e4e2a8-12c37\""
+        }
+      },
+      {
+        "id": "l1em-z1003",
+        "filename": "tiles/l1em-z1003-zoom0-r35-c28.jpg",
+        "zIndex": 1003,
+        "zUm": 56.2,
+        "width": 512,
+        "height": 512,
+        "pixelSizeNm": 3.8,
+        "xIndex": 14336,
+        "yIndex": 17920,
+        "row": 35,
+        "col": 28,
+        "zoomLevel": 0,
+        "xOriginUm": 54.4768,
+        "yOriginUm": 68.096,
+        "sourceUrl": "https://virtualflybrain.org/data/EM/L1EM/0111-8/1003/0/35_28.jpg",
+        "sha256": "89bb83bc851daa1913e3ef6f13e337a45a6d86cc8498d3a46d2421858c707073",
+        "bytes": 78378,
+        "responseHeaders": {
+          "Content-Type": "image/jpeg",
+          "Content-Length": "78378",
+          "Last-Modified": "Wed, 05 Apr 2017 12:27:51 GMT",
+          "ETag": "\"58e4e2c7-1322a\""
+        }
+      },
+      {
+        "id": "l1em-z1004",
+        "filename": "tiles/l1em-z1004-zoom0-r35-c28.jpg",
+        "zIndex": 1004,
+        "zUm": 56.25,
+        "width": 512,
+        "height": 512,
+        "pixelSizeNm": 3.8,
+        "xIndex": 14336,
+        "yIndex": 17920,
+        "row": 35,
+        "col": 28,
+        "zoomLevel": 0,
+        "xOriginUm": 54.4768,
+        "yOriginUm": 68.096,
+        "sourceUrl": "https://virtualflybrain.org/data/EM/L1EM/0111-8/1004/0/35_28.jpg",
+        "sha256": "ff2c06e8173815998b151144febb770143564f948b1b4ff32e634b654a7eba30",
+        "bytes": 65409,
+        "responseHeaders": {
+          "Content-Type": "image/jpeg",
+          "Content-Length": "65409",
+          "Last-Modified": "Wed, 05 Apr 2017 12:28:49 GMT",
+          "ETag": "\"58e4e301-ff81\""
+        }
+      },
+      {
+        "id": "l1em-z1005",
+        "filename": "tiles/l1em-z1005-zoom0-r35-c28.jpg",
+        "zIndex": 1005,
+        "zUm": 56.3,
+        "width": 512,
+        "height": 512,
+        "pixelSizeNm": 3.8,
+        "xIndex": 14336,
+        "yIndex": 17920,
+        "row": 35,
+        "col": 28,
+        "zoomLevel": 0,
+        "xOriginUm": 54.4768,
+        "yOriginUm": 68.096,
+        "sourceUrl": "https://virtualflybrain.org/data/EM/L1EM/0111-8/1005/0/35_28.jpg",
+        "sha256": "717231c4cd618e3732968f91f04e7df9817e5a5131e9287f530b5cba1277fa71",
+        "bytes": 76343,
+        "responseHeaders": {
+          "Content-Type": "image/jpeg",
+          "Content-Length": "76343",
+          "Last-Modified": "Wed, 05 Apr 2017 12:30:47 GMT",
+          "ETag": "\"58e4e377-12a37\""
+        }
+      },
+      {
+        "id": "l1em-z1006",
+        "filename": "tiles/l1em-z1006-zoom0-r35-c28.jpg",
+        "zIndex": 1006,
+        "zUm": 56.35,
+        "width": 512,
+        "height": 512,
+        "pixelSizeNm": 3.8,
+        "xIndex": 14336,
+        "yIndex": 17920,
+        "row": 35,
+        "col": 28,
+        "zoomLevel": 0,
+        "xOriginUm": 54.4768,
+        "yOriginUm": 68.096,
+        "sourceUrl": "https://virtualflybrain.org/data/EM/L1EM/0111-8/1006/0/35_28.jpg",
+        "sha256": "ab5baa01b70a48696848c6f542c38666ae7e801397e2bce34683143ecb72c15f",
+        "bytes": 77344,
+        "responseHeaders": {
+          "Content-Type": "image/jpeg",
+          "Content-Length": "77344",
+          "Last-Modified": "Wed, 05 Apr 2017 12:32:51 GMT",
+          "ETag": "\"58e4e3f3-12e20\""
+        }
+      },
+      {
+        "id": "l1em-z1007",
+        "filename": "tiles/l1em-z1007-zoom0-r35-c28.jpg",
+        "zIndex": 1007,
+        "zUm": 56.4,
+        "width": 512,
+        "height": 512,
+        "pixelSizeNm": 3.8,
+        "xIndex": 14336,
+        "yIndex": 17920,
+        "row": 35,
+        "col": 28,
+        "zoomLevel": 0,
+        "xOriginUm": 54.4768,
+        "yOriginUm": 68.096,
+        "sourceUrl": "https://virtualflybrain.org/data/EM/L1EM/0111-8/1007/0/35_28.jpg",
+        "sha256": "e42e7513f1b5ec331d9fc19194fec135897259b6fbd62a1abc3cd6f8709cdb87",
+        "bytes": 73750,
+        "responseHeaders": {
+          "Content-Type": "image/jpeg",
+          "Content-Length": "73750",
+          "Last-Modified": "Wed, 05 Apr 2017 12:35:42 GMT",
+          "ETag": "\"58e4e49e-12016\""
+        }
+      },
+      {
+        "id": "l1em-z1008",
+        "filename": "tiles/l1em-z1008-zoom0-r35-c28.jpg",
+        "zIndex": 1008,
+        "zUm": 56.45,
+        "width": 512,
+        "height": 512,
+        "pixelSizeNm": 3.8,
+        "xIndex": 14336,
+        "yIndex": 17920,
+        "row": 35,
+        "col": 28,
+        "zoomLevel": 0,
+        "xOriginUm": 54.4768,
+        "yOriginUm": 68.096,
+        "sourceUrl": "https://virtualflybrain.org/data/EM/L1EM/0111-8/1008/0/35_28.jpg",
+        "sha256": "0570fe8f830edf203dd0a38e1a397fdfe8e6d017d2c09d524d4b5ecd254ce449",
+        "bytes": 70837,
+        "responseHeaders": {
+          "Content-Type": "image/jpeg",
+          "Content-Length": "70837",
+          "Last-Modified": "Wed, 05 Apr 2017 12:37:46 GMT",
+          "ETag": "\"58e4e51a-114b5\""
+        }
+      }
+    ],
+    "source": {
+      "title": "L1 CNS ssTEM image stack, Cardona/Janelia, hosted by Virtual Fly Brain",
+      "url": "https://www.virtualflybrain.org/hosted/l1em-catmaid/",
+      "stackMetadataUrl": "https://l1em.catmaid.virtualflybrain.org/1/stack/1/info",
+      "resolutionNm": {
+        "x": 3.8,
+        "y": 3.8,
+        "z": 50.0
+      },
+      "translationNm": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 6050.0
+      },
+      "dimensions": {
+        "x": 28128,
+        "y": 31840,
+        "z": 4841
+      },
+      "orientation": 0,
+      "tileSourceType": 4,
+      "license": "CC BY 4.0 as recorded for VFB L1EM template VFB_00050000",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "licenseEvidence": "template-record-live.json; VFB_00050000 dataset_license links CC_BY_4_0 to the hosted L1EM template",
+      "attribution": "Original L1 CNS ssTEM acquisition: Albert Cardona and collaborators, HHMI Janelia; associated original L1EM publications including Ohyama et al. 2015 and Winding et al. 2023. Hosted and preserved by Virtual Fly Brain (Court et al. 2023).",
+      "limits": "Eight 512x512 JPEG tiles are a small native image patch, not a whole volume. Source tiles are aligned, tiled and JPEG-compressed EM images; intensity is not calibrated detector output. No segmentation, identified synapses or neuron labels are supplied. URLs are mutable; captured original bytes and SHA-256 define this snapshot. Native stack project translation is documented; no overlay registration with exported SWCs is asserted.",
+      "metadataEvidence": {
+        "stack-info.json": {
+          "sha256": "0727a17c6ead37271608f7641228c926a32d7a065eda5835de39a72e116e09af",
+          "bytes": 4015
+        },
+        "projects.json": {
+          "sha256": "9954948d9770ed18610af1fd369abe488a895c70d8c594912fb14f91caaf637a",
+          "bytes": 467
+        },
+        "stacks.json": {
+          "sha256": "3a52dde5ee32b9ce5c3816024a8055c5bf8d06fbd2e6e3d9833c2c70496edd30",
+          "bytes": 177
+        },
+        "template-record-live.json": {
+          "sha256": "4e3560dcad524f9934491c39f278bb77ab22412cabb433e3e1c0a62142c60ebc",
+          "bytes": 31315
+        }
+      },
+      "nativeProjectFrame": {
+        "units": "nm",
+        "formula": "project = translation + stackPixel * resolution; imageX = (col*512 + pixelX) * 2^zoomLevel, likewiseY",
+        "xyPixelSizeNm": 3.8,
+        "sectionStepNm": 50,
+        "zTranslationNm": 6050,
+        "tileOriginUm": [
+          54.4768,
+          68.096
+        ],
+        "firstLastPlaneUm": [
+          56.1,
+          56.45
+        ],
+        "fieldOfViewUm": [
+          1.9456,
+          1.9456
+        ],
+        "scope": "Spatial calibration describes the native CATMAID stack. VFB SWC export registration is not asserted."
+      }
+    }
   }
 }

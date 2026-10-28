@@ -1,0 +1,20 @@
+[
+    {
+        "comment": null,
+        "id": 1,
+        "stackgroups": [],
+        "stacks": [
+            {
+                "comment": "L1 CNS ssTEM at 3.8x3.8x50 nm of whole Drosophila 1st instar larval CNS",
+                "dimensions": [
+                    28128,
+                    31840,
+                    4841
+                ],
+                "id": 1,
+                "title": "L1 CNS 0-tilt"
+            }
+        ],
+        "title": "L1 CNS"
+    }
+]

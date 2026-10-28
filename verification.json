@@ -1,255 +1,319 @@
 {
-  "version": "3.0.0",
-  "checkedAt": "2026-10-26T19:14:40.122Z",
+  "version": "4.0.0",
+  "releaseDate": "2026-10-28",
+  "sourceCaptureDate": "2026-10-27",
+  "checkedAt": "2026-10-28T10:32:50.065Z",
   "browser": "155.0.8059.86",
   "coreTests": {
-    "passed": 37,
+    "passed": 66,
     "failed": 0
   },
   "browserChecks": [
     {
-      "name": "startup without JS errors",
+      "name": "startup no uncaught errors",
       "pass": true,
       "detail": []
     },
     {
-      "name": "eight linked larval skeletons",
+      "name": "twelve real public graph scopes",
       "pass": true
     },
     {
-      "name": "exact linked connectivity",
+      "name": "real developmental shared-node comparison",
+      "pass": true,
+      "detail": 184
+    },
+    {
+      "name": "all eight specimen ledger rows",
       "pass": true
     },
     {
-      "name": "source code legend",
+      "name": "different-source normalized distance finite",
       "pass": true
     },
     {
-      "name": "depth legend",
+      "name": "identity comparison exact",
       "pass": true
     },
     {
-      "name": "linked count threshold",
+      "name": "empty support not positive similarity",
       "pass": true
     },
     {
-      "name": "adult specimen source",
+      "name": "source identity compatibility limits choices",
       "pass": true
     },
     {
-      "name": "adult units",
+      "name": "fly cohort compact array adaptation",
       "pass": true
     },
     {
-      "name": "adult linked panel hidden",
-      "pass": true
-    },
-    {
-      "name": "adult pair geometry",
-      "pass": true
-    },
-    {
-      "name": "largest adult component default",
-      "pass": true
-    },
-    {
-      "name": "component selector",
-      "pass": true
-    },
-    {
-      "name": "invalid Sholl clears stale report",
-      "pass": true
-    },
-    {
-      "name": "valid profile restored",
-      "pass": true
-    },
-    {
-      "name": "data card larval frame",
-      "pass": true
-    },
-    {
-      "name": "data card profile exact ID",
-      "pass": true
-    },
-    {
-      "name": "data card adult frame",
-      "pass": true
-    },
-    {
-      "name": "data card adult profile",
-      "pass": true
-    },
-    {
-      "name": "linked circuit exact totals",
-      "pass": true
-    },
-    {
-      "name": "group and side induced subgraph",
+      "name": "same-ID reciprocal homolog mapping",
       "pass": true,
       "detail": {
-        "nodeCount": 3,
-        "pairCount": 2,
-        "nonSelfPairCount": 2,
-        "selfLoopCount": 0,
-        "totalWeight": 4,
-        "density": 0.3333333333333333,
-        "reciprocity": 1,
-        "weakComponentCount": 2,
-        "largestWeakComponent": 2,
-        "largestSCC": 2
+        "pairedNodeCount": 8,
+        "pairCount": 4,
+        "unpairedIds": [],
+        "missingTargets": [],
+        "invalidPairs": []
       }
     },
     {
-      "name": "incoming seed neighborhood",
+      "name": "bilateral eligible weight preserved",
       "pass": true,
       "detail": {
-        "nodeCount": 2,
-        "pairCount": 2,
-        "nonSelfPairCount": 2,
-        "selfLoopCount": 0,
-        "totalWeight": 10,
-        "density": 1,
-        "reciprocity": 1,
-        "weakComponentCount": 1,
-        "largestWeakComponent": 2,
-        "largestSCC": 2
+        "inputNodeCount": 8,
+        "retainedPairCount": 17,
+        "eligiblePairCount": 17,
+        "eligibleWeight": 107,
+        "excludedPairCount": 0,
+        "excludedWeight": 0,
+        "undeclaredEndpointIds": []
       }
     },
     {
-      "name": "zero-hop seed isolate",
+      "name": "fingerprint excludes query and finite similarity",
       "pass": true
     },
     {
-      "name": "unknown seed rejected",
+      "name": "changed fingerprint query invalidates stale output",
       "pass": true
     },
     {
-      "name": "high threshold handoff stays empty",
+      "name": "direction and source-group filtering",
       "pass": true
     },
     {
-      "name": "targeted structural deletion",
+      "name": "unknown fingerprint query rejected",
+      "pass": true
+    },
+    {
+      "name": "real EM source loaded",
+      "pass": true
+    },
+    {
+      "name": "full decoded tile pixel count",
+      "pass": true
+    },
+    {
+      "name": "pixel footprint physical area",
+      "pass": true
+    },
+    {
+      "name": "display filters preserve raw statistics",
+      "pass": true
+    },
+    {
+      "name": "calibrated image-plane ruler",
       "pass": true,
       "detail": {
-        "nodeCount": 7,
-        "pairCount": 11,
-        "nonSelfPairCount": 11,
-        "selfLoopCount": 0,
-        "totalWeight": 78,
-        "density": 0.2619047619047619,
-        "reciprocity": 0.36363636363636365,
-        "weakComponentCount": 3,
-        "largestWeakComponent": 5,
-        "largestSCC": 3
+        "distanceUm": 0.9728,
+        "deltaUm": {
+          "x": 0.9728,
+          "y": 0
+        },
+        "pixelPoints": [
+          {
+            "x": 128,
+            "y": 256
+          },
+          {
+            "x": 384,
+            "y": 256
+          }
+        ],
+        "nativePoints": [
+          {
+            "xUm": 54.9632,
+            "yUm": 69.06880000000001,
+            "zUm": 56.1
+          },
+          {
+            "xUm": 55.936,
+            "yUm": 69.06880000000001,
+            "zUm": 56.1
+          }
+        ],
+        "calibration": {
+          "width": 512,
+          "height": 512,
+          "pixelSizeNm": 3.8,
+          "originXUm": 54.4768,
+          "originYUm": 68.096,
+          "zUm": 56.1
+        },
+        "definition": "Euclidean in-plane distance using continuous pixel-boundary coordinates. X and Y range from 0 through width and height inclusive. Native coordinates derive only from the supplied source calibration. Z is fixed to this source section; no 3D registration, neurite identity or synaptic relation is inferred."
       }
     },
     {
-      "name": "matched-size random controls",
+      "name": "source native coordinate origin retained",
       "pass": true
     },
     {
-      "name": "seeded experiment repeatability",
+      "name": "drawn ROI selects source pixels",
+      "pass": true,
+      "detail": {
+        "x": 128,
+        "y": 128,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "name": "all eight source planes profiled",
       "pass": true
     },
     {
-      "name": "experiment export source and controls",
+      "name": "serial profile fixed ROI and exact Z separation",
       "pass": true
     },
     {
-      "name": "background analysis cancellation",
+      "name": "section advances actual source image",
       "pass": true
     },
     {
-      "name": "unknown removal rejected",
+      "name": "physical display zoom",
       "pass": true
     },
     {
-      "name": "local settings save",
+      "name": "reset display zoom",
       "pass": true
     },
     {
-      "name": "portable settings source hashes",
+      "name": "serial playback pauses",
       "pass": true
     },
     {
-      "name": "local study circuit restoration",
+      "name": "original JPEG export byte identity",
       "pass": true
     },
     {
-      "name": "local study specimen restoration",
+      "name": "EM receipt includes calibration and source hash",
       "pass": true
     },
     {
-      "name": "reject unknown group atomically",
+      "name": "v4 local settings saved",
       "pass": true
     },
     {
-      "name": "reject wrong family profile atomically",
+      "name": "v4 settings retain observatory and EM",
       "pass": true
     },
     {
-      "name": "reject unknown root atomically",
+      "name": "v4 local restore source plane and measurement",
       "pass": true
     },
     {
-      "name": "reject invalid controls atomically",
+      "name": "legacy v3 study source-compatible restore",
       "pass": true
     },
     {
-      "name": "reject source mismatch atomically",
+      "name": "reject unknown microscope source without mutation",
       "pass": true
     },
     {
-      "name": "reject missing field atomically",
+      "name": "reject wrong specimen identity without mutation",
       "pass": true
     },
     {
-      "name": "portable study roundtrip",
+      "name": "reject bad calibration hash without mutation",
       "pass": true
     },
     {
-      "name": "circuit receipt exact scope",
+      "name": "reject outside measurement without mutation",
       "pass": true
     },
     {
-      "name": "circuit CSV induced scope",
+      "name": "reject empty ROI without mutation",
       "pass": true
     },
     {
-      "name": "morphology receipt origin and units",
+      "name": "reject invalid threshold without mutation",
       "pass": true
     },
     {
-      "name": "existing pathfinder on linked graph",
+      "name": "legacy referenced hashes required",
       "pass": true
     },
     {
-      "name": "existing CSV import",
+      "name": "comparison receipt has both source scopes",
       "pass": true
     },
     {
-      "name": "import-derived circuit stays unverified",
+      "name": "bilateral receipt includes mapping diagnostics",
       "pass": true
     },
     {
-      "name": "existing import reset",
+      "name": "fingerprint receipt source and exact IDs",
       "pass": true
     },
     {
-      "name": "existing SWC import",
+      "name": "fingerprint-to-network source handoff",
       "pass": true
     },
     {
-      "name": "imported geometry hides linked claims",
+      "name": "comparison background cancellation",
       "pass": true
     },
     {
-      "name": "research search regression",
+      "name": "source catalog species search repaired",
       "pass": true
     },
     {
-      "name": "microscopy controls regression",
+      "name": "source kind filter excludes wrong asset class",
+      "pass": true
+    },
+    {
+      "name": "final specimen comparison",
+      "pass": true
+    },
+    {
+      "name": "final real EM decode",
+      "pass": true
+    },
+    {
+      "name": "offline specimen worker",
+      "pass": true
+    },
+    {
+      "name": "offline genuine EM image",
+      "pass": true
+    },
+    {
+      "name": "offline all eight image planes",
+      "pass": true
+    },
+    {
+      "name": "offline no HTTP data requests",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "existing measured anatomy",
+      "pass": true
+    },
+    {
+      "name": "adult physical units remain correct",
+      "pass": true
+    },
+    {
+      "name": "CSV exact-ID import still works",
+      "pass": true
+    },
+    {
+      "name": "invalid CSV retains valid graph",
+      "pass": true
+    },
+    {
+      "name": "supplied graph reset",
+      "pass": true
+    },
+    {
+      "name": "seventeen curated research entries",
+      "pass": true
+    },
+    {
+      "name": "preprint status searchable",
       "pass": true
     },
     {
@@ -257,100 +321,99 @@
       "pass": true
     },
     {
-      "name": "twelve primary papers",
+      "name": "final 390px atlas",
+      "pass": true,
+      "detail": {
+        "inner": 390,
+        "client": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "final 390px observatory",
+      "pass": true,
+      "detail": {
+        "inner": 390,
+        "client": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "final 390px circuit",
+      "pass": true,
+      "detail": {
+        "inner": 390,
+        "client": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "final 390px network",
+      "pass": true,
+      "detail": {
+        "inner": 390,
+        "client": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "final 390px data",
+      "pass": true,
+      "detail": {
+        "inner": 390,
+        "client": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "final 390px micro",
+      "pass": true,
+      "detail": {
+        "inner": 390,
+        "client": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "final 390px research",
+      "pass": true,
+      "detail": {
+        "inner": 390,
+        "client": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "final 390px gallery",
+      "pass": true,
+      "detail": {
+        "inner": 390,
+        "client": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "exact embedded VFB version identifiers",
       "pass": true
     },
     {
-      "name": "new VFB research search",
+      "name": "post-integrity comparison still matches observations",
       "pass": true
     },
     {
-      "name": "Circuit Studio strict 390px viewport",
-      "pass": true,
-      "detail": {
-        "innerWidth": 390,
-        "clientWidth": 390,
-        "scrollWidth": 390
-      }
-    },
-    {
-      "name": "strict mobile layout atlas",
-      "pass": true,
-      "detail": {
-        "viewport": 390,
-        "scroll": 390,
-        "client": 390
-      }
-    },
-    {
-      "name": "strict mobile layout circuit",
-      "pass": true,
-      "detail": {
-        "viewport": 390,
-        "scroll": 390,
-        "client": 390
-      }
-    },
-    {
-      "name": "strict mobile layout network",
-      "pass": true,
-      "detail": {
-        "viewport": 390,
-        "scroll": 390,
-        "client": 390
-      }
-    },
-    {
-      "name": "strict mobile layout data",
-      "pass": true,
-      "detail": {
-        "viewport": 390,
-        "scroll": 390,
-        "client": 390
-      }
-    },
-    {
-      "name": "strict mobile layout micro",
-      "pass": true,
-      "detail": {
-        "viewport": 390,
-        "scroll": 390,
-        "client": 390
-      }
-    },
-    {
-      "name": "strict mobile layout research",
-      "pass": true,
-      "detail": {
-        "viewport": 390,
-        "scroll": 390,
-        "client": 390
-      }
-    },
-    {
-      "name": "strict mobile layout gallery",
-      "pass": true,
-      "detail": {
-        "viewport": 390,
-        "scroll": 390,
-        "client": 390
-      }
-    },
-    {
-      "name": "offline linked anatomy startup",
+      "name": "matrix cell selects exact two adult specimens",
       "pass": true
-    },
-    {
-      "name": "standalone offline worker experiment",
-      "pass": true
-    },
-    {
-      "name": "offline no network data requests",
-      "pass": true,
-      "detail": []
     }
   ],
   "scriptErrors": [],
+  "resolvedInterimFailures": [
+    {
+      "name": "source catalog species search",
+      "cause": "Author flex display overrode hidden attribute",
+      "fixed": true,
+      "retest": "Eight matching cards, zero skeleton cards under the graph-only search"
+    }
+  ],
   "viewports": [
     {
       "width": 1500,
@@ -361,5 +424,5 @@
       "height": 844
     }
   ],
-  "scope": "New v3 workflows plus existing imports, paths, gallery, research and microscopy regression checks. Mathematical tests are separate. Native deployment is recorded separately."
+  "htmlSha256": "2aa72475e3fc1711661cfbbce46ceb80525a65e0ec524459f47240969228afd6"
 }

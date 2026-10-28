@@ -38,13 +38,15 @@ def build() -> tuple[str, dict, dict]:
     css = (SOURCE / 'upgrade.css').read_text(encoding='utf-8')
     core = (SOURCE / 'atlas-core.js').read_text(encoding='utf-8')
     extension = (SOURCE / 'upgrade.js').read_text(encoding='utf-8')
-    for name in ('circuit-core.js', 'morph-core.js'):
+    for name in ('circuit-core.js', 'morph-core.js', 'compare-core.js', 'imaging-core.js'):
         if (SOURCE / name).exists():
             core += '\n' + (SOURCE / name).read_text(encoding='utf-8')
-    if (SOURCE / 'studio-v3.css').exists():
-        css += '\n' + (SOURCE / 'studio-v3.css').read_text(encoding='utf-8')
-    if (SOURCE / 'studio-v3.js').exists():
-        extension += '\n' + (SOURCE / 'studio-v3.js').read_text(encoding='utf-8')
+    for name in ('studio-v3.css', 'studio-v4.css'):
+        if (SOURCE / name).exists():
+            css += '\n' + (SOURCE / name).read_text(encoding='utf-8')
+    for name in ('studio-v3.js', 'studio-v4.js', 'microscopy-v4.js', 'studies-v4.js'):
+        if (SOURCE / name).exists():
+            extension += '\n' + (SOURCE / name).read_text(encoding='utf-8')
     if html.count('</head>') != 1 or html.count('</body>') != 1 or '<script>' not in html:
         raise ValueError('base.html is missing its expected HTML insertion points')
     html = html.replace('</head>', '<style>' + css + '</style></head>')

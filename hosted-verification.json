@@ -1,18 +1,17 @@
 {
   "url": "https://synapse-atlas-research-kai-20261026.kai9987kai.chatgpt.site/",
-  "version": "3.0.0",
-  "workerExperiment": "passed",
-  "targetedMetrics": {
-    "nodeCount": 7,
-    "pairCount": 11,
-    "nonSelfPairCount": 11,
-    "selfLoopCount": 0,
-    "totalWeight": 78,
-    "density": 0.2619047619047619,
-    "reciprocity": 0.36363636363636365,
-    "weakComponentCount": 3,
-    "largestWeakComponent": 5,
-    "largestSCC": 3
+  "version": "4.0.0",
+  "comparisonWorker": "passed",
+  "commonObservedCells": 184,
+  "emSourceJPEGHash": "6df76d4e090b373bcb54537cb1b02055e7f653e97a10e5bfb7025cf0baf2e0d9",
+  "decodedPixels": 262144,
+  "calibration": {
+    "width": 512,
+    "height": 512,
+    "pixelSizeNm": 3.8,
+    "originXUm": 54.4768,
+    "originYUm": 68.096,
+    "zUm": 56.1
   },
   "scriptErrors": []
 }

@@ -1,0 +1,27 @@
+{
+  "images": 8,
+  "nativeWidth": 512,
+  "nativeHeight": 512,
+  "pixelSizeNm": 3.8,
+  "sectionStepNm": 50,
+  "zIndices": [
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008
+  ],
+  "bytes": 601944,
+  "hashes": "all original SHA-256 matched",
+  "JPEGs": "all8 decode to512x512 grayscale",
+  "dataURLs": "all8 exactly reproduce originalbytes",
+  "capturedBrokenSliceFlags": "none of selected8 listedbroken",
+  "licenseEvidence": [
+    "CC-BY_4.0",
+    "CC-BY_4.0"
+  ],
+  "scope": "File and calibration checks only; not an EM reconstruction or synapse annotation audit."
+}

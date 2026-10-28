@@ -1,0 +1,126 @@
+{
+  "changedFieldCount": 24,
+  "allOtherParsedValuesUnchanged": true,
+  "changes": [
+    {
+      "path": "source/public-data.json.morphology[2].source.vfbTermRecordVersion",
+      "before": 1880075371068522500,
+      "after": "1880075371068522497"
+    },
+    {
+      "path": "source/public-data.json.morphology[3].source.vfbTermRecordVersion",
+      "before": 1880075370855661600,
+      "after": "1880075370855661569"
+    },
+    {
+      "path": "source/public-data.json.morphology[4].source.vfbTermRecordVersion",
+      "before": 1880075370968907800,
+      "after": "1880075370968907776"
+    },
+    {
+      "path": "source/public-data.json.morphology[5].source.vfbTermRecordVersion",
+      "before": 1880075370997219300,
+      "after": "1880075370997219329"
+    },
+    {
+      "path": "source/public-data.json.morphology[6].source.vfbTermRecordVersion",
+      "before": 1880075371042308000,
+      "after": "1880075371042308098"
+    },
+    {
+      "path": "source/public-data.json.morphology[7].source.vfbTermRecordVersion",
+      "before": 1880075370890264600,
+      "after": "1880075370890264577"
+    },
+    {
+      "path": "source/public-data.json.morphology[8].source.vfbTermRecordVersion",
+      "before": 1880075371056988200,
+      "after": "1880075371056988160"
+    },
+    {
+      "path": "source/public-data.json.morphology[9].source.vfbTermRecordVersion",
+      "before": 1880075370944790500,
+      "after": "1880075370944790528"
+    },
+    {
+      "path": "source/public-data.json.manifest.morphology[2].source.vfbTermRecordVersion",
+      "before": 1880075371068522500,
+      "after": "1880075371068522497"
+    },
+    {
+      "path": "source/public-data.json.manifest.morphology[3].source.vfbTermRecordVersion",
+      "before": 1880075370855661600,
+      "after": "1880075370855661569"
+    },
+    {
+      "path": "source/public-data.json.manifest.morphology[4].source.vfbTermRecordVersion",
+      "before": 1880075370968907800,
+      "after": "1880075370968907776"
+    },
+    {
+      "path": "source/public-data.json.manifest.morphology[5].source.vfbTermRecordVersion",
+      "before": 1880075370997219300,
+      "after": "1880075370997219329"
+    },
+    {
+      "path": "source/public-data.json.manifest.morphology[6].source.vfbTermRecordVersion",
+      "before": 1880075371042308000,
+      "after": "1880075371042308098"
+    },
+    {
+      "path": "source/public-data.json.manifest.morphology[7].source.vfbTermRecordVersion",
+      "before": 1880075370890264600,
+      "after": "1880075370890264577"
+    },
+    {
+      "path": "source/public-data.json.manifest.morphology[8].source.vfbTermRecordVersion",
+      "before": 1880075371056988200,
+      "after": "1880075371056988160"
+    },
+    {
+      "path": "source/public-data.json.manifest.morphology[9].source.vfbTermRecordVersion",
+      "before": 1880075370944790500,
+      "after": "1880075370944790528"
+    },
+    {
+      "path": "data/linked-larva/larval-linked-morphology.json.morphology[0].source.vfbTermRecordVersion",
+      "before": 1880075371068522497,
+      "after": "1880075371068522497"
+    },
+    {
+      "path": "data/linked-larva/larval-linked-morphology.json.morphology[1].source.vfbTermRecordVersion",
+      "before": 1880075370855661569,
+      "after": "1880075370855661569"
+    },
+    {
+      "path": "data/linked-larva/larval-linked-morphology.json.morphology[2].source.vfbTermRecordVersion",
+      "before": 1880075370968907776,
+      "after": "1880075370968907776"
+    },
+    {
+      "path": "data/linked-larva/larval-linked-morphology.json.morphology[3].source.vfbTermRecordVersion",
+      "before": 1880075370997219329,
+      "after": "1880075370997219329"
+    },
+    {
+      "path": "data/linked-larva/larval-linked-morphology.json.morphology[4].source.vfbTermRecordVersion",
+      "before": 1880075371042308098,
+      "after": "1880075371042308098"
+    },
+    {
+      "path": "data/linked-larva/larval-linked-morphology.json.morphology[5].source.vfbTermRecordVersion",
+      "before": 1880075370890264577,
+      "after": "1880075370890264577"
+    },
+    {
+      "path": "data/linked-larva/larval-linked-morphology.json.morphology[6].source.vfbTermRecordVersion",
+      "before": 1880075371056988160,
+      "after": "1880075371056988160"
+    },
+    {
+      "path": "data/linked-larva/larval-linked-morphology.json.morphology[7].source.vfbTermRecordVersion",
+      "before": 1880075370944790528,
+      "after": "1880075370944790528"
+    }
+  ]
+}
